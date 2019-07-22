@@ -1,0 +1,130 @@
+<mat-toolbar class="brm-color" style="display: flex; align-items: center;flex-wrap: wrap;">
+  <mat-toolbar-row>
+    <img width="92" height="48" src="../../../assets/img/brm_logo.png">
+    <span class="example-spacer" style="flex:auto;"></span>
+
+    <span class="example-spacer" style="flex:auto;"></span>
+
+
+
+    <span class="example-spacer" style="flex:auto;"></span>
+
+    <button mat-icon-button style="color:white;" [matMenuTriggerFor]="menu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+
+      <button mat-menu-item>
+        <mat-icon>edit</mat-icon>
+        <span>Changer mot de passe</span>
+      </button>
+      <button mat-menu-item [routerLink]="[ '' ]">
+        <mat-icon>close</mat-icon>
+        <span>Deconnexion</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<mat-sidenav-container class="admin-container">
+  <mat-sidenav mode="side" class="sidenav" opened>
+    <mat-list>
+        <a routerLink="/dashboard/">
+      <mat-list-item>
+        <!-- <span class="fa fa-phone" style="color: green;"></span> -->
+        <h4 mat-line>  Comptes </h4>
+      </mat-list-item>
+    </a>
+      <mat-divider></mat-divider>
+      <a routerLink="/dashboard/prets/">
+      <mat-list-item>
+        <h4 mat-line>Prêts en cours</h4>
+      </mat-list-item>
+      </a>
+    </mat-list>
+    <mat-divider></mat-divider>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Virements</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-divider></mat-divider>
+          <a routerLink="/dashboard/beneficaire/">
+          <mat-list-item>
+            <h4 mat-line>Vers bénéficiaire</h4>
+          </mat-list-item>
+          </a>
+          <mat-divider></mat-divider>
+          <a routerLink="/dashboard/compte/">
+          <mat-list-item>
+            <h4 mat-line>Vers compte</h4>
+          </mat-list-item>
+        </a>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </mat-expansion-panel>
+    </mat-accordion>
+     
+    <mat-list>
+        <a routerLink="/dashboard/masse/">
+      <mat-list-item>
+        <h4 mat-line>Virements de masse</h4>
+      </mat-list-item>
+    </a>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <h4 mat-line>Bénéficiaires</h4>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <h4 mat-line>Prêts en cours</h4>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <a routerLink="/dashboard/releve/">
+      <mat-list-item>
+        <h4 mat-line>Relevé d'identification bancaire</h4>
+      </mat-list-item>
+      </a>
+      <mat-divider></mat-divider>
+    </mat-list>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Cartes et Chéquiers</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <h4 mat-line>Commander</h4>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <h4 mat-line>Faire Opposition</h4>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-list>
+      <mat-list-item>
+        <h4 mat-line>Cours des devises</h4>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+          <h4 mat-line>Réseaux Agences et GABs</h4>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <h4 mat-line>Messagerie</h4>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+      
+    </mat-list>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

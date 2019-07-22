@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../node_modules//bootstrap/dist/css/bootstrap.min.css';
+@import './assets/css/w3.css';
+
+
+.brm-color{
+    background-color: rgb(0, 48, 79);
+    background-repeat: no-repeat;
+}
+.body{
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/img/brmhead.jpg');
+    background-repeat: no-repeat;
+}
+.body-dash{
+    background-image: url('./assets/img/brmhead.jpg');
+    -o-filter: url('./assets/img/brmhead.jpg');
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+
+}
+.table-responsive{
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
+
+
+.mytable{
+    width: 100%;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.mytable  tr  td  th{
+    border: 1px solid  rgb(245, 237, 237);
+
+}
+.mytable  tr  td {
+    border: 1px solid rgb(245, 237, 237);
+
+}
+.mytable  tr {
+    border: 1px solid  rgb(245, 237, 237);
+
+}
+
+td,tr{
+    height: 30px !important;
+}
+
+body > * {
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
+.mat-cell,.mat-body,.mat-body-1,.mat-form-field,.mat-raised-button,
+span,.mat-line,th,tr,.table,table,td,.mat-row,
+.mat-card,.mat-card-title,.mat-tab-label-content,tbody{
+    font-size: 12px !important;
+}
+
+.mat-list-item{
+    height: 33px !important;
+    }
+.mat-expansion-panel-header{
+    height: 33px !important;
+}

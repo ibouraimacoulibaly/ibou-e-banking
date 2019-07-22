@@ -1,0 +1,25 @@
+
+.mytable{
+    background-color: white;
+    border-color: lightgray;
+    margin: 3px;
+}
+
+.mytable tr{
+    padding: 3px;
+}
+
+.spl{
+    border: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    background-color: white;
+}
+
+.spv{
+    border: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    background-color: white;
+
+}

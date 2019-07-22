@@ -1,0 +1,184 @@
+<div class="container-fluid">
+  <div class="row container-fluid">
+    <div class="container-fluid col-sm-6">
+
+       <div class=" col-sm-12 w3-padding" style="margin-top: 5%;">
+          <div class="row">
+              <div  class="spl col-sm-5">Code client:
+              </div>
+              <div  class="spv col-sm-7">
+                5506465</div>
+              </div>
+            <div class=" row ">
+              <div class="spl col-sm-5">
+                Nom du client :
+              </div>
+              <div class="spv col-sm-7">
+                Pape Mansour Diop
+              </div>
+            </div>
+            <div class="row ">
+              <div class="spl col-sm-5">
+                Numéro de compte :
+              </div>
+              <div class="spv col-sm-7">
+                  021235-4054054545-5405 XOF
+              </div>
+            </div>
+            <div class="row ">
+              <div class="spl col-sm-5">
+                Intitulé du compte :
+              </div>
+              <div class="spv col-sm-7">
+                COMPTE A VUE PARTICULIERS
+              </div>
+            </div>
+            <div class="row ">
+              <div class="spl col-sm-5">
+                Code Iban :
+  
+              </div>
+              <div class="spv col-sm-7">
+                SN06SN054564054054545441101
+  
+              </div>
+            </div>
+            <div class="row ">
+              <div class="spl col-sm-5">
+                Date :
+  
+              </div>
+              <div class="spv col-sm-7">
+                03/03/2019
+  
+              </div>
+            </div> 
+       </div>
+
+      <!-- <table class="mytable container-fluid mat-elevation-z2 rounded">
+        <tbody>
+          <tr>
+            <td >Code client:
+            </td>
+            <td>
+              5506465</td>
+          </tr>
+          <tr>
+            <td>
+              Nom du client :
+            </td>
+            <td>
+              Pape Mansour Diop
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Numéro de compte :
+            </td>
+            <td>
+                021235-4054054545-5405 XOF
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Intitulé du compte :
+            </td>
+            <td>
+              COMPTE A VUE PARTICULIERS
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Code Iban :
+
+            </td>
+            <td>
+              SN06SN054564054054545441101
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Date :
+
+            </td>
+            <td>
+              03/03/2019
+
+            </td>
+          </tr>
+        </tbody>
+      </table> -->
+      
+
+    </div>
+    <div class="col-sm-6">
+      <div class="container-fluid w3-center">
+        <mat-form-field class="w3-margin">
+          <input type="text" matInput placeholder="Opération">
+        </mat-form-field>
+        <button mat-raised-button color="primary">Rechercher</button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="container-fluid">
+      <div class="container-fluid w3-white  w3-card">
+        <span class="w3-right">Solde Disponible (XOF): 665 000</span>
+      </div>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 container-fluid">
+
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> Date </th>
+        <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="operation">
+        <th mat-header-cell *matHeaderCellDef> Opération </th>
+        <td mat-cell *matCellDef="let element"> {{element.operation}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="valeur">
+        <th mat-header-cell *matHeaderCellDef>Valeur </th>
+        <td mat-cell *matCellDef="let element"> {{element.valeur}}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="debit">
+        <th mat-header-cell *matHeaderCellDef>Débit (XOF) </th>
+        <td mat-cell *matCellDef="let element"> {{element.debit}}</td>
+      </ng-container>
+      <ng-container matColumnDef="credit">
+        <th mat-header-cell *matHeaderCellDef>Crédit (XOF)</th>
+        <td mat-cell *matCellDef="let element"> {{element.credit}}</td>
+      </ng-container>
+      <ng-container matColumnDef="solde">
+        <th mat-header-cell *matHeaderCellDef>Solde (XOF)</th>
+        <td mat-cell *matCellDef="let element"> {{element.solde}}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [length]="displayedColumns.length" [pageSize]="14" [pageSizeOptions]="[5,8, 10]"
+      showFirstLastButtons></mat-paginator>
+  </div>
+  <div class="row container-fluid">
+     <div class="col-sm-6 container-fluid w3-center">
+      <div class="container-fluid w3-center">
+        <button mat-raised-button color="warn" [routerLink]="[ '../']">retourner</button>
+      </div>
+     </div>
+     <div class="col-sm-6 container-fluid w3-center">
+      <div class="container-fluid w3-center">
+        <mat-form-field class="w3-margin">
+          <mat-select placeholder="Format exportation">
+            <mat-option *ngFor="let option of options" [value]="option">{{option}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <button mat-raised-button color="primary">exporter</button>
+      </div>
+     </div>
+  </div>
+  
+</div>
