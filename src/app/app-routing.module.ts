@@ -15,6 +15,11 @@ import { RegistreFormComponent } from './registre-form/registre-form.component';
 import { VirementMasseComponent } from './virement-masse/virement-masse.component';
 import { ReleveIdentificationComponent } from './releve-identification/releve-identification.component';
 import { ReleveImpressionComponent } from './releve-impression/releve-impression.component';
+import { NouveauCompteComponent } from './components/dashboard/compte/nouveau-compte/nouveau-compte.component';
+import { CommanderComponent } from './carte-chequiers/commander/commander.component';
+import { FaireOpposerComponent } from './carte-chequiers/faire-opposer/faire-opposer.component';
+import { ReseauxGabComponent } from './reseaux-gab/reseaux-gab.component';
+import { MessagerieComponent } from './messagerie/messagerie.component';
 
 
 const routes: Routes = [
@@ -74,6 +79,26 @@ const routes: Routes = [
           {
             path: 'impression',
             component: ReleveImpressionComponent
+          },
+          {
+            path: 'nouveau-compte',
+            component: NouveauCompteComponent
+          },
+          {
+            path: 'commander',
+            component: CommanderComponent
+          },
+          {
+            path: 'faire',
+            component: FaireOpposerComponent
+          },
+          {
+            path: 'reseaux',
+            component: ReseauxGabComponent
+          },
+          {
+            path: 'messagerie',
+            component: MessagerieComponent
           }
         ]
       }

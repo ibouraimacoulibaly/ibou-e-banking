@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-nouveau-prets',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NouveauPretsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  
 
   ngOnInit() {
   }

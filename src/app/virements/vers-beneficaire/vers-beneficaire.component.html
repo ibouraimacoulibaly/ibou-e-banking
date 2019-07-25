@@ -1,17 +1,55 @@
-<div class="row">
-<form class="border border-light p-5">
+<div id='virement'> Virement d'un compte vers un bénéficiare </div>
+<div class="row" id="virement1">
+    <form class="example-form" id="form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="E-BANKING  "  disabled value="banque en ligne">
+          <h6 style="margin-bottom:-1%;"><strong>EMETTEUR</strong>  <strong style="margin-left:38%;">BÉNÉFICIARE</strong></h6>
+        </mat-form-field>
+      
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="Intutilé du compte">
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="Intutilé du compte">
+          </mat-form-field></td>
+        </tr></table>
 
-    <p class="h4 mb-4">virements vers un bénéficiaire</p>
-    <h6>Nom emeteur</h6>
-    <input   class="form-control mb-6" placeholder="nom éméteur"> <br>
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="Nom et Prenom">
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="Nom et Prenom">
+          </mat-form-field></td>
+        </tr></table>
+        
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="Numero  du compte">
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="Numero  du compte">
+          </mat-form-field></td>
+        </tr></table>
 
-    <h6>Numero du compte emeteur</h6>
-    <input  class="form-control mb-6" placeholder="numero compte"> 
-    
-  
- </form>
- 
-</div>      
- 
-  
- 
+        <table class="example-full-width" cellspacing="0" style="width:104%;"><tr>
+            <td><mat-form-field class="example-full-width" >
+              <input matInput placeholder="Montant a transferer">
+            </mat-form-field></td>
+            <td><mat-form-field class="example-full-width">
+              <input matInput [matDatepicker]="picker" placeholder="Date du virement">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field></td>
+          </tr></table>
+       
+          
+
+      
+            <button style="margin-left:300px;" mat-raised-button color="primary" [routerLink]="[ '' ]">Transferer
+            </button>
+      </form>
+       
+</div>
+

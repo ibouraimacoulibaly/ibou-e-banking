@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material';
+import {NgxPrintModule} from 'ngx-print';
 
 import { InternationalPhoneNumberModule } from 'ngx-international-phone-number';
+import { AgmCoreModule } from '@agm/core';
 
 
 
@@ -27,6 +29,12 @@ import { RegistreFormComponent } from './registre-form/registre-form.component';
 import { VirementMasseComponent } from './virement-masse/virement-masse.component';
 import { ReleveIdentificationComponent } from './releve-identification/releve-identification.component';
 import { ReleveImpressionComponent } from './releve-impression/releve-impression.component';
+import { NouveauCompteComponent } from './components/dashboard/compte/nouveau-compte/nouveau-compte.component';
+import { CommanderComponent } from './carte-chequiers/commander/commander.component';
+import { FaireOpposerComponent } from './carte-chequiers/faire-opposer/faire-opposer.component';
+import { ReseauxGabComponent } from './reseaux-gab/reseaux-gab.component';
+import { MessagerieComponent } from './messagerie/messagerie.component';
+
 
 
 
@@ -48,7 +56,13 @@ import { ReleveImpressionComponent } from './releve-impression/releve-impression
     RegistreFormComponent,
     VirementMasseComponent,
     ReleveIdentificationComponent,
-    ReleveImpressionComponent
+    ReleveImpressionComponent,
+    NouveauCompteComponent,
+    CommanderComponent,
+    FaireOpposerComponent,
+    ReseauxGabComponent,
+    MessagerieComponent,
+ 
   ],
   imports: [
     BrowserModule,
@@ -58,6 +72,11 @@ import { ReleveImpressionComponent } from './releve-impression/releve-impression
     FormsModule,
     InternationalPhoneNumberModule,
     MatButtonModule,
+    NgxPrintModule,
+    AgmCoreModule.forRoot({
+     //apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
+      libraries: ['places']
+    })
     
     
     
