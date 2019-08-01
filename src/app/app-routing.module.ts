@@ -20,6 +20,7 @@ import { CommanderComponent } from './carte-chequiers/commander/commander.compon
 import { FaireOpposerComponent } from './carte-chequiers/faire-opposer/faire-opposer.component';
 import { ReseauxGabComponent } from './reseaux-gab/reseaux-gab.component';
 import { MessagerieComponent } from './messagerie/messagerie.component';
+import { DeviseComponent } from './devise/devise.component';
 
 
 const routes: Routes = [
@@ -99,6 +100,10 @@ const routes: Routes = [
           {
             path: 'messagerie',
             component: MessagerieComponent
+          },
+          {
+            path: 'devise',
+            component: DeviseComponent
           }
         ]
       }

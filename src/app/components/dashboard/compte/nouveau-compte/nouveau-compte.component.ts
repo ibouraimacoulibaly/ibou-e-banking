@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-nouveau-compte',
   templateUrl: './nouveau-compte.component.html',
@@ -9,6 +10,7 @@ export class NouveauCompteComponent implements OnInit {
 
   constructor() { }
 
+  
   ngOnInit() {
   }
 

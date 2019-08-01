@@ -1,0 +1,29 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+   
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+  
+    <!-- Devise Column -->
+    <ng-container matColumnDef="devise">
+      <th mat-header-cell *matHeaderCellDef> Devise </th>
+      <td mat-cell *matCellDef="let element"> {{element.devise}} </td>
+    </ng-container>
+  
+    <!-- FCFA Column -->
+    <ng-container matColumnDef="fcfa">
+      <th mat-header-cell *matHeaderCellDef> FCFA </th>
+      <td mat-cell *matCellDef="let element"> {{element.fcfa}} </td>
+    </ng-container>
+  
+    
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  

@@ -1,50 +1,76 @@
-<mat-form-field style="margin-left:50px; width: 96%; margin-top: 2%;">
-  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
-</mat-form-field>
+<div class="container" id="principal">
+  <div class="container" id="principal1">
+   
+     
+  
+  <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+            <h4>Impression de RIB</h4>
+        </td>
+        <td>
+            <button printTitle="E-BANKING"  
+            printSectionId="principal2"  
+            ngxPrint>
+                <mat-icon matSuffix>print</mat-icon>Impression
+            </button>
+        </td>
+      </tr>
+    </table>
+    <div id="principal2">
+      <h5>saisie des informations pour l'Impression de RIB</h5>
+      <form action="">
+          <table class="example-full-width" cellspacing="0">
+              <tr>
+                <td>
+                   <h6>Compte selectionner</h6>
+                </td>
+                <td>
+                    <input id="inp1" type="text">
+                </td>
+              </tr>
+            </table>
 
-<div class="mat-elevation-z8">
-  <table mat-table [dataSource]="dataSource">
+            
+               
+                   <div>  Nombre de RIB sur une page  <p><input id="inp2" type="text"></p> 
+                  </div> 
+                 
+            <div>
+              <strong>
+                Titulaire du compte
+              </strong> <p>Mamadou lamine KA</p> 
+            </div>
+            
+            <div>
+                <strong>
+                  libelle
+                </strong> <p>Mamadou lamine KA</p> 
+            </div>
+            
+            <div>
+                <strong>
+                  RIB
+                </strong> <p>Mamadou lamine KA</p> 
+            </div>
 
-    <!-- Position Code banque -->
-    <ng-container matColumnDef="banque">
-      <th mat-header-cell *matHeaderCellDef> Code banque </th>
-      <td mat-cell *matCellDef="let element"> {{element.banque}} </td>
-    </ng-container>
+            <div>
+                <strong>
+                  agence
+                </strong> <p>Mamadou lamine KA</p> 
+            </div>
 
-    <!-- Name Code guichet -->
-    <ng-container matColumnDef="guichet">
-      <th mat-header-cell *matHeaderCellDef> Code guichet </th>
-      <td mat-cell *matCellDef="let element"> {{element.guichet}} </td>
-    </ng-container>
+            <div>
+                <strong>
+                 addresse du client
+                </strong> <p>Mamadou lamine KA</p> 
+            </div>
+                  
+      </form>
 
-    <!-- Weight Numéro compte -->
-    <ng-container matColumnDef="numero">
-      <th mat-header-cell *matHeaderCellDef> Numéro compte </th>
-      <td mat-cell *matCellDef="let element"> {{element.numero}} </td>
-    </ng-container>
+    </div>
 
-    <!-- Symbol Clé RIB -->
-    <ng-container matColumnDef="rib">
-      <th mat-header-cell *matHeaderCellDef> Clé RIB </th>
-      <td mat-cell *matCellDef="let element"> {{element.rib}} </td>
-    </ng-container>
-
-    <!-- Symbol Domicialiation -->
-    <ng-container matColumnDef="domicialiation">
-      <th mat-header-cell *matHeaderCellDef> Domicialiation </th>
-      <td mat-cell *matCellDef="let element"> {{element.domicialiation}} </td>
-    </ng-container>
-
-    <!-- Symbol Titulaire -->
-    <ng-container matColumnDef="titulaire">
-      <th mat-header-cell *matHeaderCellDef> Titulaire </th>
-      <td mat-cell *matCellDef="let element"> {{element.titulaire}} </td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    
-    <tr mat-row class="table-item" *matRowDef="let row; columns: displayedColumns;" [routerLink]="[ '/dashbord/masse/' ]"></tr>
-  </table>
-
-  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </div>
+  <div style="margin-left:40%;"><button style="margin:3%;"mat-raised-button color="primary">Vlider</button>
+     <button mat-raised-button color="secondary">Annuler</button></div>
 </div>

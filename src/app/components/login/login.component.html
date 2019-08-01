@@ -14,6 +14,8 @@
               <td class="container-fluid">
                 <h5 class="float-center container-fluid">Authentification</h5>
               </td>
+               <td  class="float-center container-fluid"><a [routerLink]="['reinitialiser-mot-de-passe']">Presentation</a> </td>
+               <td class="container-fluid"> <a [routerLink]="['reinitialiser-mot-de-passe']">Télécharger le formulaire d'abonnement</a></td>
             </tr>
           </tbody>
         </table>
@@ -28,15 +30,17 @@
             </div>
             <div class="form-group">
               <label for="password">Mot de passe</label>
-              <input type="password" [(ngModel)]="input_clavier" [ngModelOptions]="{standalone: true}"
+              <input type="password" disabled [(ngModel)]="input_clavier" [ngModelOptions]="{standalone: true}"
                 class="form-control">
             </div>
             <div class="row">
               <!-- <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid" >Se connecter</button> -->
               <button style="margin-left:20px;" mat-raised-button color="primary" [routerLink]="[ '/dashboard' ]">Se
                 connecter</button>
-              <strong style="margin-top:10px;">OR </strong>
-              <button mat-raised-button color="Secondary" [routerLink]="[ '/registre/' ]">S'inscrire</button>
+                <button style="margin-left:20px;" mat-raised-button color="warn" (click)="delete()" >
+                Effacer</button>  
+              
+              <!-- <button mat-raised-button color="Secondary" [routerLink]="[ '/registre/' ]">S'inscrire</button> -->
             </div>
           </form>
         </div>
@@ -61,13 +65,13 @@
 
       <div class="card-footer">
         
-        <div class="stats container-fluid w3-center">
-          <div class="container-fluid">
-            <a [routerLink]="['/registre/']" style="color:rgb(59, 159, 199); margin-left: 10%;"> S'inscrire d'abord </a>
+        
+          <div class="container-fluid" style="margin-left:5%;">
+            <!-- <a [routerLink]="['/registre/']" style="color:rgb(59, 159, 199); margin-left: 10%;"> S'inscrire d'abord </a> -->
             
-            <a [routerLink]="['reinitialiser-mot-de-passe']" style="color:rgb(59, 159, 199);">Mot de passe oublie?</a>
+            <a  [routerLink]="['reinitialiser-mot-de-passe']" style="color:rgb(59, 159, 199);">Mot de passe oublie?</a>
           </div>
-        </div>
+        
       </div>
     </div>
 

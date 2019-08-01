@@ -1,5 +1,29 @@
-table {
-    width: 96%;
-    margin-left: 2%;
-    margin-top: 2%;
-  }
+#principal{
+  margin-left: 5%;
+  margin-top: 2%;
+}
+#imp{
+  margin-left: 100%;
+
+}
+table{
+  width: 100%;
+}
+#principal{
+  width: 80%;
+}
+#inp1{
+  width: 80%;
+  height: 30px;
+  margin-left: -30%;
+}
+#input2{
+  width: 30%;
+  height: 20px;
+  margin-left: 60%;
+}
+p{
+  margin-left: 32.8%;
+  margin-top: -15px;
+}
+

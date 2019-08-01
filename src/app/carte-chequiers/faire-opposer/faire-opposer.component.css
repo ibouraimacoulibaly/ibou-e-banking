@@ -1,0 +1,24 @@
+#h5{
+    border-bottom: 2px solid;
+    margin-top: 1%;
+    margin-left: 10%;
+    color: blue;
+}
+mat-grid-tile {
+    margin-top: -18%;
+}
+img{
+    width: 70%;
+    height: 70%;
+
+}
+p{
+    font-size: 14px;
+    margin-left: 2%;
+}
+#faire{
+    margin-left: 10%;
+}
+li{
+    margin-left: 5%;
+}

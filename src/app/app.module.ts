@@ -5,6 +5,9 @@ import {NgxPrintModule} from 'ngx-print';
 
 import { InternationalPhoneNumberModule } from 'ngx-international-phone-number';
 import { AgmCoreModule } from '@agm/core';
+import { FileSelectDirective } from 'ng2-file-upload';
+import {MatDialogModule} from "@angular/material";
+
 
 
 
@@ -34,6 +37,7 @@ import { CommanderComponent } from './carte-chequiers/commander/commander.compon
 import { FaireOpposerComponent } from './carte-chequiers/faire-opposer/faire-opposer.component';
 import { ReseauxGabComponent } from './reseaux-gab/reseaux-gab.component';
 import { MessagerieComponent } from './messagerie/messagerie.component';
+import { DeviseComponent } from './devise/devise.component';
 
 
 
@@ -62,6 +66,10 @@ import { MessagerieComponent } from './messagerie/messagerie.component';
     FaireOpposerComponent,
     ReseauxGabComponent,
     MessagerieComponent,
+    DeviseComponent,
+    FileSelectDirective,
+    
+
  
   ],
   imports: [
@@ -74,9 +82,10 @@ import { MessagerieComponent } from './messagerie/messagerie.component';
     MatButtonModule,
     NgxPrintModule,
     AgmCoreModule.forRoot({
-     //apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
+     apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
       libraries: ['places']
-    })
+    }),
+    MatDialogModule
     
     
     

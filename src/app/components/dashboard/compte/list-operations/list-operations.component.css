@@ -23,3 +23,11 @@
     background-color: white;
 
 }
+th{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+td{
+    color: slategray;
+}

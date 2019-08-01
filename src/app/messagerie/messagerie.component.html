@@ -1,5 +1,42 @@
-<div class="container">
-  <div>
+<div id='messagerie'> Messagerie</div>
+<div class="row" id="messagerie1">
+    <form class="example-form" id="form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="E-BANKING  "  disabled value="banque en ligne">
+         
+        </mat-form-field>
+      
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="NOM et Prenom">
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="Numero du compte">
+          </mat-form-field></td>
+        </tr></table>
 
-  </div>
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+              <mat-icon matSuffix>phone</mat-icon>
+            <input matInput placeholder="Telephone">
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+              <mat-icon matSuffix>email</mat-icon>
+            <input matInput placeholder="Email">
+          </mat-form-field></td>
+        </tr></table>
+        
+        <mat-form-field style="width:100%;">
+            <mat-icon matSuffix>edit</mat-icon>
+          <textarea matInput placeholder="Message"></textarea>
+        </mat-form-field>
+        
+          
+
+      
+            <button style="margin-left:300px;" mat-raised-button color="primary" [routerLink]="[ '' ]">Envoyer
+            </button>
+      </form>
+       
 </div>
+

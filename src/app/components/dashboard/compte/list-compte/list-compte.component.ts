@@ -1,5 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource, MatPaginator } from '@angular/material';
+import {TooltipPosition} from '@angular/material/tooltip';
+import {FormControl} from '@angular/forms'
+
 
 @Component({
   selector: 'app-list-compte',
@@ -8,7 +11,10 @@ import { MatTableDataSource, MatPaginator } from '@angular/material';
 })
 export class ListCompteComponent implements OnInit {
 
-  displayedColumns: string[] = ['intitule', 'numero', 'solde', 'montant_dispo'];
+  positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
+  position = new FormControl(this.positionOptions[0]);
+
+  displayedColumns: string[] = ['intitule', 'numero', 'solde', 'montant_dispo', 'montant'];
 
   comptes: Compte[] = [
     {
