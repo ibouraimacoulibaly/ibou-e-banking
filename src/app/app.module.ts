@@ -38,6 +38,8 @@ import { FaireOpposerComponent } from './carte-chequiers/faire-opposer/faire-opp
 import { ReseauxGabComponent } from './reseaux-gab/reseaux-gab.component';
 import { MessagerieComponent } from './messagerie/messagerie.component';
 import { DeviseComponent } from './devise/devise.component';
+import { PresentationComponent } from './presentation/presentation.component';
+import { AbonnementComponent } from './abonnement/abonnement.component';
 
 
 
@@ -68,6 +70,8 @@ import { DeviseComponent } from './devise/devise.component';
     MessagerieComponent,
     DeviseComponent,
     FileSelectDirective,
+    PresentationComponent,
+    AbonnementComponent,
     
 
  
@@ -82,7 +86,7 @@ import { DeviseComponent } from './devise/devise.component';
     MatButtonModule,
     NgxPrintModule,
     AgmCoreModule.forRoot({
-     apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
+     //apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
       libraries: ['places']
     }),
     MatDialogModule

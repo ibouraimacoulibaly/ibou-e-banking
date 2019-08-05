@@ -1,15 +1,31 @@
-#impression{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 3%;
+
+mat-grid-tile{
+    width: 35%;
+    margin: 1%;
     border: 2px solid;
+    border-radius: 5px;
+   
+
 }
-table{
-    border: 1px solid;
-    width: 100%;
-    margin-bottom: 2%;
+#page{
+    margin-top: 3%;
 }
-td, th{
-    border: 1px solid;
-    margin-left: 0.2%;
+img{
+    width: 60px;
+    height: 60px;
+    margin-top: -30%;
+    margin-left: -60.8%;
+    
 }
+h4{
+    margin-top: -25%;
+    margin-left: 1%; 
+    margin-right: -50%;
+}
+h6{
+    margin-right: -50%;
+    margin-top: -10%;
+    border-bottom:3px solid; 
+
+}
+

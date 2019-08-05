@@ -21,6 +21,8 @@ import { FaireOpposerComponent } from './carte-chequiers/faire-opposer/faire-opp
 import { ReseauxGabComponent } from './reseaux-gab/reseaux-gab.component';
 import { MessagerieComponent } from './messagerie/messagerie.component';
 import { DeviseComponent } from './devise/devise.component';
+import { PresentationComponent } from './presentation/presentation.component';
+import { AbonnementComponent } from './abonnement/abonnement.component';
 
 
 const routes: Routes = [
@@ -36,6 +38,16 @@ const routes: Routes = [
     path: 'registre-form',
     component: RegistreFormComponent
   },
+  
+          {
+            path: 'presentation',
+            component: PresentationComponent
+
+          },
+          {
+            path: 'abonnement',
+            component: AbonnementComponent
+          },
   {
     path: 'dashboard',
     component: DashboardComponent,

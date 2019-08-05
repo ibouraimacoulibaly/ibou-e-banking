@@ -1,49 +1,24 @@
-<div class="container" id="impression">
-  <div class="container" id="impression1">
-    <h5 style="margin-left:20%;">Relevé d'identification bancaire</h5>
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
-        <!--- Note that these columns can be defined in any order.
-              The actual rendered columns are set as a property on the row definition" -->
+<div class="container" id="page">
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+      <div>
+      <img mat-card-image src="assets/img/brm_logo.png" alt="faire opposer">
+      <h4>BANQUE RÉGIONALE DE MARCHÉ</h4>
+      <h6>RELEVE D'ITENTITE BANCAIRE</h6>
+    </div>
+    </mat-grid-tile>
+    
+    
+    
+    <mat-grid-tile>
       
-        <!-- Position Code guichet -->
-        <ng-container matColumnDef="position">
-          <th mat-header-cell *matHeaderCellDef> Code Banque </th>
-          <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-        </ng-container>
-      
-        <!-- Name Code guichet -->
-        <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef> Code guichet </th>
-          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-        </ng-container>
-      
-        <!-- Weight Numero  Compte -->
-        <ng-container matColumnDef="weight">
-          <th mat-header-cell *matHeaderCellDef> Numero compte </th>
-          <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-        </ng-container>
-      
-        <!-- Symbol Clé RIB -->
-        <ng-container matColumnDef="symbol">
-          <th mat-header-cell *matHeaderCellDef> Clé RIB </th>
-          <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
-        </ng-container>
-      
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-        
-      </table>
-      <h6>Domicialiation:  <strong>ecobank sicap foire</strong> </h6> 
-        <h6>titulaire: <strong>mr ibouraima coulibaly</strong>  </h6> 
-        
-  </div>
+       <p>En cas de perte, de vol ou d'utilisation frauduleuse, le titulaire de la carte doit faire opposition dans les meilleurs délais. Cette opposition permet à la banque de prendre toutes 
+      les mesures pour que la carte ne soit plus utilisable.</p> 
+    </mat-grid-tile>
+    
+  </mat-grid-list>
+  
 </div>
-<button  style="background-color:aquamarine; width:100px; margin-left:50%; margin-top: 50px;"
-    printTitle="E-BANKING"  
-    printSectionId="impression1"  
-    ngxPrint>Impression
-</button>
+
  
 

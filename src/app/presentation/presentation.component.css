@@ -1,0 +1,27 @@
+#img{
+    margin-left: 42%;
+    width: 100px;
+    height: 100px;
+    margin-top: 2%;
+}
+#st1{
+    font-size: 16px;
+   margin-left: 10%;
+    margin-top: 1%;
+
+}
+#img1{
+    margin-left: 40%;
+    width: 200px;
+    height: 200px;
+    
+}
+li{
+    margin-left: 10%;
+    font-size: 14px;
+    font-family: monospace;;
+}
+#principal{
+    background-color: darkgrey;
+    margin-top: 19%;
+}

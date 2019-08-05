@@ -12,7 +12,7 @@
             <button printTitle="E-BANKING"  
             printSectionId="principal2"  
             ngxPrint>
-                <mat-icon matSuffix>print</mat-icon>Impression
+                <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon> <div style="margin-top:-25px; margin-left:30px;">Impression</div> 
             </button>
         </td>
       </tr>
@@ -23,17 +23,27 @@
           <table class="example-full-width" cellspacing="0">
               <tr>
                 <td>
-                   <h6>Compte selectionner</h6>
+                  <strong>Compte selectionner</strong> 
                 </td>
                 <td>
-                    <input id="inp1" type="text">
+                   <!--  <input id="inp1" type="text"> -->
+                    <select matNativeControl required id="inp1">
+                      <option value="volvo">CPTL CLIP 2103 356106790566 FFHHFFH</option>
+                      <option value="saab">DHTL CLIP 2103 356106790566 FFHHFFH</option>
+                      <option value="mercedes">EQGL CLIP 2103 356106790566 FFHHFFH</option>
+                      <option value="audi">ADRF CLIP 2103 356106790566 FFHHFFH</option>
+                    </select>
                 </td>
+               
               </tr>
             </table>
 
             
                
-                   <div>  Nombre de RIB sur une page  <p><input id="inp2" type="text"></p> 
+                   <div> <strong> Nombre de RIB sur une page</strong>  <p><input type="number" id="inp2" type="text"
+                    
+                    >
+                  </p> 
                   </div> 
                  
             <div>
@@ -45,13 +55,13 @@
             <div>
                 <strong>
                   libelle
-                </strong> <p>Mamadou lamine KA</p> 
+                </strong> <p>CPTH VBFGGF</p> 
             </div>
             
             <div>
                 <strong>
                   RIB
-                </strong> <p>Mamadou lamine KA</p> 
+                </strong> <p>2054 522555 1255555 45554455</p> 
             </div>
 
             <div>
@@ -63,7 +73,10 @@
             <div>
                 <strong>
                  addresse du client
-                </strong> <p>Mamadou lamine KA</p> 
+                </strong> <p>Mamadou lamine KA</p>
+                <p>Ville</p>
+                <p>Sicap foire</p>
+                <p>agence</p>    
             </div>
                   
       </form>
@@ -71,6 +84,7 @@
     </div>
 
   </div>
-  <div style="margin-left:40%;"><button style="margin:3%;"mat-raised-button color="primary">Vlider</button>
+  <div style="margin-left:40%;"><button style="margin:3%;"mat-raised-button color="primary">Valider</button>
      <button mat-raised-button color="secondary">Annuler</button></div>
-</div>
+  <div style="margin-left:43%;  color: brown;" >* champs obligatoire</div>      
+</div> 
