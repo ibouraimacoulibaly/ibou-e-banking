@@ -11,9 +11,10 @@
 
 .sidenav{
     width: 240px;
-    /* background:#ffffff; */
+     background:rgb(208, 209, 235);  
     /* background: linear-gradient(to left,rgb(5, 5, 75,0.2) , rgb(255, 0, 0, 0.2), rgba(206, 187, 153, 0.2), rgb(255, 255, 0,0.2),rgb(200, 255, 0,0.2)); */
-    background: linear-gradient(to left,rgb(236, 236, 253), white, white);
+    /* background: linear-gradient(to bottom,rgb(197, 204, 216), rgb(182, 190, 207),white);  */
+
     
   }
 
@@ -24,7 +25,7 @@
     padding: 0px !important;
     margin: 0px !important;
     font-size: 14px;
-    background: linear-gradient(to top, rgba(255, 255, 0, 0.027),rgba(200, 255, 0, 0.048));
+    background: linear-gradient(to top, rgba(95, 95, 66, 0.027),rgba(200, 255, 0, 0.048));
 
   }
   .mat-expansion-panel-header{
@@ -45,7 +46,7 @@
   }
   .side-active{
     border-right: 4px solid rgba(2, 176, 182, 0.973) !important; 
-    background: linear-gradient(to right,rgb(250, 250, 250),#51C3CD);
+    background: linear-gradient(to right,rgb(250, 250, 250),rgb(183, 204, 66));
     box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.2);
   
   }
@@ -57,7 +58,7 @@
   }
   
   .drop-down__button{
-  background: linear-gradient(to right,#222D5D,#51C3CD);
+  background: linear-gradient(to right,#222D5D,rgb(58, 192, 204));
   display: inline-block;
   line-height: 40px;
   padding: 0 18px;
