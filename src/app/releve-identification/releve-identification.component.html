@@ -1,90 +1,83 @@
 <div class="container" id="principal">
   <div class="container" id="principal1">
-   
-     
-  
-  <table class="example-full-width" cellspacing="0">
-      <tr>
-        <td>
-            <h4>Impression de RIB</h4>
-        </td>
-        <td>
-            <button printTitle="E-BANKING"  
-            printSectionId="principal2"  
-            ngxPrint>
-                <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon> <div style="margin-top:-25px; margin-left:30px;">Impression</div> 
-            </button>
-        </td>
-      </tr>
-    </table>
+
+
     <div id="principal2">
-      <h5>saisie des informations pour l'Impression de RIB</h5>
       <form action="">
+        <mat-card style="margin-top:8%;">
           <table class="example-full-width" cellspacing="0">
-              <tr>
-                <td>
-                  <strong>Compte selectionner</strong> 
-                </td>
-                <td>
-                   <!--  <input id="inp1" type="text"> -->
-                    <select matNativeControl required id="inp1">
-                      <option value="volvo">CPTL CLIP 2103 356106790566 FFHHFFH</option>
-                      <option value="saab">DHTL CLIP 2103 356106790566 FFHHFFH</option>
-                      <option value="mercedes">EQGL CLIP 2103 356106790566 FFHHFFH</option>
-                      <option value="audi">ADRF CLIP 2103 356106790566 FFHHFFH</option>
-                    </select>
-                </td>
-               
-              </tr>
-            </table>
+            <tr>
+              <td>
+                <strong>Compte Sélectionné</strong>
+              </td>
+              <div style="margin-left: -384%;">
 
-            
-               
-                   <div> <strong> Nombre de RIB sur une page</strong>  <p><input type="number" id="inp2" type="text"
-                    
-                    >
-                  </p> 
-                  </div> 
-                 
-            <div>
-              <strong>
-                Titulaire du compte
-              </strong> <p>Mamadou lamine KA</p> 
-            </div>
-            
-            <div>
-                <strong>
-                  libelle
-                </strong> <p>CPTH VBFGGF</p> 
-            </div>
-            
-            <div>
-                <strong>
-                  RIB
-                </strong> <p>2054 522555 1255555 45554455</p> 
-            </div>
+                <!--  <input id="inp1" type="text"> -->
 
-            <div>
-                <strong>
-                  agence
-                </strong> <p>Mamadou lamine KA</p> 
-            </div>
+                <mat-select [(value)]="selected" matNativeControl required id="inp1">
+                  <mat-option value="none">none </mat-option>
+                  <mat-option value="volvo">CPTL CLIP 2103 356106790566 FFHHFFH </mat-option>
+                  <mat-option value="saab">DHTL CLIP 2103 356106790566 FFHHFFH</mat-option>
+                  <mat-option value="mercedes">EQGL CLIP 2103 356106790566 FFHHFFH</mat-option>
+                  <mat-option value="audi">ADRF CLIP 2103 356106790566 FFHHFFH</mat-option>
+                </mat-select>
 
-            <div>
-                <strong>
-                 addresse du client
-                </strong> <p>Mamadou lamine KA</p>
-                <p>Ville</p>
-                <p>Sicap foire</p>
-                <p>agence</p>    
-            </div>
-                  
+
+              </div>
+
+            </tr>
+          </table> <br>
+
+          <div>
+            <strong>
+              Titulaire du compte
+            </strong>
+            <p>Pape Fall </p>
+          </div>
+
+          <div>
+            <strong>
+              Libellé
+            </strong>
+            <p>CPTH VBFGGF</p>
+          </div>
+
+          <div>
+            <strong>
+              Numéro de Compte
+            </strong>
+            <p>2054 522555 1255555 45554455</p>
+          </div>
+
+          <div>
+            <strong>
+              Agence
+            </strong>
+            <p>Mermoz </p>
+          </div>
+
+          <div>
+            <strong>
+              Adresse du Client
+            </strong>
+            <p>Sicap Foire</p>
+          </div>
+        </mat-card>
       </form>
 
     </div>
 
   </div>
-  <div style="margin-left:40%;"><button style="margin:3%;"mat-raised-button color="primary">Valider</button>
-     <button mat-raised-button color="secondary">Annuler</button></div>
-  <div style="margin-left:43%;  color: brown;" >* champs obligatoire</div>      
-</div> 
+  <div style="margin-left:-0.5%;margin-top: 1%;">
+
+    <!-- <button class="btn-impression" printTitle="E-BANKING" printSectionId="principal2" ngxPrint> -->
+    <!-- <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon>
+      <div style="margin-top:-25px; margin-left:30px;">Impression</div>
+    </button> -->
+    <button mat-raised-button color="warn" [routerLink]="['../']">Retour</button>
+    <button mat-raised-button color="primary" printTitle="E-BANKING" printSectionId="principal2" ngxPrint>
+      <mat-icon style="margin-top: -25px;" matSuffix>print</mat-icon>
+      &nbsp; &nbsp; &nbsp;Impression
+    </button>
+  </div>
+</div>

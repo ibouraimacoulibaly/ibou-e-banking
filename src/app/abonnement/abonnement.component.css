@@ -1,9 +1,16 @@
 #telecharger{
 
-    margin-left: 10%;
-    background-color: darkgrey;
+    margin-left: 15%;
+    background-color:orange;
     margin-top: 19%;
-    height: auto;
+    
+}
+a{
+    font-size: 12px;
+}
+.mycard{
+    width: 70%;
+    height: 60%;
 }
 #telecharger1{
 
@@ -11,6 +18,8 @@
     width: 10%;
     color: rgb(146, 116, 116);
     font-size: 16px;
+    margin-top: 2%;
+
 }
 #telecharger2{
 
@@ -18,7 +27,7 @@
     width: 10%;
     color: rgb(146, 116, 116);
     font-size: 16px;
-    margin-top: -23%;
+    margin-top: -22%;
 }
 mat-icon{
     width: 50px;

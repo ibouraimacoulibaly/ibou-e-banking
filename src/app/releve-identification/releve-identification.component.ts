@@ -8,6 +8,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class ReleveIdentificationComponent implements OnInit {
   
+  selected = 'volvo';
 
 
   constructor() { }
