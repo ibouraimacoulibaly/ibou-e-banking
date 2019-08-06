@@ -1,0 +1,49 @@
+<div class="container-fluid col-sm-12" style="margin: auto;">
+    <div class="row">
+  
+    </div>
+    <div class="container-fluid col-sm-6  rounded mat-elevation-z8"
+      style="margin: auto; margin-top: 10%; padding: 1%; background-color: #51C3CD;">
+  
+      <div class="card card-stats mat-elevation-z2 brm-color w3-text-white">
+        <div class="card-header card-header-success card-header-icon">
+          <table class="container-fluid">
+            <tbody class="container-fluid">
+              <tr>
+                <td><img mat-card-icon src="../../../assets/img/brm_logo.png" height="46" width="92" alt=""></td>
+                <td class="container-fluid">
+                  <h6 class="float-center container-fluid">Pour récupérer votre mot de passe, Veuillez saisir votre identifiant</h6>
+                </td>
+                 
+              </tr>
+            </tbody>
+          </table>
+  
+        </div>
+        <div class="card-body row col-sm-12">
+          <div class="col-sm-5 container-fluid">
+            <form class="form">
+              <div class="form-group">
+                <label for="identifiant">Votre identifiant</label>
+                <input type="text" [(ngModel)]="identifiant" [ngModelOptions]="{standalone: true}" class="form-control">
+              </div>
+             
+              <div class="row" >
+               
+                <button style="margin-left:20%;" mat-raised-button color="primary" [routerLink]="[ '/code-sms' ]">Valider
+                </button>
+                  <button style="margin-left:5%;" mat-raised-button color="warn" [routerLink]="[ '../']">retourner</button>
+                  
+                  
+               
+              </div>
+            </form>
+          </div>
+         
+  
+          
+      </div>
+  
+    </div>
+  </div>
+ 

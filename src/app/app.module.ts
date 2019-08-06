@@ -40,6 +40,11 @@ import { MessagerieComponent } from './messagerie/messagerie.component';
 import { DeviseComponent } from './devise/devise.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { AbonnementComponent } from './abonnement/abonnement.component';
+import { ReinitiationMotDePasseComponent } from './reinitiation-mot-de-passe/reinitiation-mot-de-passe.component';
+import { CodeSmsComponent } from './code-sms/code-sms.component';
+import { NouveauMotDePasseComponent } from './nouveau-mot-de-passe/nouveau-mot-de-passe.component';
+import { CarteComponent } from './carte/carte.component';
+import { CommanderCarteComponent } from './commander-carte/commander-carte.component';
 
 
 
@@ -72,6 +77,11 @@ import { AbonnementComponent } from './abonnement/abonnement.component';
     FileSelectDirective,
     PresentationComponent,
     AbonnementComponent,
+    ReinitiationMotDePasseComponent,
+    CodeSmsComponent,
+    NouveauMotDePasseComponent,
+    CarteComponent,
+    CommanderCarteComponent,
     
 
  
