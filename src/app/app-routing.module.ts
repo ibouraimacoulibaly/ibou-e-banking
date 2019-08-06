@@ -23,6 +23,12 @@ import { MessagerieComponent } from './messagerie/messagerie.component';
 import { DeviseComponent } from './devise/devise.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { AbonnementComponent } from './abonnement/abonnement.component';
+import { ReinitiationMotDePasseComponent } from './reinitiation-mot-de-passe/reinitiation-mot-de-passe.component';
+import { CodeSmsComponent } from './code-sms/code-sms.component';
+import { NouveauMotDePasseComponent } from './nouveau-mot-de-passe/nouveau-mot-de-passe.component';
+import { CarteComponent } from './carte/carte.component';
+import { CommanderCarteComponent } from './commander-carte/commander-carte.component';
+
 
 
 const routes: Routes = [
@@ -39,7 +45,7 @@ const routes: Routes = [
     component: RegistreFormComponent
   },
   
-          {
+           {
             path: 'presentation',
             component: PresentationComponent
 
@@ -47,6 +53,19 @@ const routes: Routes = [
           {
             path: 'abonnement',
             component: AbonnementComponent
+          },
+          {
+            path: 'reinitialiser-mot-de-passe',
+            component: ReinitiationMotDePasseComponent
+          },
+          {
+            path: 'code-sms',
+            component: CodeSmsComponent
+
+          },
+          {
+            path: 'nouveau-mot-de-passe',
+            component: NouveauMotDePasseComponent
           },
   {
     path: 'dashboard',
@@ -116,7 +135,15 @@ const routes: Routes = [
           {
             path: 'devise',
             component: DeviseComponent
-          }
+          },
+          {
+            path: 'carte',
+            component: CarteComponent
+          },
+          {
+            path: 'commander-carte',
+            component: CommanderCarteComponent
+          },
         ]
       }
     ]

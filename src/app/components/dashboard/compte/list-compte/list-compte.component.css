@@ -8,10 +8,11 @@
 th{
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+    font-size: 16px;
 }
 td{
     color: slategray;
+    font-size: 12px;
 }
 button{
     margin: 3px;
