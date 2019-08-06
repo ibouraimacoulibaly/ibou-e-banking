@@ -15,8 +15,8 @@ td{
 }
 button{
     margin: 5px;
-    height: 65%;
-    width: 4%;
+    height: 60%;
+    width: 10%;
 
 }
 mat-icon{
@@ -24,10 +24,4 @@ mat-icon{
     display: block;
     margin: auto;
  }
- i{
-    text-align: center;
-    display: block;
-    margin: auto;
- }
-  
   
