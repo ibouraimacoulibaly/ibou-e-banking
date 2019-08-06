@@ -18,19 +18,19 @@ export class ListCompteComponent implements OnInit {
 
   comptes: Compte[] = [
     {
-      intitule: 'COMPTE A VUE PARTICULIERS',
+      intitule: 'Compte à Vue Particuliers',
       numero: '021235-4054054545-5405 XOF',
       solde: '300 885',
       montant_dispo: '300 885'
     },
     {
-      intitule: 'COMPTE EPARGNE',
+      intitule: 'Compte Epargne',
       numero: '445052-4054054545-5405 XOF',
       solde: '20 054 885',
       montant_dispo: '20 054 885'
     },
     {
-      intitule: 'COMPTE COURANT',
+      intitule: 'Compte Courant',
       numero: '445052-4054054545-5400 XOF',
       solde: '20 054 885',
       montant_dispo: '20 054 885'

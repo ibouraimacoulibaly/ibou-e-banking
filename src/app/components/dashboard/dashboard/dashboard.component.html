@@ -8,9 +8,9 @@
 
    
     <span class="example-spacer" style="flex:auto;"></span>
-    <strong style="color:white; font-size: 12px;"> 
-      <span>dernier connexion 31/07/2019</span></strong>
-     <strong style="color:white; font-size: 12px; margin-left: 2%;"> Bienvenue ibouraima coulibaly</strong> 
+    <a style="color:white; font-size: 12px;"> 
+      Bienvenue Ibouraima Coulibaly </a>
+     <a style="color:white; font-size: 12px; margin-left: 2%;"> Dernière connexion 31/07/2019</a>
      
     <button mat-icon-button style="color:white;" [matMenuTriggerFor]="menu">
       <mat-icon>account_circle</mat-icon>
@@ -23,7 +23,7 @@
       </button>
       <button mat-menu-item [routerLink]="[ '' ]">
         <mat-icon>close</mat-icon>
-        <span>Deconnexion</span>
+        <span>Déconnexion</span>
       </button>
       
     </mat-menu>
@@ -45,7 +45,7 @@
       <mat-divider></mat-divider>
       <a routerLink="/dashboard/prets/">
         <mat-list-item>
-            <span class="fa fa-home" style="color:rgb(39, 12, 161);"></span> 
+            <span class="fa fa-money-bill-alt" style="color:rgb(39, 12, 161);"></span> 
           <h4 mat-line>Prêts en cours</h4>
         </mat-list-item>
       </a>
