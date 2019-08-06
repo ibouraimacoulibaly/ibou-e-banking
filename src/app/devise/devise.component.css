@@ -12,3 +12,7 @@ table {
 td{
     color: slategray;
 }
+.bouton_ajout{
+  margin-left: 80%;
+  margin-top: 5%;
+}

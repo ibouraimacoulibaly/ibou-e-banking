@@ -40,7 +40,7 @@
     font-size: 14px;
   }
   .mat-list-item:hover{
-    background: linear-gradient(to right, rgb(3, 17, 68),white);
+    background: linear-gradient(to right, rgb(1, 10, 39),white);
     border-bottom: 1px solid rgb(3, 163, 255) ;
     color: white;
   }

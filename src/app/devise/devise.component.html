@@ -1,7 +1,6 @@
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
-   
-  
+<button class="bouton_ajout" mat-raised-button><mat-icon>add</mat-icon>Ajouter Devise</button>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 ">
+     
     <!-- Position Column -->
     <ng-container matColumnDef="position">
       <th mat-header-cell *matHeaderCellDef> No. </th>
@@ -13,6 +12,17 @@
       <th mat-header-cell *matHeaderCellDef> Devise </th>
       <td mat-cell *matCellDef="let element"> {{element.devise}} </td>
     </ng-container>
+
+    <ng-container matColumnDef="achat">
+        <th mat-header-cell *matHeaderCellDef> Valeur à l'achat </th>
+        <td mat-cell *matCellDef="let element"> {{element.achat}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="vente">
+          <th mat-header-cell *matHeaderCellDef> Valeur à la vente </th>
+          <td mat-cell *matCellDef="let element"> {{element.vente}} </td>
+        </ng-container>
+    
   
     <!-- FCFA Column -->
     <ng-container matColumnDef="fcfa">

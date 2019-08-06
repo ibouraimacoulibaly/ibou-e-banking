@@ -1,33 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import {MatPaginator} from '@angular/material/paginator';
-import {MatSort} from '@angular/material/sort';
-import {MatTableDataSource} from '@angular/material/table';
+import { MatTableDataSource, MatPaginator } from '@angular/material';
+import {TooltipPosition} from '@angular/material/tooltip';
+import {FormControl} from '@angular/forms';
 
-export interface UserData {
-  id: string;
-  name: string;
-  progress: string;
-  color: string;
-  
-}
-const COLORS: string[] = [
-  'maroon', 'red', 'orange', 'yellow', 'olive'
-];
-const NAMES: string[] = [
-  'ibouraima coulibaly', 'youga dieng', 'pape', 'Atticus', 'Amelia', 'Jack', 'Charlotte'
-];
-const numero: string[] =[
-  'gfgfgfggfgfgf65899', 'hhjjjjj554466', 'ddd5d55d5d55d55d55d', 'fggfgfggfgfgfggf885', 'gfggfggfgfgg333'
-];
-const dates: string[] =[
-  'gfgfgfggfgfgf65899', 'hhjjjjj554466', 'ddd5d55d5d55d55d55d', 'fggfgfggfgfgfggf885', 'gfggfggfgfgg333'
-];
-const dat: string[] =[
-  'gfgfgfggfgfgf65899', 'hhjjjjj554466', 'ddd5d55d5d55d55d55d', 'fggfgfggfgfgfggf885', 'gfggfggfgfgg333'
-];
-const numero1: string[] =[
-  'gfgfgfggfgfgf65899', 'hhjjjjj554466', 'ddd5d55d5d55d55d55d', 'fggfgfggfgfgfggf885', 'gfggfggfgfgg333'
-]
 
 
 
@@ -36,46 +11,55 @@ const numero1: string[] =[
   templateUrl: './prets-en-cours.component.html',
   styleUrls: ['./prets-en-cours.component.css']
 })
-export class PretsEnCoursComponent implements OnInit { displayedColumns: string[] = ['id', 'name', 'progress', 'color', 'numero'];
-dataSource: MatTableDataSource<UserData>;
+export class PretsEnCoursComponent implements OnInit {
+positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
+  position = new FormControl(this.positionOptions[0]);
 
-@ViewChild(MatPaginator, {}) paginator: MatPaginator;
-@ViewChild(MatSort, {}) sort: MatSort;
+  displayedColumns: string[] = ['intitule', 'numero', 'nom','solde', 'montant_dispo', 'montant'];
 
-constructor() {
-  // Create 100 users
-  const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
+  comptes: Compte[] = [
+    {
+      intitule: 'Compte à Vue Particuliers',
+      numero: '021235-4054054545-5405 XOF',
+      nom:'Habib ball',
+      solde: '300 885',
+      montant_dispo: '389 885'
+    },
+    {
+      intitule: 'Compte Epargne',
+      numero: '445052-4054054545-5405 XOF',
+      nom:'Saliou sall',
+      solde: '20 054 885',
+      montant_dispo: '24 650 000'
+    },
+    {
+      intitule: 'Compte Courant',
+      numero: '445052-4054054545-5400 XOF',
+      nom:'Fatma Thiaw',
 
-  // Assign the data to the data source for the table to render
-  this.dataSource = new MatTableDataSource(users);
-}
+      solde: '12 054 885',
+      montant_dispo: '17 156 000'
+    }
+  ];
 
+  dataSource: MatTableDataSource<Compte>;
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+
+  constructor() { }
 
   ngOnInit() {
+    this.dataSource = new MatTableDataSource<Compte>(this.comptes);
+    this.paginator._intl.itemsPerPageLabel = 'Nombre de ligne';
     this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
   }
 
-  applyFilter(filterValue: string) {
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage();
-    }
-  }
 }
 
-/** Builds and returns a new User. */
-function createNewUser(id: number): UserData {
-  const name = NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
-      NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) + '.';
-
-  return {
-    id: id.toString(),
-    name: name,
-    progress: Math.round(Math.random() * 100).toString(),
-    color: COLORS[Math.round(Math.random() * (COLORS.length - 1))
-    ]
-  }
-
+export interface Compte {
+  intitule: string;
+  numero: string;
+  nom:string;
+  solde: string;
+  montant_dispo: string;
 }
