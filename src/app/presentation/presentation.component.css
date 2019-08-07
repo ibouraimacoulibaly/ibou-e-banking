@@ -5,9 +5,8 @@
     margin-top: 2%;
 }
 #st1{
-    font-size: 16px;
-   margin-left: 10%;
     margin-top: 1%;
+    margin: 20%;
 
 }
 #img1{
@@ -28,7 +27,7 @@ li{
     border-radius: 5px;
 }
 #btr{
-    margin-left: 50%;
+    margin-left: 2%;
     margin-top: 1%;
     margin-bottom: 2%;
 }

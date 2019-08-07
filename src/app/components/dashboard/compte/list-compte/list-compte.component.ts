@@ -32,8 +32,8 @@ export class ListCompteComponent implements OnInit {
     {
       intitule: 'Compte Courant',
       numero: '445052-4054054545-5400 XOF',
-      solde: '20 054 885',
-      montant_dispo: '20 054 885'
+      solde: '11 054 885',
+      montant_dispo: '10 100 200'
     }
   ];
 

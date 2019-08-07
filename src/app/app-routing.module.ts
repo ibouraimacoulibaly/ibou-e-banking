@@ -1,5 +1,5 @@
 import { NgModule, Component } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ChildrenOutletContexts } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
@@ -28,12 +28,11 @@ import { CodeSmsComponent } from './code-sms/code-sms.component';
 import { NouveauMotDePasseComponent } from './nouveau-mot-de-passe/nouveau-mot-de-passe.component';
 import { CarteComponent } from './carte/carte.component';
 import { CommanderCarteComponent } from './commander-carte/commander-carte.component';
-<<<<<<< HEAD
 import { AddDeviseComponent } from './devise/add-devise/add-devise.component';
-=======
 import { CarteOppositionComponent } from './carte-opposition/carte-opposition.component';
 import { ChequiersComponent } from './chequiers/chequiers.component';
->>>>>>> 0cf6fac7cf59aaf9c951cdcc60358b679285d00e
+import { DetailPretsComponent } from './prets/detail-prets/detail-prets.component';
+import { DetailPrets2Component } from './prets/detail-prets2/detail-prets2.component';
 
 
 
@@ -99,8 +98,17 @@ const routes: Routes = [
           },
           {
             path: 'prets',
-            component: PretsEnCoursComponent
+            component: PretsEnCoursComponent   
           },
+          {
+            path: 'detail-pret',
+            component:DetailPretsComponent
+          },
+          {
+            path: 'detail-pret2',
+            component:DetailPrets2Component
+          }
+          ,
           {
             path: 'nouveau',
             component: NouveauPretsComponent
@@ -143,8 +151,8 @@ const routes: Routes = [
             component: DeviseComponent
           },
           {
-            path:'add-devise',
-            component:AddDeviseComponent
+            path: 'add-devise',
+            component: AddDeviseComponent
           },
           {
             path: 'carte',
