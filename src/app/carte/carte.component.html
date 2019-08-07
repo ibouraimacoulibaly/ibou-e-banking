@@ -1,17 +1,18 @@
      
- <div class="row" style="margin-left:60%; margin-bottom: -4%;">
-               
-    <button style="margin-left:10%; width: 150px;" mat-raised-button color="primary" [routerLink]="[ '/dashboard/commander-carte/' ]">Demander une carte
-      </button>
-      <button style="margin-left:5%; width: 150px;" mat-raised-button color="warn" [routerLink]="[ '']">faire oposser</button>
-      
-      
-   
-  </div>
-<div class="container-fluid">
-    <div class="w3-container w3-margin container-fluid w3-center">
-      <span style="color:black;">Liste des carte bancaires</span>
+
+<div class="container-fluid" style=" margin-top: 3%;">
+    <div class="w3-container w3-margin container-fluid w3-center"
+    style="margin-left: -80%;">
+      <span style="color:black;font-size: 13%;">Liste des carte bancaires- Compte Numéro 1243 5436 6549 0065</span>
     </div>
+    <div class="row" style="margin-left:65%; margin-bottom: 3%; margin-top: 2%;" >
+               
+      <button style="margin-left:10%; width: 150px;" mat-raised-button color="primary" [routerLink]="[ '/dashboard/commander-carte/' ]">Demander une carte
+        </button>
+        <button style="margin-left:5%; width: 150px;" mat-raised-button color="warn" [routerLink]="[ '/dashboard/carte-opposition/']">Faire opposition</button>
+      
+    </div>
+
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 container-fluid">
       
         <ng-container matColumnDef="carte">
@@ -29,17 +30,12 @@
           <td mat-cell *matCellDef="let element"> {{element.numero}}</td>
         </ng-container>
 
-        <ng-container matColumnDef="compte">
-            <th mat-header-cell *matHeaderCellDef> Compte associé  </th>
-            <td mat-cell *matCellDef="let element"> {{element.compte}}</td>
-          </ng-container>
+        
 
-          <ng-container matColumnDef="montant">
+          <ng-container matColumnDef="etat">
             <th mat-header-cell *matHeaderCellDef>Etat  </th>
             <td mat-cell *matCellDef="let element">
-              <input type="checkbox" name="active" id="active" >Actif
-              <input style="margin-lef:20px;" type="checkbox" name="active" id="active" >Boqué
-              <input style="margin-lef:20px;" type="checkbox" name="active" id="active" >En opposition
+              {{element.etat}}
             </td>
           </ng-container>  
 

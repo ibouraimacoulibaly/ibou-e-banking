@@ -45,7 +45,12 @@ import { CodeSmsComponent } from './code-sms/code-sms.component';
 import { NouveauMotDePasseComponent } from './nouveau-mot-de-passe/nouveau-mot-de-passe.component';
 import { CarteComponent } from './carte/carte.component';
 import { CommanderCarteComponent } from './commander-carte/commander-carte.component';
+<<<<<<< HEAD
 import { AddDeviseComponent } from './devise/add-devise/add-devise.component';
+=======
+import { CarteOppositionComponent } from './carte-opposition/carte-opposition.component';
+import { ChequiersComponent } from './chequiers/chequiers.component';
+>>>>>>> 0cf6fac7cf59aaf9c951cdcc60358b679285d00e
 
 
 
@@ -83,7 +88,12 @@ import { AddDeviseComponent } from './devise/add-devise/add-devise.component';
     NouveauMotDePasseComponent,
     CarteComponent,
     CommanderCarteComponent,
+<<<<<<< HEAD
     AddDeviseComponent,
+=======
+    CarteOppositionComponent,
+    ChequiersComponent,
+>>>>>>> 0cf6fac7cf59aaf9c951cdcc60358b679285d00e
     
 
  

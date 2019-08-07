@@ -1,0 +1,47 @@
+<div class="container-fluid" style=" margin-top: 3%;">
+  <div class="w3-container w3-margin container-fluid w3-center" style="margin-left: -80%;">
+    <span style="color:black;">Liste des chéques en cours- Compte Numéro 1243 5436 6549 0065</span>
+  </div>
+  <div class="row" style="margin-left:65%; margin-bottom: 3%; margin-top: 2%;">
+
+    <button style="margin-left:10%; width: 150px;" mat-raised-button color="primary"
+      [routerLink]="[ '/dashboard/commander/' ]">commander un chéqier
+    </button>
+    <button style="margin-left:5%; width: 150px;" mat-raised-button color="warn"
+      [routerLink]="[ '/dashboard/faire/']">Faire opposition</button>
+
+  </div>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 container-fluid">
+
+    <ng-container matColumnDef="cheque">
+      <th mat-header-cell *matHeaderCellDef> Type de chéques </th>
+      <td mat-cell *matCellDef="let element"> {{element.cheque}} </td>
+    </ng-container>
+
+
+
+    <ng-container matColumnDef="numero">
+      <th mat-header-cell *matHeaderCellDef> Numéro du compte </th>
+      <td mat-cell *matCellDef="let element"> {{element.numero}}</td>
+    </ng-container>
+
+
+
+    <ng-container matColumnDef="etat">
+      <th mat-header-cell *matHeaderCellDef>Etat </th>
+      <td mat-cell *matCellDef="let element">
+        {{element.etat}}
+      </td>
+    </ng-container>
+
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row class="table-item" *matRowDef="let row; columns: displayedColumns;" [routerLink]="[ 'operations' ]">
+    </tr>
+  </table>
+
+  <mat-paginator [length]="displayedColumns.length" [hidden]="true" [pageSize]="14" [pageSizeOptions]="[5,8, 10]"
+    showFirstLastButtons></mat-paginator>
+
+</div>
