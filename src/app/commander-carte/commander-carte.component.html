@@ -1,16 +1,14 @@
 <div class="container" id="principal">
     <div class="container" id="principal1">
      
-       
-    
-    <table class="example-full-width" cellspacing="0">
+      <table class="example-full-width" cellspacing="0">
         <tr>
           <td>
-              <h4>Demande de carte bancaire</h4>
+              <h4 style="color: black;">Demande de carte bancaire</h4>
           </td>
           <td>
               <button printTitle="E-BANKING"  
-              printSectionId="principal2"  
+              printSectionId="imprimer"  
               ngxPrint
               style="margin-left:290%;">
                   <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon> <div style="margin-top:-25px; margin-left:30px;">Impréssion</div> 
@@ -18,14 +16,15 @@
           </td>
         </tr>
       </table>
-      <div class="row" style="font-size:16px; margin-left:2%;" 
-      >Saisie des information pour la commande de la carte bancaire </div>
+      <div class="row" style="font-size:16px; margin-left:2%; color: black;" 
+        >Saisie des information pour la commande de carte bancaire 
+      </div>
    </div>
-   <div style="margin-top:2%; margin-left: 2%;" >
+   <div style="margin-top:2%; margin-left: 2%;" id="imprimer" >
    <div> 
      <strong> Compte</strong>  
     <p>
-        <select matNativeControl required id="inp1">
+        <select  id="inp1" style="width: 400px; height: 30px;">
             <option value="volvo">CPTL CLIP 2103 356106790566 FFHHFFH</option>
             <option value="saab">DHTL CLIP 2103 356106790566 FFHHFFH</option>
             <option value="mercedes">EQGL CLIP 2103 356106790566 FFHHFFH</option>
@@ -43,37 +42,43 @@
    
   <div> 
       <strong>Titulaire du compte</strong>  
-     <p>
-       COULIBALY IBOURAIMA
-     </p> 
+      <p>
+        COULIBALY IBOURAIMA
+      </p> 
+     
    </div>
 
    <div> 
       <strong>Type de commande</strong>  
      <p>
-       <input type="radio" name="" id="">Prémier acquission
+       <input type="radio" name="" id=""> Prémier acquission
      </p>
      <p>
-        <input type="radio" name="" id="">Prémier acquission
+        <input type="radio" name="" id=""> Carte complémentaire
       </p> 
    </div>
 
    <div> 
       <strong> Type de carte</strong>  
      <p>
-       <select name="" id="">
-         <option value=""></option>
-         <option value="">bst</option>
-         <option value="">re</option>
+       <select name="" id="" style="width: 150px; height: 30px;">
+         
+         <option value="">ClassiC</option>
+         <option value="">Electron</option>
        </select>
      </p> 
    </div> 
 
    <div> 
       <strong>Titulaire de la carte</strong>  
-     <p>
-       COULIBALY IBOURAIMA
-     </p> 
+      <p>
+        <!-- <select name="" id="" style="width: 200px; height: 30px;">
+          <option value="">IBOURAIMA COULIBALY</option>
+          <option value="">YOUGA DIENG </option>
+          <option value="">PAPE BABACAR FAR</option>
+        </select> -->
+        <input style="width: 200px; height: 30px;" type="text" value="IBOURAIMA COULIBALY">
+      </p> 
    </div>
 
    <div> 
@@ -89,15 +94,22 @@
    <div> 
       <strong>Type de Débit</strong>  
      <p>
-       <input type="radio" name="" id="">immédiat
+       <input type="radio" name="" id="">Immédiat
      </p>
      <p>
-        <input type="radio" name="" id="">diffé
+        <input type="radio" name="" id="">Différé debut de mois
       </p>
       <p>
-          <input type="radio" name="" id="">Personnelle
+          <input type="radio" name="" id="">Différé fin de mois
         </p> 
    </div>
+
+   <div> 
+    <strong>Montant débit autorisé</strong>  
+   <p>
+     <input style="width: 200px; height: 30px;" type="number" name="montant" id="montant" placeholder="0.000"> XOF
+   </p> 
+ </div>
 
 
 
@@ -105,4 +117,9 @@
 </div>
 
 
+  </div>
+  <div class="row" style="margin-left: 40%; margin-top: 1%;">
+    <button mat-raised-button color="primary" [routerLink]="">Valider</button>
+    <button mat-raised-button color="secondary" [routerLink]="">Annuler</button>
+    <button style="margin-left: 50%;" mat-raised-button color="warn" [routerLink]="[ '/dashboard/carte/']">Retour</button>
   </div>

@@ -3,30 +3,28 @@ import { MatTableDataSource, MatPaginator } from '@angular/material';
 import {TooltipPosition} from '@angular/material/tooltip';
 import {FormControl} from '@angular/forms'
 
+
 @Component({
-  selector: 'app-carte',
-  templateUrl: './carte.component.html',
-  styleUrls: ['./carte.component.css']
+  selector: 'app-chequiers',
+  templateUrl: './chequiers.component.html',
+  styleUrls: ['./chequiers.component.css']
 })
-export class CarteComponent implements OnInit {
-  
+export class ChequiersComponent implements OnInit {
   positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
-  displayedColumns: string[] = ['carte', 'numero', 'debit', 'etat'];
+  displayedColumns: string[] = ['cheque', 'numero', 'etat'];
 
   comptes: Compte[] = [
     {
-      carte: 'VISA ELECTRON',
+      cheque: 'CLASSIQUE',
       numero: '1234 **** 56',
-      debit: 'Immédiat',
       etat: 'Actif'
       
     },
     {
-      carte: ' AOSIS GIM-UMEOA  ',
+      cheque: 'PORTEFEUILLE ',
       numero: '4321 **** 93',
-      debit: 'Débit différé',
       etat: 'Bloqué'
     
     }
@@ -46,11 +44,9 @@ export class CarteComponent implements OnInit {
   }
 
 }
-
 export interface Compte {
-  carte: string;
+  cheque: string;
   numero: string;
-  debit: string;
   etat: string;
  
 }

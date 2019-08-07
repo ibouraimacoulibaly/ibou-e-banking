@@ -1,59 +1,95 @@
-<div id='commander'> Commander un chéquiers </div>
-<div class="row" id="commander1">
-    <form class="example-form" id="form">
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="Commander un chequiers  " disabled value="E-BANKING">
-        </mat-form-field>
-      
-        <table class="example-full-width" cellspacing="0"><tr>
-          <td><mat-form-field style="width:100%;">
-            <mat-label>Intitulé du compte</mat-label>
-            <mat-select disableRipple>
-              <mat-option value="1">Compte a vue particuliers</mat-option>
-              <mat-option value="2">Compte Epargne</mat-option>
-              <mat-option value="3">Compte courant</mat-option>
-              <mat-option value="4">Bénécaire</mat-option>
-            </mat-select>
-          </mat-form-field></td>
-          <td><mat-form-field class="example-full-width">
-            <input matInput placeholder="Numero de compte">
-          </mat-form-field></td>
-        </tr></table>
-      
-        
-        <table class="example-full-width" cellspacing="0"><tr>
-            <td><mat-form-field class="example-full-width">
-              <input matInput placeholder="Nom client">
-            </mat-form-field></td>
-            <td><mat-form-field style="width:100%;">
-              <mat-label>Type de chéquiers</mat-label>
-              <mat-select disableRipple>
-                <mat-option value="1">Classique</mat-option>
-                <mat-option value="2">Portefeuille</mat-option>
-               
-              </mat-select>
-            </mat-form-field></td>
-          </tr></table>
-
-          <table class="example-full-width" cellspacing="0"><tr>
-            <td><mat-form-field style="width:100%;">
-              <mat-label>Selectionner le mode de livraison</mat-label>
-              <mat-select disableRipple>
-                <mat-option value="1">Personnelle</mat-option>
-                <mat-option value="2">particuliers</mat-option>
-               
-              </mat-select>
-            </mat-form-field></td>
-              <td><mat-form-field style="width:100%;">
-                <mat-label>selectionner la quantité souhaiter</mat-label>
-                <input type="number"  matInput>
-              </mat-form-field></td>
-             
-            </tr></table>
-
-      
-            <button style="margin-left:300px;" mat-raised-button color="primary" [routerLink]="[ '' ]">Enregistrer
+<div class="container" id="principal">
+  <div class="container" id="principal1">
+   
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+            <h4>Mes commandes de chéquiers</h4>
+        </td>
+        <td>
+            <button printTitle="E-BANKING"  
+            printSectionId="imprimer"  
+            ngxPrint
+            style="margin-left:290%;">
+                <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon> <div style="margin-top:-25px; margin-left:30px;">Impréssion</div> 
             </button>
-      </form>
-       
+        </td>
+      </tr>
+    </table>
+    <div class="row" style="font-size:16px; margin-left:2%;" >
+      Caractéristiques de la commande
+    </div>
+ </div>
+ <div style="margin-top:2%; margin-left: 2%;" id="imprimer" >
+  <div> 
+    <strong>Veuillez</strong>  
+   <p>
+     <input type="radio" name="" id=""> Tenir à ma disposition à mon agence
+   </p>
+   <p>
+      <input type="radio" name="" id=""> M'expédier par pli recommandé et à mes frais à mon adresse
+    </p> 
+ </div>
+ <div> 
+   <strong> Compte</strong>  
+  <p>
+      <select  id="inp1" style="width: 400px; height: 30px;">
+          <option value="volvo">CPTL CLIP 2103 356106790566 FFHHFFH</option>
+          <option value="saab">DHTL CLIP 2103 356106790566 FFHHFFH</option>
+          <option value="mercedes">EQGL CLIP 2103 356106790566 FFHHFFH</option>
+          <option value="audi">ADRF CLIP 2103 356106790566 FFHHFFH</option>
+        </select>
+  </p> 
+</div> 
+ 
+<div> 
+    <strong> Devise</strong>  
+   <p>
+    XOF
+   </p> 
+</div>
+ 
+<div> 
+    <strong>Titulaire du compte</strong>  
+    <p>
+      COULIBALY IBOURAIMA
+    </p> 
+   
+ </div>
+ 
+ <div> 
+  <strong> Agence</strong>  
+ <p>
+   1150 Sicap foire
+ </p> 
+</div>
+ 
+
+ <div> 
+    <strong> Nombre de chéquiers</strong>  
+   <p>
+     <input type="number" name="" id=""  style="width: 200px; height: 30px;">
+   </p> 
+ </div> 
+
+ <div> 
+    <strong>Type de chéquiers</strong>  
+    <p>
+      <select name="" id="" style="width: 200px; height: 30px;">
+        <option value="">CLASSIQUE</option>
+        <option value="">PORTEFEUILLE </option>
+        
+      </select>
+    </p> 
+ </div>
+
+ 
+</div>
+
+
+</div>
+<div class="row" style="margin-left: 40%; margin-top: 1%;">
+  <button mat-raised-button color="primary" [routerLink]="">Valider</button>
+  <button mat-raised-button color="secondary" [routerLink]="">Annuler</button>
+  <button style="margin-left: 50%;" mat-raised-button color="warn" [routerLink]="[ '/dashboard/carte/']">Retour</button>
 </div>

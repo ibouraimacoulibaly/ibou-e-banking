@@ -45,6 +45,8 @@ import { CodeSmsComponent } from './code-sms/code-sms.component';
 import { NouveauMotDePasseComponent } from './nouveau-mot-de-passe/nouveau-mot-de-passe.component';
 import { CarteComponent } from './carte/carte.component';
 import { CommanderCarteComponent } from './commander-carte/commander-carte.component';
+import { CarteOppositionComponent } from './carte-opposition/carte-opposition.component';
+import { ChequiersComponent } from './chequiers/chequiers.component';
 
 
 
@@ -82,6 +84,8 @@ import { CommanderCarteComponent } from './commander-carte/commander-carte.compo
     NouveauMotDePasseComponent,
     CarteComponent,
     CommanderCarteComponent,
+    CarteOppositionComponent,
+    ChequiersComponent,
     
 
  
