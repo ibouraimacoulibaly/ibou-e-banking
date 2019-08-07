@@ -34,7 +34,7 @@ positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left
     },
     {
       intitule: 'Compte Courant',
-      numero: '445052-4054054545-5400 XOF',
+      numero: '445052-4054054545-5600 XOF',
       nom:'Fatma Thiaw',
 
       solde: '12 054 885',

@@ -1,7 +1,7 @@
 table {
     width: 80%;
     margin-left: 10%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: 2%;
   }
   th{
@@ -9,10 +9,22 @@ table {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
 }
+mat-fab{
+color:"primary";
+}
 td{
     color: slategray;
 }
 .bouton_ajout{
   margin-left: 80%;
-  margin-top: 5%;
+  width: 15%;
+  margin-top: 6%;
+  color: white;
+  color: "primary";
+}
+.positionM{
+  border: 1px solid;
+width: 20%;
+margin-top: 5%;
+margin-left: 10%;
 }

@@ -28,6 +28,7 @@ import { CodeSmsComponent } from './code-sms/code-sms.component';
 import { NouveauMotDePasseComponent } from './nouveau-mot-de-passe/nouveau-mot-de-passe.component';
 import { CarteComponent } from './carte/carte.component';
 import { CommanderCarteComponent } from './commander-carte/commander-carte.component';
+import { AddDeviseComponent } from './devise/add-devise/add-devise.component';
 
 
 
@@ -44,29 +45,29 @@ const routes: Routes = [
     path: 'registre-form',
     component: RegistreFormComponent
   },
-  
-           {
-            path: 'presentation',
-            component: PresentationComponent
 
-          },
-          {
-            path: 'abonnement',
-            component: AbonnementComponent
-          },
-          {
-            path: 'reinitialiser-mot-de-passe',
-            component: ReinitiationMotDePasseComponent
-          },
-          {
-            path: 'code-sms',
-            component: CodeSmsComponent
+  {
+    path: 'presentation',
+    component: PresentationComponent
 
-          },
-          {
-            path: 'nouveau-mot-de-passe',
-            component: NouveauMotDePasseComponent
-          },
+  },
+  {
+    path: 'abonnement',
+    component: AbonnementComponent
+  },
+  {
+    path: 'reinitialiser-mot-de-passe',
+    component: ReinitiationMotDePasseComponent
+  },
+  {
+    path: 'code-sms',
+    component: CodeSmsComponent
+
+  },
+  {
+    path: 'nouveau-mot-de-passe',
+    component: NouveauMotDePasseComponent
+  },
   {
     path: 'dashboard',
     component: DashboardComponent,
@@ -84,7 +85,7 @@ const routes: Routes = [
             component: ListOperationsComponent
           },
           {
-            path:'beneficaire',
+            path: 'beneficaire',
             component: VersBeneficaireComponent
           },
           {
@@ -137,6 +138,10 @@ const routes: Routes = [
             component: DeviseComponent
           },
           {
+            path:'add-devise',
+            component:AddDeviseComponent
+          },
+          {
             path: 'carte',
             component: CarteComponent
           },
@@ -148,7 +153,7 @@ const routes: Routes = [
       }
     ]
   }
-  
+
 ];
 
 @NgModule({
