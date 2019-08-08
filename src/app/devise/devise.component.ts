@@ -25,7 +25,7 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, devise: 'Euro',achat:'655,957', vente: 650.103},
+  {position: 1, devise: 'Euro',achat:'655.957', vente: 650.103},
   {position: 2, devise: 'Dollar us',achat:'561.320', vente: 549.201},
   {position: 3, devise: 'Yen japonais',achat:'5.622', vente: 5.4595},
   {position: 4, devise: 'Couronne danoise',achat:'89.98', vente: 87.8700},

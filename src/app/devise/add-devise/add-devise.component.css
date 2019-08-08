@@ -1,0 +1,18 @@
+.position{
+    margin-top:10%;
+    width: 40%;
+    margin-left: 30%;
+    border: 1px solid;
+}
+.bouton{
+    margin: 5%;
+    margin-left: 20%;
+}
+button{
+    margin: 10%;
+}
+mat-form-field{
+    margin:auto;
+    display: block;
+    text-align: center;
+}

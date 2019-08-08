@@ -1,5 +1,5 @@
 import { NgModule, Component } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ChildrenOutletContexts } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
@@ -28,9 +28,15 @@ import { CodeSmsComponent } from './code-sms/code-sms.component';
 import { NouveauMotDePasseComponent } from './nouveau-mot-de-passe/nouveau-mot-de-passe.component';
 import { CarteComponent } from './carte/carte.component';
 import { CommanderCarteComponent } from './commander-carte/commander-carte.component';
+import { AddDeviseComponent } from './devise/add-devise/add-devise.component';
 import { CarteOppositionComponent } from './carte-opposition/carte-opposition.component';
 import { ChequiersComponent } from './chequiers/chequiers.component';
+<<<<<<< HEAD
 import { NouveauBeneficiaireComponent } from './virements/nouveau-beneficiaire/nouveau-beneficiaire.component';
+=======
+import { DetailPretsComponent } from './prets/detail-prets/detail-prets.component';
+import { DetailPrets2Component } from './prets/detail-prets2/detail-prets2.component';
+>>>>>>> 98cd1c73cbbe9e0b7b935ac3644a0e0da1c48fd5
 
 
 
@@ -47,29 +53,29 @@ const routes: Routes = [
     path: 'registre-form',
     component: RegistreFormComponent
   },
-  
-           {
-            path: 'presentation',
-            component: PresentationComponent
 
-          },
-          {
-            path: 'abonnement',
-            component: AbonnementComponent
-          },
-          {
-            path: 'reinitialiser-mot-de-passe',
-            component: ReinitiationMotDePasseComponent
-          },
-          {
-            path: 'code-sms',
-            component: CodeSmsComponent
+  {
+    path: 'presentation',
+    component: PresentationComponent
 
-          },
-          {
-            path: 'nouveau-mot-de-passe',
-            component: NouveauMotDePasseComponent
-          },
+  },
+  {
+    path: 'abonnement',
+    component: AbonnementComponent
+  },
+  {
+    path: 'reinitialiser-mot-de-passe',
+    component: ReinitiationMotDePasseComponent
+  },
+  {
+    path: 'code-sms',
+    component: CodeSmsComponent
+
+  },
+  {
+    path: 'nouveau-mot-de-passe',
+    component: NouveauMotDePasseComponent
+  },
   {
     path: 'dashboard',
     component: DashboardComponent,
@@ -87,7 +93,7 @@ const routes: Routes = [
             component: ListOperationsComponent
           },
           {
-            path:'beneficaire',
+            path: 'beneficaire',
             component: VersBeneficaireComponent
           },
           {
@@ -96,8 +102,17 @@ const routes: Routes = [
           },
           {
             path: 'prets',
-            component: PretsEnCoursComponent
+            component: PretsEnCoursComponent   
           },
+          {
+            path: 'detail-pret',
+            component:DetailPretsComponent
+          },
+          {
+            path: 'detail-pret2',
+            component:DetailPrets2Component
+          }
+          ,
           {
             path: 'nouveau',
             component: NouveauPretsComponent
@@ -140,6 +155,10 @@ const routes: Routes = [
             component: DeviseComponent
           },
           {
+            path: 'add-devise',
+            component: AddDeviseComponent
+          },
+          {
             path: 'carte',
             component: CarteComponent
           },
@@ -163,7 +182,7 @@ const routes: Routes = [
       }
     ]
   }
-  
+
 ];
 
 @NgModule({
