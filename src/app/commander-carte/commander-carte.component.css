@@ -1,13 +1,15 @@
 p{
     margin-left: 35%;
-    margin-top: -15px;
+    margin-top: -17px;
     font-size: 13px;
     color: black;
+    
   
   }
   strong{
-      font-size: 12px;
+      font-size: 14px;
       color: black;
+      font-family: monospace;
 
   }
   #principal1{

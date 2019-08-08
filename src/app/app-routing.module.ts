@@ -30,6 +30,7 @@ import { CarteComponent } from './carte/carte.component';
 import { CommanderCarteComponent } from './commander-carte/commander-carte.component';
 import { CarteOppositionComponent } from './carte-opposition/carte-opposition.component';
 import { ChequiersComponent } from './chequiers/chequiers.component';
+import { NouveauBeneficiaireComponent } from './virements/nouveau-beneficiaire/nouveau-beneficiaire.component';
 
 
 
@@ -153,6 +154,10 @@ const routes: Routes = [
           {
             path: 'cheque',
             component: ChequiersComponent
+          },
+          {
+            path: 'nouveau-beneficiaire',
+            component: NouveauBeneficiaireComponent
           }
         ]
       }

@@ -47,6 +47,8 @@ import { CarteComponent } from './carte/carte.component';
 import { CommanderCarteComponent } from './commander-carte/commander-carte.component';
 import { CarteOppositionComponent } from './carte-opposition/carte-opposition.component';
 import { ChequiersComponent } from './chequiers/chequiers.component';
+import { VirementsComponent } from './virements/virements.component';
+import { NouveauBeneficiaireComponent } from './virements/nouveau-beneficiaire/nouveau-beneficiaire.component';
 
 
 
@@ -86,6 +88,8 @@ import { ChequiersComponent } from './chequiers/chequiers.component';
     CommanderCarteComponent,
     CarteOppositionComponent,
     ChequiersComponent,
+    VirementsComponent,
+    NouveauBeneficiaireComponent,
     
 
  

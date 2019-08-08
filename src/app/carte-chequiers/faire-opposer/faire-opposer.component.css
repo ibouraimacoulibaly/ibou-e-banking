@@ -1,24 +1,28 @@
-#h5{
-    border-bottom: 2px solid;
+#opposer{
+    margin-left: 10%;
+    width: 80%;
+    border: 4px solid;
     margin-top: 1%;
-    margin-left: 10%;
-    color: blue;
+    margin-bottom: 1%;
+    border-radius: 8px;
 }
-mat-grid-tile {
-    margin-top: -18%;
+#img1{
+    margin-left: 35%;
+    width: 20%;
+    height: 20%;
+    margin-top: 3%;
 }
-img{
+#opposer1{
+    margin-left: 15%;
     width: 70%;
-    height: 70%;
-
-}
+    border: 2px solid red;
+    margin-top: 1%;
+} 
 p{
-    font-size: 14px;
-    margin-left: 2%;
-}
-#faire{
-    margin-left: 10%;
+    margin-top: 3%;
+    font-size: 16px;
 }
 li{
-    margin-left: 5%;
+    margin-left: 3%;
+    margin-top: 2%;
 }

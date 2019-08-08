@@ -18,15 +18,15 @@ export class CarteComponent implements OnInit {
   comptes: Compte[] = [
     {
       carte: 'VISA ELECTRON',
-      numero: '1234 **** 56',
+      numero: '1234 **** **** **56',
       debit: 'Immédiat',
       etat: 'Actif'
       
     },
     {
-      carte: ' AOSIS GIM-UMEOA  ',
-      numero: '4321 **** 93',
-      debit: 'Débit différé',
+      carte: ' OASIS GIM-UEMOA  ',
+      numero: '4321 **** **** **93',
+      debit: 'Différé',
       etat: 'Bloqué'
     
     }

@@ -1,95 +1,92 @@
 <div class="container" id="principal">
-  <div class="container" id="principal1">
-   
-    <table class="example-full-width" cellspacing="0">
-      <tr>
-        <td>
-            <h4>Mes commandes de chéquiers</h4>
-        </td>
-        <td>
-            <button printTitle="E-BANKING"  
-            printSectionId="imprimer"  
-            ngxPrint
-            style="margin-left:290%;">
+    <div class="container" id="principal1">
+
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <h4>Mes commandes de chéquiers</h4>
+                </td>
+                <td>
+                    <button printTitle="E-BANKING" printSectionId="imprimer" ngxPrint style="margin-left:290%;">
                 <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon> <div style="margin-top:-25px; margin-left:30px;">Impréssion</div> 
             </button>
-        </td>
-      </tr>
-    </table>
-    <div class="row" style="font-size:16px; margin-left:2%;" >
-      Caractéristiques de la commande
+                </td>
+            </tr>
+        </table>
+        <div class="row" style="font-size:16px; margin-left:2%;">
+            Caractéristiques de la commande
+        </div>
     </div>
- </div>
- <div style="margin-top:2%; margin-left: 2%;" id="imprimer" >
-  <div> 
-    <strong>Veuillez</strong>  
-   <p>
-     <input type="radio" name="" id=""> Tenir à ma disposition à mon agence
-   </p>
-   <p>
-      <input type="radio" name="" id=""> M'expédier par pli recommandé et à mes frais à mon adresse
-    </p> 
- </div>
- <div> 
-   <strong> Compte</strong>  
-  <p>
-      <select  id="inp1" style="width: 400px; height: 30px;">
-          <option value="volvo">CPTL CLIP 2103 356106790566 FFHHFFH</option>
-          <option value="saab">DHTL CLIP 2103 356106790566 FFHHFFH</option>
-          <option value="mercedes">EQGL CLIP 2103 356106790566 FFHHFFH</option>
-          <option value="audi">ADRF CLIP 2103 356106790566 FFHHFFH</option>
+    <div style="margin-top:2%; margin-left: 2%;" id="imprimer">
+        <div>
+            <strong style="font-family: monospace;">Veuillez</strong>
+            <p>
+                <input type="radio" name="" id=""> Tenir à ma disposition à mon agence
+            </p>
+            <p>
+                <input type="radio" name="" id=""> M'expédier par pli recommandé et à mes frais à mon adresse
+            </p>
+        </div>
+        <div>
+            <strong> Compte</strong>
+            <p>
+                <select id="inp1" style="width: 400px; height: 30px;">
+          <option value="volvo">CPTL  2103 356106790566 FFHHFFH</option>
+          <option value="saab">DHTL  2103 356106790566 FFHHFFH</option>
+          <option value="mercedes"> CLIP 2103 356106790566 FFHHFFH</option>
+          <option value="audi">CLIP 2103 356106790566 FFHHFFH</option>
         </select>
-  </p> 
-</div> 
- 
-<div> 
-    <strong> Devise</strong>  
-   <p>
-    XOF
-   </p> 
-</div>
- 
-<div> 
-    <strong>Titulaire du compte</strong>  
-    <p>
-      COULIBALY IBOURAIMA
-    </p> 
-   
- </div>
- 
- <div> 
-  <strong> Agence</strong>  
- <p>
-   1150 Sicap foire
- </p> 
-</div>
- 
+            </p>
+        </div>
 
- <div> 
-    <strong> Nombre de chéquiers</strong>  
-   <p>
-     <input type="number" name="" id=""  style="width: 200px; height: 30px;">
-   </p> 
- </div> 
+        <div>
+            <strong> Devise</strong>
+            <p>
+                XOF
+            </p>
+        </div>
 
- <div> 
-    <strong>Type de chéquiers</strong>  
-    <p>
-      <select name="" id="" style="width: 200px; height: 30px;">
-        <option value="">CLASSIQUE</option>
-        <option value="">PORTEFEUILLE </option>
+        <div>
+            <strong>Titulaire du compte</strong>
+            <p>
+                COULIBALY IBOURAIMA
+            </p>
+
+        </div>
+
+        <div>
+            <strong> Agence</strong>
+            <p>
+                1150 Sicap foire
+            </p>
+        </div>
+
+
+        <div>
+            <strong> Nombre de chéquiers</strong>
+            <p>
+                <input type="number" name="" id="" style="width: 200px; height: 30px;">
+            </p>
+        </div>
+
+        <div>
+            <strong>Type de chéquiers</strong>
+            <p>
+                <select name="" id="" style="width: 200px; height: 30px;">
+        <option value="">ATalon Barré 25F</option>
+        <option value="">Simple Non Barré </option>
         
       </select>
-    </p> 
- </div>
+            </p>
+        </div>
 
- 
-</div>
+
+    </div>
 
 
 </div>
 <div class="row" style="margin-left: 40%; margin-top: 1%;">
-  <button mat-raised-button color="primary" [routerLink]="">Valider</button>
-  <button mat-raised-button color="secondary" [routerLink]="">Annuler</button>
-  <button style="margin-left: 50%;" mat-raised-button color="warn" [routerLink]="[ '/dashboard/carte/']">Retour</button>
+    <button mat-raised-button color="primary" [routerLink]="">Valider</button>
+    <button mat-raised-button color="secondary" [routerLink]="">Effacer</button>
+    <button style="margin-left: 50%;" mat-raised-button color="warn" [routerLink]="[ '/dashboard/cheque/']">Retour</button>
 </div>

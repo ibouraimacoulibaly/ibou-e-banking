@@ -13,19 +13,21 @@ export class ChequiersComponent implements OnInit {
   positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
-  displayedColumns: string[] = ['cheque', 'numero', 'etat'];
+  displayedColumns: string[] = ['cheque', 'numero', 'etat', 'date'];
 
   comptes: Compte[] = [
     {
-      cheque: 'CLASSIQUE',
-      numero: '1234 **** 56',
-      etat: 'Actif'
+      cheque: 'ATalon Barré 25F',
+      numero: '11675-4054054545-0000',
+      date: '07/08/2019',
+      etat: 'Validé'
       
     },
     {
-      cheque: 'PORTEFEUILLE ',
-      numero: '4321 **** 93',
-      etat: 'Bloqué'
+      cheque: 'Simple Non Barré 100F ',
+      numero: '445052-4054054545-5405',
+      date: '31/07/2019',
+      etat: 'En courss'
     
     }
    
@@ -48,5 +50,6 @@ export interface Compte {
   cheque: string;
   numero: string;
   etat: string;
+  date: string;
  
 }

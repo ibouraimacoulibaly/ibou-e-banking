@@ -1,0 +1,19 @@
+#nouveau {
+    margin: 2%;
+    border: 1px solid;
+    width: 80%;
+    margin-left: 10%;
+}
+
+p {
+    margin-left: 35%;
+    margin-top: -17px;
+    font-size: 13px;
+    color: black;
+}
+
+strong {
+    font-size: 14px;
+    color: black;
+    font-family: monospace;
+}
