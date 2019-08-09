@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material';
 import {NgxPrintModule} from 'ngx-print';
+import {MatRadioModule} from '@angular/material/radio';
+
 
 import { InternationalPhoneNumberModule } from 'ngx-international-phone-number';
 import { AgmCoreModule } from '@agm/core';
@@ -109,6 +111,7 @@ import { NouveauVirementComponent } from './virements/nouveau-virement/nouveau-v
     MaterialAppModule,
     AppRoutingModule,
     FormsModule,
+    MatRadioModule,
     InternationalPhoneNumberModule,
     MatButtonModule,
     NgxPrintModule,

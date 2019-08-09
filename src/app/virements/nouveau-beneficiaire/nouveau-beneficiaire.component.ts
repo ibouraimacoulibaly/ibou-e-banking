@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nouveau-beneficiaire.component.css']
 })
 export class NouveauBeneficiaireComponent implements OnInit {
+ virement='permanent';
 
   constructor() { }
+ 
 
   ngOnInit() {
+  }
+  option(){
   }
 
 }
