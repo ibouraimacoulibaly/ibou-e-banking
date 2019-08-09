@@ -1,40 +1,41 @@
 import { Component, OnInit,  ViewChild  } from '@angular/core';
 import { MatTableDataSource, MatPaginator } from '@angular/material';
 import {TooltipPosition} from '@angular/material/tooltip';
-import {FormControl} from '@angular/forms';
+import {FormControl} from '@angular/forms'
+
 
 @Component({
-  selector: 'app-vers-compte',
-  templateUrl: './vers-compte.component.html',
-  styleUrls: ['./vers-compte.component.css'],
-  
+  selector: 'app-depot-terme',
+  templateUrl: './depot-terme.component.html',
+  styleUrls: ['./depot-terme.component.css']
 })
-export class VersCompteComponent implements OnInit {
+export class DepotTermeComponent implements OnInit {
   positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
-  displayedColumns: string[] = [ 'numero', 'date', 'compte', 'credit', 'motif', 'montant', 'dates'];
+  displayedColumns: string[] = [ 'numero',  'compte', 'description', 'taux','date', 'echeance', 'montant'];
 
   comptes: Compte[] = [
     {
-      numero: '09',
+      numero: '12',
+      compte: '5564 8977 3215 6775',
+      description: 'Normal',
+      taux: '27%',
       date: '26/07/2019',
-      compte: '00981234768576543',
-      credit: '34768576543210056',
-      motif: 'transfert en reconnaissance',
-      montant: '540 64O',
-      dates: '21/05/2019'
+      echeance: '30/08/2019',
+      montant: '122 546',
+     
       
       
     },
     {
-      numero: '43',
-      date: '23/04/2019',
-      compte: '43211234869994493',
-      credit: '48643219994493123',
-      motif: 'demande',
-      montant: '122 464',
-      dates: '26/06/2019'
+      numero: '12',
+      compte: '5643 9807 4321 8796',
+      description: 'Par defaut',
+      taux: '19%',
+      date: '01/07/2018',
+      echeance: '03/03/2019',
+      montant: '342 000',
     }
    
   ];
@@ -53,14 +54,13 @@ export class VersCompteComponent implements OnInit {
 
 }
 export interface Compte {
+  description: string;
   numero: string;
   date: string;
   compte: string;
-  motif: string;
+  taux: string;
   montant: string;
-  dates: string;
-  credit: string;
+  echeance: string;
   
  
 }
-

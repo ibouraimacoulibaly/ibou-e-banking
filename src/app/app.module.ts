@@ -54,6 +54,8 @@ import { NouveauBeneficiaireComponent } from './virements/nouveau-beneficiaire/n
 import { DetailPretsComponent } from './prets/detail-prets/detail-prets.component';
 import { DetailPrets2Component } from './prets/detail-prets2/detail-prets2.component';
 import { NouveauVirementComponent } from './virements/nouveau-virement/nouveau-virement.component';
+import { DepotTermeComponent } from './depot-terme/depot-terme.component';
+import { RemiseChequeComponent } from './remise-cheque/remise-cheque.component';
 
 
 
@@ -99,6 +101,8 @@ import { NouveauVirementComponent } from './virements/nouveau-virement/nouveau-v
     DetailPretsComponent,
     DetailPrets2Component,
     NouveauVirementComponent,
+    DepotTermeComponent,
+    RemiseChequeComponent,
     
 
  

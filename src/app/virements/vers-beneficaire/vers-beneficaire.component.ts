@@ -20,9 +20,9 @@ export class VersBeneficaireComponent implements OnInit {
       beneficiaire: 'COULIBALY IBOURAIMA 2315 7658 2111 6666',
       numero: '12',
       date: '26/07/2019',
-      compte: '00981234768576543210056',
-      motif: 'demande',
-      montant: '122 546 400',
+      compte: '5436-0984869994786',
+      motif: 'transfert en reconnaissance',
+      montant: '122 546',
       dates: '26/08/2019'
       
       
@@ -30,11 +30,11 @@ export class VersBeneficaireComponent implements OnInit {
     {
       beneficiaire: 'YOUGA DIENG 4354 7685 9899 0764',
       numero: '34',
-      date: '26/07/2019',
+      date: '20/03/2019',
       compte: '4321-1234869994493',
       motif: 'demande',
-      montant: '122 500 464',
-      dates: '26/08/2019'
+      montant: '500 464',
+      dates: '06/02/2019'
     }
    
   ];

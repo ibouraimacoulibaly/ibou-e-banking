@@ -1,0 +1,58 @@
+<div class="container-fluid" style=" margin-top: 3%;">
+    <div class="w3-container w3-margin container-fluid w3-center" style="margin-left: -80%;">
+        <span style="color:black; font-Size:18px;">Dépots à Terme </span>
+    </div>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 container-fluid">
+
+
+
+
+
+        <ng-container matColumnDef="numero">
+            <th mat-header-cell *matHeaderCellDef> Numéro </th>
+            <td mat-cell *matCellDef="let element"> {{element.numero}}</td>
+        </ng-container>
+        <ng-container matColumnDef="compte">
+            <th mat-header-cell *matHeaderCellDef> Numéro de <br> compte </th>
+            <td mat-cell *matCellDef="let element"> {{element.compte}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef>Type <br> Description </th>
+            <td mat-cell *matCellDef="let element">
+                {{element.description}}
+            </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="taux">
+            <th mat-header-cell *matHeaderCellDef>Taux <br> d'intérêt </th>
+            <td mat-cell *matCellDef="let element"> {{element.taux}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef>Date de <br> valeur </th>
+            <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="echeance">
+            <th mat-header-cell *matHeaderCellDef>Date <br> d'échéance </th>
+            <td mat-cell *matCellDef="let element"> {{element.echeance}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="montant">
+            <th mat-header-cell *matHeaderCellDef>Montant en <br> devise du compte </th>
+            <td mat-cell *matCellDef="let element"> {{element.montant}} </td>
+        </ng-container>
+
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row class="table-item" *matRowDef="let row; columns: displayedColumns;" [routerLink]="[ 'operations' ]">
+        </tr>
+    </table>
+
+    <mat-paginator [length]="displayedColumns.length" [hidden]="true" [pageSize]="14" [pageSizeOptions]="[5,8, 10]" showFirstLastButtons></mat-paginator>
+
+</div>

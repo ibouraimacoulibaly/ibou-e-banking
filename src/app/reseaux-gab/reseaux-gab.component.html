@@ -1,33 +1,82 @@
 <mat-tab-group animationDuration="1500ms">
-  <mat-tab label="Map" > 
- 
+    <mat-tab label="Map">
 
-<div class="container">
- 
-  <h6>recherche nos reseaux e-banking sur maps</h6>
- 
-  <div class="form-group">
-    <label>Enter address</label>
-    <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
-  </div>
- 
-  <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
-    <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"
-      (dragEnd)="markerDragEnd($event)"></agm-marker>
-  </agm-map>
- 
-  <h5>Address: {{address}}</h5>
-  <div>Latitude: {{latitude}}</div>
-  <div>Longitude: {{longitude}}</div>
-</div>
-</mat-tab>
-<mat-tab label="Liste">
-  <mat-list dense>
-    <mat-list-item> Pepper </mat-list-item>
-    <mat-list-item> Salt </mat-list-item>
-    <mat-list-item> Paprika </mat-list-item>
-   </mat-list>
-</mat-tab>
+
+        <div class="container">
+
+            <h6>recherche nos reseaux e-banking sur maps</h6>
+
+            <div class="form-group">
+                <label>Enter address</label>
+                <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+            </div>
+
+            <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+                <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true" (dragEnd)="markerDragEnd($event)"></agm-marker>
+            </agm-map>
+
+            <h5>Address: {{address}}</h5>
+            <div>Latitude: {{latitude}}</div>
+            <div>Longitude: {{longitude}}</div>
+        </div>
+    </mat-tab>
+
+
+    <mat-tab label="Liste">
+        <div class="container" id="tableau">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Agence</th>
+                        <th>Gab</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Agence : </strong>
+                            <p>sicap foire</p>
+                            <strong>Adresse : </strong>
+                            <p>Sicap foire lot 139</p>
+                            <strong>Téléphone : </strong>
+                            <p>+221 33 867 25 16</p>
+                            <strong>Horaire : </strong>
+                            <p>7/7 08:00 - 17:00</p>
+                        </td>
+                        <td>
+                            <strong>Gab : </strong>
+                            <p>ucad</p>
+                            <strong>Siége sociale : </strong>
+                            <p>Point E lot 139</p>
+
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Agence : </strong>
+                            <p>Pikine</p>
+                            <strong>Adresse : </strong>
+                            <p>Pikine Est lot 139</p>
+                            <strong>Téléphone : </strong>
+                            <p>+221 33 867 25 16</p>
+                            <strong>Horaire : </strong>
+                            <p>7/7 08:00 - 17:00</p>
+                        </td>
+                        <td>
+                            <strong>Gab : </strong>
+                            <p>Pike Est</p>
+                            <strong>Adresse : </strong>
+                            <p>Pikine Est lot 139</p>
+
+
+                        </td>
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+        </div>
+
+    </mat-tab>
 </mat-tab-group>
-
-

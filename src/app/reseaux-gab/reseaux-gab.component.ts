@@ -1,6 +1,11 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
 import { MapsAPILoader, MouseEvent } from '@agm/core';
 
+import { MatTableDataSource, MatPaginator } from '@angular/material';
+import {TooltipPosition} from '@angular/material/tooltip';
+import {FormControl} from '@angular/forms'
+
+
 
 @Component({
   selector: 'app-reseaux-gab',
@@ -14,6 +19,9 @@ export class ReseauxGabComponent implements OnInit {
   zoom: number;
   address: string;
   private geoCoder;
+
+  
+  
 
   @ViewChild('search')
   public searchElementRef: ElementRef;
@@ -87,5 +95,8 @@ export class ReseauxGabComponent implements OnInit {
    
       });
    */
-  }
+  
 }
+
+}
+

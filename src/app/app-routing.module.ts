@@ -35,6 +35,8 @@ import { NouveauBeneficiaireComponent } from './virements/nouveau-beneficiaire/n
 import { DetailPretsComponent } from './prets/detail-prets/detail-prets.component';
 import { DetailPrets2Component } from './prets/detail-prets2/detail-prets2.component';
 import { NouveauVirementComponent } from './virements/nouveau-virement/nouveau-virement.component';
+import { DepotTermeComponent } from './depot-terme/depot-terme.component';
+import { RemiseChequeComponent } from './remise-cheque/remise-cheque.component';
 
 
 
@@ -179,7 +181,16 @@ const routes: Routes = [
           {
             path: 'nouveau-virement',
             component: NouveauVirementComponent
+          },
+          {
+            path: 'depot-terme',
+            component: DepotTermeComponent
+          },
+          {
+            path: 'remise-cheque',
+            component: RemiseChequeComponent
           }
+
          
         ]
       }
