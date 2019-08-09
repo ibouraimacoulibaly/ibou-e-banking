@@ -9,18 +9,16 @@ table {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
 }
-mat-fab{
-color:"primary";
-}
+
 td{
     color: slategray;
 }
+
 .bouton_ajout{
   margin-left: 80%;
   width: 15%;
   margin-top: 6%;
   color: white;
-  color: "primary";
 }
 .positionM{
   border: 1px solid;
