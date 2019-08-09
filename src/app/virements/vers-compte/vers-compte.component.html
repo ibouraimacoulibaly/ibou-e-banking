@@ -1,55 +1,65 @@
-<div id='virement'> Virement d'un compte vers une autre commpte </div>
-<div class="row" id="virement1">
-    <form class="example-form" id="form">
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="E-BANKING  "  disabled value="banque en ligne">
-          <h6 style="margin-bottom:-1%;"><strong>EMETTEUR</strong>  <strong style="margin-left:38%;">RECEVEUR</strong></h6>
-        </mat-form-field>
-      
-        <table class="example-full-width" cellspacing="0"><tr>
-          <td><mat-form-field class="example-full-width">
-            <input matInput placeholder="Intutilé du compte">
-          </mat-form-field></td>
-          <td><mat-form-field class="example-full-width">
-            <input matInput placeholder="Intutilé du compte">
-          </mat-form-field></td>
-        </tr></table>
+<div class="container-fluid" style=" margin-top: 3%;">
+    <div class="w3-container w3-margin container-fluid w3-center" style="margin-left: -80%;">
+        <span style="color:black; font-Size:18px;">Virements vers Compte</span>
+    </div>
+    <div class="row" style="margin-left:75%; margin-bottom: 3%; margin-top: 2%;">
 
-        <table class="example-full-width" cellspacing="0"><tr>
-          <td><mat-form-field class="example-full-width">
-            <input matInput placeholder="Nom et Prenom">
-          </mat-form-field></td>
-          <td><mat-form-field class="example-full-width">
-            <input matInput placeholder="Nom et Prenom">
-          </mat-form-field></td>
-        </tr></table>
-        
-        <table class="example-full-width" cellspacing="0"><tr>
-          <td><mat-form-field class="example-full-width">
-            <input matInput placeholder="Numero  du commpte">
-          </mat-form-field></td>
-          <td><mat-form-field class="example-full-width">
-            <input matInput placeholder="Numero  du commpte">
-          </mat-form-field></td>
-        </tr></table>
+        <button style="margin-left:10%; width: 150px;" mat-raised-button color="primary" [routerLink]="[ '/dashboard/nouveau-virement/']">Nouveau virement
+      </button>
 
-        <table class="example-full-width" cellspacing="0" style="width:104%;"><tr>
-            <td><mat-form-field class="example-full-width">
-              <input matInput placeholder="Montant a transferer">
-            </mat-form-field></td>
-            <td><mat-form-field class="example-full-width">
-              <input matInput [matDatepicker]="picker" placeholder="Date du virement">
-              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-              <mat-datepicker #picker></mat-datepicker>
-            </mat-form-field></td>
-          </tr></table>
-       
-          
 
-      
-            <button style="margin-left:300px;" mat-raised-button color="primary" [routerLink]="[ '' ]">Enregistrer
-            </button>
-      </form>
-       
+    </div>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 container-fluid">
+
+
+
+
+
+        <ng-container matColumnDef="numero">
+            <th mat-header-cell *matHeaderCellDef> Numéro </th>
+            <td mat-cell *matCellDef="let element"> {{element.numero}}</td>
+        </ng-container>
+        <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef> Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.date}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="compte">
+            <th mat-header-cell *matHeaderCellDef>Compte débité </th>
+            <td mat-cell *matCellDef="let element">
+                {{element.compte}}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="credit">
+            <th mat-header-cell *matHeaderCellDef>Compte Crédité </th>
+            <td mat-cell *matCellDef="let element">
+                {{element.credit}}
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="motif">
+            <th mat-header-cell *matHeaderCellDef>Motif </th>
+            <td mat-cell *matCellDef="let element"> {{element.motif}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="montant">
+            <th mat-header-cell *matHeaderCellDef>Montant </th>
+            <td mat-cell *matCellDef="let element"> {{element.montant}} XOF </td>
+        </ng-container>
+
+        <ng-container matColumnDef="dates">
+            <th mat-header-cell *matHeaderCellDef>Date d'expiration </th>
+            <td mat-cell *matCellDef="let element"> {{element.dates}} </td>
+        </ng-container>
+
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row class="table-item" *matRowDef="let row; columns: displayedColumns;" [routerLink]="[ 'operations' ]">
+        </tr>
+    </table>
+
+    <mat-paginator [length]="displayedColumns.length" [hidden]="true" [pageSize]="14" [pageSizeOptions]="[5,8, 10]" showFirstLastButtons></mat-paginator>
+
 </div>
-

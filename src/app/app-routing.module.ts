@@ -34,6 +34,7 @@ import { ChequiersComponent } from './chequiers/chequiers.component';
 import { NouveauBeneficiaireComponent } from './virements/nouveau-beneficiaire/nouveau-beneficiaire.component';
 import { DetailPretsComponent } from './prets/detail-prets/detail-prets.component';
 import { DetailPrets2Component } from './prets/detail-prets2/detail-prets2.component';
+import { NouveauVirementComponent } from './virements/nouveau-virement/nouveau-virement.component';
 
 
 
@@ -174,7 +175,12 @@ const routes: Routes = [
           {
             path: 'nouveau-beneficiaire',
             component: NouveauBeneficiaireComponent
+          },
+          {
+            path: 'nouveau-virement',
+            component: NouveauVirementComponent
           }
+         
         ]
       }
     ]

@@ -48,10 +48,12 @@ import { CommanderCarteComponent } from './commander-carte/commander-carte.compo
 import { AddDeviseComponent } from './devise/add-devise/add-devise.component';
 import { CarteOppositionComponent } from './carte-opposition/carte-opposition.component';
 import { ChequiersComponent } from './chequiers/chequiers.component';
+
 import { VirementsComponent } from './virements/virements.component';
 import { NouveauBeneficiaireComponent } from './virements/nouveau-beneficiaire/nouveau-beneficiaire.component';
 import { DetailPretsComponent } from './prets/detail-prets/detail-prets.component';
 import { DetailPrets2Component } from './prets/detail-prets2/detail-prets2.component';
+import { NouveauVirementComponent } from './virements/nouveau-virement/nouveau-virement.component';
 
 
 
@@ -96,6 +98,7 @@ import { DetailPrets2Component } from './prets/detail-prets2/detail-prets2.compo
     NouveauBeneficiaireComponent,
     DetailPretsComponent,
     DetailPrets2Component,
+    NouveauVirementComponent,
     
 
  
