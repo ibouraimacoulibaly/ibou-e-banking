@@ -1,5 +1,39 @@
 <mat-tab-group animationDuration="1500ms">
+<<<<<<< HEAD
     <mat-tab label="Map">
+=======
+  <mat-tab label="Map" > 
+ 
+
+<div class="container">
+ 
+  <h6>recherche nos reseaux e-banking sur maps</h6>
+ 
+  <div class="form-group">
+    <label>Enter address</label>
+    <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+  </div>
+ 
+  <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+    <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"
+      (dragEnd)="markerDragEnd($event)"></agm-marker>
+  </agm-map>
+ 
+  <h5>Address: {{address}}</h5>
+  <div>Latitude: {{latitude}}</div>
+  <div>Longitude: {{longitude}}</div>
+</div>
+</mat-tab>
+<mat-tab label="Liste">
+  <mat-list >
+    <mat-list-item> A </mat-list-item>
+   </mat-list>
+   <mat-list >
+    <mat-list-item> B </mat-list-item>
+   </mat-list>
+</mat-tab>
+</mat-tab-group>
+>>>>>>> f2b192ecfa8058ac1afa9566d1cc9f20ac773b39
 
 
         <div class="container">

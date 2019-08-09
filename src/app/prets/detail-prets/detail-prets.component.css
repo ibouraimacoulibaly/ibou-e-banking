@@ -2,5 +2,6 @@ table{
     width: 60%;
     margin-left: 23%;
     margin-top: 10%;
-    border: 1px solid;
+    border: 2px solid;
+    border-color: blue;
 }
