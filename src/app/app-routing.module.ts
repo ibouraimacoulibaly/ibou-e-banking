@@ -31,12 +31,10 @@ import { CommanderCarteComponent } from './commander-carte/commander-carte.compo
 import { AddDeviseComponent } from './devise/add-devise/add-devise.component';
 import { CarteOppositionComponent } from './carte-opposition/carte-opposition.component';
 import { ChequiersComponent } from './chequiers/chequiers.component';
-<<<<<<< HEAD
 import { NouveauBeneficiaireComponent } from './virements/nouveau-beneficiaire/nouveau-beneficiaire.component';
-=======
 import { DetailPretsComponent } from './prets/detail-prets/detail-prets.component';
 import { DetailPrets2Component } from './prets/detail-prets2/detail-prets2.component';
->>>>>>> 98cd1c73cbbe9e0b7b935ac3644a0e0da1c48fd5
+import { NouveauVirementComponent } from './virements/nouveau-virement/nouveau-virement.component';
 
 
 
@@ -177,7 +175,12 @@ const routes: Routes = [
           {
             path: 'nouveau-beneficiaire',
             component: NouveauBeneficiaireComponent
+          },
+          {
+            path: 'nouveau-virement',
+            component: NouveauVirementComponent
           }
+         
         ]
       }
     ]

@@ -13,7 +13,7 @@ export class ChequiersComponent implements OnInit {
   positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
-  displayedColumns: string[] = ['cheque', 'numero', 'etat', 'date'];
+  displayedColumns: string[] = ['cheque', 'date' , 'numero', 'etat'];
 
   comptes: Compte[] = [
     {

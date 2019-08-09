@@ -13,22 +13,28 @@ export class VersBeneficaireComponent implements OnInit {
   positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
-  displayedColumns: string[] = ['numero','date' , 'nom', 'categorie'];
+  displayedColumns: string[] = [ 'numero', 'date', 'compte', 'beneficiaire', 'motif', 'montant', 'dates'];
 
   comptes: Compte[] = [
     {
-      nom: 'COULIBALY IBOURAIMA',
-      numero: '1234 **** **56',
+      beneficiaire: 'COULIBALY IBOURAIMA 2315 7658 2111 6666',
+      numero: '12',
       date: '26/07/2019',
-      categorie: 'En cours'
+      compte: '00981234768576543210056',
+      motif: 'demande',
+      montant: '122 546 400',
+      dates: '26/08/2019'
       
       
     },
     {
-      nom: 'YOUGA DIENG ',
-      numero: '4321 **** **93',
+      beneficiaire: 'YOUGA DIENG 4354 7685 9899 0764',
+      numero: '34',
       date: '26/07/2019',
-      categorie: 'En cours'
+      compte: '4321-1234869994493',
+      motif: 'demande',
+      montant: '122 500 464',
+      dates: '26/08/2019'
     }
    
   ];
@@ -47,10 +53,13 @@ export class VersBeneficaireComponent implements OnInit {
 
 }
 export interface Compte {
-  nom: string;
+  beneficiaire: string;
   numero: string;
   date: string;
-  categorie: string;
+  compte: string;
+  motif: string;
+  montant: string;
+  dates: string;
   
  
 }
