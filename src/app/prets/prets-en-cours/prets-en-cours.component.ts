@@ -19,9 +19,9 @@ positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left
     {
       dossier: '012768',
       numero: '021235-4054054545-5405 XOF',
-      du:'1 800 000',
+      du:'621 000',
       nombre: '8',
-      montant_impaye: '389 885'
+      montant_impaye: '205 605'
     },
     {
       dossier: '098908',

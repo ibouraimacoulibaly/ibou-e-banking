@@ -1,17 +1,12 @@
-table {
-    /* width: 80%; */
-    /* margin-left: 10%;
-    margin-top: 1%;
-    margin-bottom: 2%; */
-  }
-  th{
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+table{
+    margin-top: 10%;
+    border-color: rgb(50, 71, 190);
 }
 
-td{
-    color: slategray;
+
+  th{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
 }
 
 .bouton_ajout{
@@ -36,7 +31,7 @@ margin-left: 10%;
 .header{
   
   width: 104%;
-  margin-top: 7%;
+  margin-top: 0%;
   margin-left: -2%;
   background-color: rgb(153, 158, 179);
 }
@@ -49,7 +44,4 @@ mat-card{
   margin-top: 3%;
   margin-left: 10%;
   /* border: 1px solid;  */
-}
-td{
-  color: black;
 }
