@@ -185,11 +185,11 @@ const routes: Routes = [
           {
             path: 'depot-terme',
             component: DepotTermeComponent
-          },
-          {
-            path: 'remise-cheque',
-            component: RemiseChequeComponent
-          }
+           },
+           {
+             path: 'remise-cheque',
+             component: RemiseChequeComponent
+           }
 
          
         ]
