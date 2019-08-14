@@ -14,29 +14,28 @@ export class MessagerieComponent implements OnInit {
   positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
-  displayedColumns: string[] = ['carte', 'numero', 'debit', 'etat'];
+  displayedColumns: string[] = ['dossier', 'numero', 'du','nombre'];
 
   comptes: Compte[] = [
     {
-      carte: 'VISA ELECTRON',
-      numero: '1234 **** **** **56',
-      debit: 'Immédiat',
-      etat: 'Actif'
-      
+      dossier: 'moi',
+      numero: 'Demande de carte',
+      du:'12/10/2017',
+      nombre: '27/11/2017',
     },
     {
-      carte: ' OASIS GIM-UEMOA  ',
-      numero: '4321 **** **** **93',
-      debit: 'Différé',
-      etat: 'Bloqué'
-    
+      dossier: 'moi',
+      numero: 'Demande de chéquier',
+      du:'25/06/2015',
+      nombre: '25/08/2015',
+     
     }
-   
+    
   ];
 
   dataSource: MatTableDataSource<Compte>;
-  @ViewChild(MatPaginator) paginator: MatPaginator;
 
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
   constructor() { }
 
@@ -49,9 +48,8 @@ export class MessagerieComponent implements OnInit {
 }
 
 export interface Compte {
-  carte: string;
+  dossier: string;
   numero: string;
-  debit: string;
-  etat: string;
- 
+  du:string;
+  nombre: string;
 }

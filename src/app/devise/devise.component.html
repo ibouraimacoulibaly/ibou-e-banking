@@ -35,7 +35,7 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
    -->
-  <mat-card style="  height: 50%; ">
+  <mat-card>
       <mat-card class="header" ></mat-card>
 
     <table class="table" >
@@ -73,6 +73,9 @@
           </tbody>
       
     </table>
-    <mat-card class="footer"></mat-card>
+    <!-- <mat-card class="footer"></mat-card> -->
+    <mat-card-footer >
+        <mat-card class="footer"></mat-card>
+    </mat-card-footer>
   </mat-card>
-  <button mat-raised-button  class="retour" color ="warn">Retour</button> 
+  <button mat-raised-button  class="retour" color ="warn"  [routerLink]="['']">Retour</button> 

@@ -1,30 +1,68 @@
 <div class="container-fluid">
-  <table border="10">
-      <tr >
-          <td  colspan="2"><a style="margin-left:35%;">Compte de Prêt:</a><a > 021235-4054054545-5405 XOF</a></td>
-        </tr>
-    <tr>
-      <td colspan="2">Num Dossier: <a style="margin-left: 3%;">   012768</a></td>
-    </tr>
-    <tr>
+  <mat-card>
+    <!-- <table  border="10">
+      <tr>
+        <td colspan="2"><a style="margin-left:35%;">Compte de Prêt:</a><a> 021235-4054054545-5405 XOF</a></td>
+      </tr>
+      <tr>
+        <td colspan="2">Num Dossier: <a style="margin-left: 3%;"> 012768</a></td>
+      </tr>
+      <tr>
         <td>Montant du prêt: 1 200 000</td>
         <td>Durée du prêt: 60 mois</td>
       </tr>
       <tr>
-          <td>Taux d'intérêt: 7%</td>
-          <td>Type de taux: Variable</td>
-        </tr>
+        <td>Taux d'intérêt: 7%</td>
+        <td>Type de taux: Variable</td>
+      </tr>
+      <tr>
+        <td>Echéance Prêt: 25/09/2021</td>
+        <td>Amortissements Restants: 25</td>
+      </tr>
+      <tr>
+        <td>Périodicité: Mensuelle</td>
+        <td>Capital Restant: 621 000</td>
+      </tr>
+      <tr>
+        <td>Prochain Amortissement: 25/09/2019</td>
+        <td>Montant Amortissement: 25 700</td>
+      </tr>
+    </table> -->
+    <mat-card class="header" ></mat-card>
+
+    <table class="table" >
         <tr>
+            <td colspan="2"><a style="margin-left:15%; font-size: 150%;">Compte de Prêt:</a><a style="margin-left:0%; font-size: 150%;"> 021235-4054054545-5405 XOF</a></td>
+          </tr>
+          <tr>
+            <td colspan="2">Num Dossier: <a style="margin-left: 3%;"> 012768</a></td>
+          </tr>
+          <tr>
+            <td>Montant du prêt: 1 200 000</td>
+            <td>Durée du prêt: 60 mois</td>
+          </tr>
+          <tr>
+            <td>Taux d'intérêt: 7%</td>
+            <td>Type de taux: Variable</td>
+          </tr>
+          <tr>
             <td>Echéance Prêt: 25/09/2021</td>
             <td>Amortissements Restants: 25</td>
           </tr>
           <tr>
-              <td>Périodicité: Mensuelle</td>
-              <td>Capital Restant: 621 000</td>
-            </tr>
-            <tr>
-                <td>Prochain Amortissement: 25/09/2019</td>
-                <td>Montant Amortissement: 25 700</td>
-              </tr>
-  </table>
+            <td>Périodicité: Mensuelle</td>
+            <td>Capital Restant: 621 000</td>
+          </tr>
+          <tr>
+            <td>Prochain Amortissement: 25/09/2019</td>
+            <td>Montant Amortissement: 25 700</td>
+          </tr>
+      
+    </table>
+    <!-- <mat-card class="footer"></mat-card> -->
+    <mat-card-footer >
+        <mat-card class="footer"></mat-card>
+    </mat-card-footer>
+  </mat-card>
+  <button mat-raised-button  class="retour" color ="warn" routerLink="/dashboard/prets">Retour</button> 
 </div>
