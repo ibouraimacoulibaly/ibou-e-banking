@@ -1,13 +1,17 @@
 table{
-    margin-top: 10%;
-    border-color: rgb(50, 71, 190);
+    margin-top: 3%;
 }
 
-
-  th{
+th{
+    color: black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
 }
+
+td{
+    color: slategray;
+}
+  
 
 .bouton_ajout{
   margin-left: 80%;
@@ -30,18 +34,18 @@ margin-left: 10%;
 }
 .header{
   
-  width: 104%;
-  margin-top: 0%;
-  margin-left: -2%;
+  width: 70%;
+  margin-top: 3%;
+  margin-left: 10%;
   background-color: rgb(153, 158, 179);
 }
 .retour{
   margin-top: 1%;
-  margin-left: 72.5%;
+  margin-left: 73.5%;
 }
 mat-card{
   width: 70%;
-  margin-top: 3%;
+  margin-top: -0.5%;
   margin-left: 10%;
   /* border: 1px solid;  */
 }

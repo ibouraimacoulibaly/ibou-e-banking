@@ -7,14 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nouveau-beneficiaire.component.css']
 })
 export class NouveauBeneficiaireComponent implements OnInit {
- virement='permanent';
-
+  virement = 'permanent';
+  date = 'any';
   constructor() { }
- 
+
 
   ngOnInit() {
   }
-  option(){
+  optionDate() {
+    console.log('entrée');
   }
 
 }

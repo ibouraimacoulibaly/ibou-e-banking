@@ -1,5 +1,5 @@
 table{
-    margin-top: 10%;
+    margin-top: 3%;
     border: 2px solid;
     border-color: rgb(100, 100, 161);
 }
@@ -36,9 +36,9 @@ margin-left: 10%;
 }
 .header{
   
-  width: 104%;
-  margin-top: 0%;
-  margin-left: -2%;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 10%;
   background-color: rgb(153, 158, 179);
 }
 .retour{
@@ -47,7 +47,7 @@ margin-left: 10%;
 }
 mat-card{
   width: 70%;
-  margin-top: 3%;
+  margin-top: -0.75%;
   margin-left: 10%;
   /* border: 1px solid;  */
 }
