@@ -1,20 +1,33 @@
-
-.clavier{
+.clavier {
     width: 100%;
 }
 
-
-.clavier_input{
+.clavier_input {
     width: 277px;
     height: 30px;
     margin: 3px;
     font-size: 12px;
     display: inline;
 }
-.clavier button{
+
+.clavier button {
     width: 46px;
     height: 40px;
     font-weight: bold;
     background-color: rgb(255, 255, 255);
     vertical-align: top;
+}
+
+#footer {
+    width: 49%;
+    height: 20px;
+    background-color: darkgrey;
+    margin-left: 25.5%;
+    margin-top: 0.1%;
+    padding: 2px;
+}
+
+#a {
+    margin-left: 8%;
+    margin-top: 20px;
 }

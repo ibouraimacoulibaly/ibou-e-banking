@@ -18,3 +18,7 @@ strong {
     color: black;
     font-family: monospace;
 }
+
+button {
+    margin: 2%;
+}

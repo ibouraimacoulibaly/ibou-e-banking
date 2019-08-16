@@ -3,32 +3,34 @@ import { MatTableDataSource, MatPaginator } from '@angular/material';
 import {TooltipPosition} from '@angular/material/tooltip';
 import {FormControl} from '@angular/forms'
 
-
 @Component({
-  selector: 'app-chequiers',
-  templateUrl: './chequiers.component.html',
-  styleUrls: ['./chequiers.component.css']
+  selector: 'app-beneficiaire',
+  templateUrl: './beneficiaire.component.html',
+  styleUrls: ['./beneficiaire.component.css']
 })
-export class ChequiersComponent implements OnInit {
+export class BeneficiaireComponent implements OnInit {
+
   positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
-  displayedColumns: string[] = ['cheque', 'date' , 'numero', 'etat'];
+  displayedColumns: string[] = [ 'numero', 'nom', 'compte', 'iban'];
 
   comptes: Compte[] = [
     {
-      cheque: 'ATalon Barré 25F',
-      numero: '11675-4054054545-0000',
-      date: '07/08/2019',
-      etat: 'Validé'
+      iban: 'AZF 2315 7658 2111 6666',
+      numero: '12',
+      nom: 'ABDOULAYE BALDE',
+      compte: '7654 **** ** 09'
+     
+      
       
     },
     {
-      cheque: 'Simple Non Barré 100F ',
-      numero: '445052-4054054545-5405',
-      date: '31/07/2019',
-      etat: 'En cours'
-    
+      iban: 'HYT 4354 7685 9899 0764',
+      numero: '34',
+      nom: 'PAPE NDIAYE',
+      compte: '8909 **** **31'
+     
     }
    
   ];
@@ -47,9 +49,10 @@ export class ChequiersComponent implements OnInit {
 
 }
 export interface Compte {
-  cheque: string;
+  iban: string;
   numero: string;
-  etat: string;
-  date: string;
+  nom: string;
+  compte: string;
+ 
  
 }

@@ -61,6 +61,9 @@ import { DepotTermeComponent } from './depot-terme/depot-terme.component';
 import { RemiseChequeComponent } from './remise-cheque/remise-cheque.component';
 import { MessageContenuComponent } from './message-contenu/message-contenu.component';
 import { MessageEnvoyeContenuComponent } from './message-envoye-contenu/message-envoye-contenu.component';
+import { ReseauxDetailsComponent } from './reseaux-details/reseaux-details.component';
+import { BeneficiaireComponent } from './beneficiaire/beneficiaire.component';
+import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiaire-nouveau.component';
 
 
 
@@ -111,6 +114,9 @@ import { MessageEnvoyeContenuComponent } from './message-envoye-contenu/message-
     RemiseChequeComponent,
     MessageContenuComponent,
     MessageEnvoyeContenuComponent,
+    ReseauxDetailsComponent,
+    BeneficiaireComponent,
+    BeneficiaireNouveauComponent,
 
     
 

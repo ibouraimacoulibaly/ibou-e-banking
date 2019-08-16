@@ -17,10 +17,10 @@
                 <strong> Compte</strong>
                 <p>
                     <select id="inp1" style="width: 400px; height: 30px;">
-                        <option value="volvo">CPTL CLIP 2103 356106790566 FFHHFFH</option>
-                        <option value="saab">DHTL CLIP 2103 356106790566 FFHHFFH</option>
-                        <option value="mercedes">EQGL CLIP 2103 356106790566 FFHHFFH</option>
-                        <option value="audi">ADRF CLIP 2103 356106790566 FFHHFFH</option>
+                        <option value="volvo"> 2103 356106790566 FFHHFFH</option>
+                        <option value="saab"> 2103 356106790566 FFHHFFH</option>
+                        <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
+                        <option value="audi"> 2103 356106790566 FFHHFFH</option>
                     </select>
                 </p>
             </div>
@@ -52,23 +52,13 @@
             </div>
 
 
-<<<<<<< HEAD
-            <div>
-                <strong>Date</strong>
-                <p> <input type="radio" name="date" id="" style="height: 10px; width: 10px; margin-right: 10px;">Aujourd'hui</p>
-                <p><input type="radio" name="date" id="" style="height: 10px; width: 10px; margin-right: 10px;">A une autre date <input type="datetime" name="" id=""></p>
-            </div>
-=======
             <div [ngSwitch]="virement">
                 <div *ngSwitchCase="'permanent'">
 
                     <strong>Date</strong>
-                    <p> <input type="radio" name="date" id="" [ngModel]="date"
-                            style="height: 10px; width: 10px; margin-right: 10px;">Aujourd'hui</p>
-                    <div >
-                        <p><input type="radio" name="date" id=""
-                                style="height: 10px; width: 10px; margin-right: 10px;">A
-                            une autre date <input type="text" name="" id=""></p>
+                    <p> <input type="radio" name="date" id="" [ngModel]="date" style="height: 10px; width: 10px; margin-right: 10px;">Aujourd'hui</p>
+                    <div>
+                        <p><input type="radio" name="date" id="" style="height: 10px; width: 10px; margin-right: 10px;">A une autre date <input type="text" name="" id=""></p>
                     </div>
 
                     <div>
@@ -83,12 +73,12 @@
                         </p>
                     </div>
                 </div>
-                <div  *ngSwitchCase="'unique'">
+                <div *ngSwitchCase="'unique'">
 
                 </div>
-                
 
->>>>>>> f2b192ecfa8058ac1afa9566d1cc9f20ac773b39
+
+
 
             </div>
 
@@ -126,7 +116,10 @@
 
 
     </div>
-    <div class="row" style="margin-left: 40%; margin-top: 1%;">
-        <button mat-raised-button color="primary" [routerLink]="">Valider</button>
+</div>
+<div class="row" style="margin-left: 40%; margin-top: 1%;">
+    <button mat-raised-button color="primary" [routerLink]="">Valider</button>
+    <button mat-raised-button color="default" [routerLink]="">Effacer</button>
+    <button style="margin-left: 50%;" mat-raised-button color="warn" [routerLink]="[ '/dashboard/beneficaire/']">Retour</button>
 
-    </div>
+</div>
