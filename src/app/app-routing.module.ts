@@ -40,6 +40,7 @@ import { DepotTermeComponent } from './depot-terme/depot-terme.component';
 import { RemiseChequeComponent } from './remise-cheque/remise-cheque.component';
 
 import { MessageContenuComponent } from './message-contenu/message-contenu.component';
+import { MessageEnvoyeContenuComponent } from './message-envoye-contenu/message-envoye-contenu.component';
 
 
 
@@ -157,6 +158,10 @@ const routes: Routes = [
           {
             path: 'contenu-message',
             component: MessageContenuComponent
+          },
+          {
+            path: 'message-envoye',
+            component: MessageEnvoyeContenuComponent
           },
           {
             path: 'devise',

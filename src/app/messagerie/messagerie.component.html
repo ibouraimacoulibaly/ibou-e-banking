@@ -4,167 +4,179 @@
 <button  style="margin-left: 80%; margin-top: 1%; margin-bottom: -4%;"
 mat-raised-button color="primary">Ajouter un nouveau compte</button>
 </a> -->
-<div class="container-fluid">
-  <div class="w3-container w3-margin container-fluid w3-center">
-    <span style="color:black;font-size: 13%;"></span>
-  </div>
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 container-fluid">
+    <div class="container-fluid">
+      <div class="w3-container w3-margin container-fluid w3-center">
+        <span style="color:black;font-size: 13%;"></span>
+      </div>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 container-fluid">
 
-    <ng-container matColumnDef="dossier">
-      <th mat-header-cell *matHeaderCellDef> Emetteur </th>
-      <td mat-cell *matCellDef="let element"> BRM DAKAR </td>
-    </ng-container>
+        <ng-container matColumnDef="dossier">
+          <th mat-header-cell *matHeaderCellDef> Emetteur </th>
+          <td mat-cell *matCellDef="let element"> BRM DAKAR </td>
+        </ng-container>
 
-    <ng-container matColumnDef="numero">
-      <th mat-header-cell *matHeaderCellDef> Objet </th>
-      <td mat-cell *matCellDef="let element"> {{element.numero}} </td>
-    </ng-container>
+        <ng-container matColumnDef="numero">
+          <th mat-header-cell *matHeaderCellDef> Objet </th>
+          <td mat-cell *matCellDef="let element"> {{element.numero}} </td>
+        </ng-container>
 
-    <ng-container matColumnDef="du">
-      <th mat-header-cell *matHeaderCellDef> Reçu </th>
-      <td mat-cell *matCellDef="let element"> {{element.du}} </td>
-    </ng-container>
+        <ng-container matColumnDef="du">
+          <th mat-header-cell *matHeaderCellDef> Reçu </th>
+          <td mat-cell *matCellDef="let element"> {{element.du}} </td>
+        </ng-container>
 
 
-    <ng-container matColumnDef="nombre">
-      <th mat-header-cell *matHeaderCellDef>  Echéances impayées </th>
-      <td mat-cell *matCellDef="let element"> {{element.nombre}}</td>
-    </ng-container>
+        <ng-container matColumnDef="nombre">
+          <th mat-header-cell *matHeaderCellDef> Date Expiration </th>
+          <td mat-cell *matCellDef="let element"> {{element.nombre}}</td>
+        </ng-container>
 
-    <ng-container matColumnDef="montant_impaye">
-      <th mat-header-cell *matHeaderCellDef> Montant échéances impayées </th>
-      <td mat-cell *matCellDef="let element"> {{element.montant_impaye}}</td>
-    </ng-container>
+        <ng-container matColumnDef="montant_impaye">
+          <th mat-header-cell *matHeaderCellDef> Montant échéances impayées </th>
+          <td mat-cell *matCellDef="let element"> {{element.montant_impaye}}</td>
+        </ng-container>
 
-    <ng-container matColumnDef="montant">
-      <th mat-header-cell *matHeaderCellDef> <a style="margin-left: 10.5%;">Actions</a> </th>
-      <td mat-cell *matCellDef="let element">
+        <ng-container matColumnDef="montant">
+          <th mat-header-cell *matHeaderCellDef> <a style="margin-left: 10.5%;">Actions</a> </th>
+          <td mat-cell *matCellDef="let element">
 
-        
 
-        
-        
-      </td>
-    </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row class="table-item" *matRowDef="let row; columns: displayedColumns;"  routerLink="../contenu-message">
-    </tr>
-  </table>
 
-  <mat-paginator [length]="displayedColumns.length" [hidden]="true" [pageSize]="14" [pageSizeOptions]="[5,8, 10]"
-    showFirstLastButtons></mat-paginator>
-</div>
+
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row class="table-item" *matRowDef="let row; columns: displayedColumns;" routerLink="../contenu-message">
+        </tr>
+      </table>
+
+      <mat-paginator [length]="displayedColumns.length" [hidden]="true" [pageSize]="14" [pageSizeOptions]="[5,8, 10]"
+        showFirstLastButtons></mat-paginator>
+    </div>
 
   </mat-tab>
- 
+
   <mat-tab label="Envoyés">
     <!-- <a routerLink="/dashboard/nouveau-compte/">
 <button  style="margin-left: 80%; margin-top: 1%; margin-bottom: -4%;"
 mat-raised-button color="primary">Ajouter un nouveau compte</button>
 </a> -->
-<div class="container-fluid">
-  <div class="w3-container w3-margin container-fluid w3-center">
-    <span style="color:black;font-size: 13%;"></span>
-  </div>
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 container-fluid">
+    <div class="container-fluid">
+      <div class="w3-container w3-margin container-fluid w3-center">
+        <span style="color:black;font-size: 13%;"></span>
+      </div>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 container-fluid">
 
-    <ng-container matColumnDef="dossier">
-      <th mat-header-cell *matHeaderCellDef> Emetteur </th>
-      <td mat-cell *matCellDef="let element"> {{element.dossier}} </td>
-    </ng-container>
+        <ng-container matColumnDef="dossier">
+          <th mat-header-cell *matHeaderCellDef> Destinataire </th>
+          <td mat-cell *matCellDef="let element"> {{element.dossier}} </td>
+        </ng-container>
 
-    <ng-container matColumnDef="numero">
-      <th mat-header-cell *matHeaderCellDef> Objet </th>
-      <td mat-cell *matCellDef="let element"> {{element.numero}} </td>
-    </ng-container>
+        <ng-container matColumnDef="numero">
+          <th mat-header-cell *matHeaderCellDef> Objet </th>
+          <td mat-cell *matCellDef="let element"> {{element.numero}} </td>
+        </ng-container>
 
-    <ng-container matColumnDef="du">
-      <th mat-header-cell *matHeaderCellDef> Date d'envoie </th>
-      <td mat-cell *matCellDef="let element"> {{element.du}} </td>
-    </ng-container>
+        <ng-container matColumnDef="du">
+          <th mat-header-cell *matHeaderCellDef> Date d'envoi </th>
+          <td mat-cell *matCellDef="let element"> {{element.du}} </td>
+        </ng-container>
 
 
-    <ng-container matColumnDef="nombre">
-      <th mat-header-cell *matHeaderCellDef>  Date d'expiration </th>
-      <td mat-cell *matCellDef="let element"> {{element.nombre}}</td>
-    </ng-container>
+        <ng-container matColumnDef="nombre">
+          <th mat-header-cell *matHeaderCellDef> Date d'expiration </th>
+          <td mat-cell *matCellDef="let element"> {{element.nombre}}</td>
+        </ng-container>
 
-   
-    <ng-container matColumnDef="montant">
-      <th mat-header-cell *matHeaderCellDef> <a style="margin-left: 10.5%;">Actions</a> </th>
-      <td mat-cell *matCellDef="let element">
 
-        
+        <ng-container matColumnDef="montant">
+          <th mat-header-cell *matHeaderCellDef> <a style="margin-left: 10.5%;">Actions</a> </th>
+          <td mat-cell *matCellDef="let element">
 
-        
-        
-      </td>
-    </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row class="table-item" *matRowDef="let row; columns: displayedColumns;"  routerLink="../detail-pret">
-    </tr>
-  </table>
 
-  <mat-paginator [length]="displayedColumns.length" [hidden]="true" [pageSize]="14" [pageSizeOptions]="[5,8, 10]"
-    showFirstLastButtons></mat-paginator>
-</div>
+
+
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row class="table-item" *matRowDef="let row; columns: displayedColumns;" routerLink="../message-envoye">
+        </tr>
+      </table>
+
+      <mat-paginator [length]="displayedColumns.length" [hidden]="true" [pageSize]="14" [pageSizeOptions]="[5,8, 10]"
+        showFirstLastButtons></mat-paginator>
+    </div>
 
   </mat-tab>
   <mat-tab label="Nouveau Message">
 
-    <div id='messagerie'> Messagerie</div>
+    <!-- <div id='messagerie'> Messagerie</div> -->
 
     <div id="messagerie1">
       <form class="example-form" id="form">
-        <mat-form-field class="example-full-width">
+        <!-- <mat-form-field class="example-full-width">
           <input matInput placeholder="E-BANKING  " disabled value="banque en ligne">
 
-        </mat-form-field>
+        </mat-form-field> -->
+        <mat-card class="header"></mat-card><br>
 
-        <table class="example-full-width" cellspacing="0">
-          <tr>
-            <td>
-              <mat-form-field class="example-full-width">
-                <input matInput placeholder="NOM et Prenom">
-              </mat-form-field>
-            </td>
-            <td>
+        <mat-card class="card">
+
+
+
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <td>
+                <mat-form-field class="example-full-width">
+                  <mat-select placeholder="Destinataire">
+                    <mat-option value="sacre_coeur">Agence sacrée coeur (Moustapha Lô)</mat-option>
+                  <mat-option value="rufisque">Agence Rufisque (Aminata Faye)</mat-option>
+
+                  </mat-select>
+                </mat-form-field>
+              </td>
+              <!-- <td>
               <mat-form-field class="example-full-width">
                 <input matInput placeholder="Numero du compte">
               </mat-form-field>
-            </td>
-          </tr>
-        </table>
+            </td> -->
+            </tr>
+          </table>
 
-        <table class="example-full-width" cellspacing="0">
-          <tr>
-            <td>
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <!-- <td>
               <mat-form-field class="example-full-width">
                 <mat-icon matSuffix>phone</mat-icon>
                 <input matInput placeholder="Telephone">
               </mat-form-field>
-            </td>
-            <td>
-              <mat-form-field class="example-full-width">
-                <mat-icon matSuffix>email</mat-icon>
-                <input matInput placeholder="Email">
-              </mat-form-field>
-            </td>
-          </tr>
-        </table>
+            </td> -->
+              <td>
+                <mat-form-field class="example-full-width">
+                  <mat-icon matSuffix>object</mat-icon>
+                  <input matInput placeholder="Objet">
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
 
-        <mat-form-field style="width:100%;">
+        <mat-form-field  class="example-full-width">
           <mat-icon matSuffix>edit</mat-icon>
           <textarea matInput placeholder="Message"></textarea>
         </mat-form-field>
+        <input type="file" name="fichier" ng2FileSelect [uploader]="uploader" />
+
+      </mat-card>
+      <mat-card class="footer"></mat-card>
 
 
 
-
-        <button style="margin-left:300px;" mat-raised-button color="primary" [routerLink]="[ '' ]">Envoyer
-        </button>
+        <button style="margin-left:30%;" mat-raised-button color="primary" [routerLink]="[ '' ]">Envoyer  </button>
+        <button  mat-raised-button color="warn" [routerLink]="[ '' ]">Effacer </button>
       </form>
 
     </div>

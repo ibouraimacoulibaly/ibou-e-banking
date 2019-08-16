@@ -18,13 +18,13 @@ export class MessagerieComponent implements OnInit {
 
   comptes: Compte[] = [
     {
-      dossier: 'moi',
+      dossier: 'BRM BANK',
       numero: 'Demande de carte',
       du:'12/10/2017',
       nombre: '27/11/2017',
     },
     {
-      dossier: 'moi',
+      dossier: 'Demande de Chèque',
       numero: 'Demande de chéquier',
       du:'25/06/2015',
       nombre: '25/08/2015',

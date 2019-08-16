@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nouveau-virement.component.css']
 })
 export class NouveauVirementComponent implements OnInit {
-
+  virement = 'permanent';
+  date = 'any';
   constructor() { }
 
   ngOnInit() {

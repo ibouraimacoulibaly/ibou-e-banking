@@ -9,11 +9,13 @@
 }
 #messagerie1{
     width: 80%;
-    border: 2px solid;
     margin-left: 10%;
     margin-top: 0.7%; 
 }
 
+.card{
+  margin-top:-2.5%;
+}
 .table-item:hover {
   cursor: pointer;
   background-color: rgb(218, 215, 243);
@@ -29,11 +31,23 @@ td{
   color: slategray;
   font-size: 12px;
 }
+.footer{
+  width: 100%;
+  margin-top: 0%;
+  margin-left: 0%;
+  background-color: rgb(121, 136, 206);
+  display: block;
+}
+.header{
+  
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 0%;
+  background-color: rgb(153, 158, 179);
+}
 button{
-  margin: 3px;
-  width: 20px;
-  height: 30px;
-
+ margin: 7%;
+margin-top: 2%;
 }
 
 
@@ -57,3 +71,27 @@ example-form {
       width: 80%;
       margin-top: 2%;
   }
+  
+  table {
+    width: 98%;
+    margin-left: 1%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 94%;
+  }
+  th{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+td{
+    color:grey;
+    font-size: 12px; 
+}
+textarea{
+  zoom:200%;
+}
+  
+ 

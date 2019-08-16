@@ -1,0 +1,50 @@
+table{
+    margin-top: 3%;
+}
+
+th{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+td{
+    color: slategray;
+}
+  
+
+.bouton_ajout{
+  margin-left: 80%;
+  width: 15%;
+  margin-top: 6%;
+  color: white;
+}
+.positionM{
+  border: 1px solid;
+width: 70%;
+margin-top: 2%;
+margin-left: 10%;
+}
+.footer{
+  width: 100%;
+  margin-top: 0%;
+  margin-left: 0%;
+  background-color: rgb(121, 136, 206);
+  display: block;
+}
+.header{
+  width: 70%;
+  margin-top: 3%;
+  margin-left: 10%;
+  background-color: rgb(153, 158, 179);
+}
+.retour{
+  margin-top: 1%;
+  margin-left: 73.5%;
+}
+mat-card{
+  width: 70%;
+  margin-top: -0.5%;
+  margin-left: 10%;
+  /* border: 1px solid;  */
+}

@@ -1,17 +1,49 @@
 #nouveau {
-    margin: 2%;
-    border: 1px solid;
-    width: 80%;
-    margin-left: 10%;
+    margin: 3%;
+    /* border: 1px solid; */
+    /* border-color: rgb(110, 110, 221); */
+    margin-left: 8%;
     border-radius: 8px;
+}
+button{
+    margin:3%;
+}
+.top{
+    width: 80%;
+    height: 20%;
+    background-color: blue;
+
+}
+mat-radio-button{
+zoom: 90%;
 }
 
 p {
     margin-left: 35%;
     margin-top: -17px;
-    font-size: 13px;
+    font-size: 12px;
     color: black;
 }
+.card{
+    margin-top: -0.75;
+    width: 80%;
+    margin-left: 10%;
+}
+.header{
+    width: 80%;  
+    margin-top: 1%;
+    margin-left: 10%;
+    background-color: rgb(153, 158, 179);
+    display: block;
+
+  }
+  .footer{
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    background-color: rgb(121, 136, 206);
+    display: block;
+  }
 
 strong {
     font-size: 14px;
