@@ -23,7 +23,7 @@
       </div>
       <div class="card-body row col-sm-12">
         <div class="col-sm-5 container-fluid">
-          <form class="form">
+          <form class="form"  (ngSubmit)="login($event)">
             <div class="form-group">
               <label for="username">Identifiant</label>
               <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" class="form-control">
@@ -35,8 +35,10 @@
             </div>
             <div class="row">
               <!-- <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid" >Se connecter</button> -->
-              <button style="margin-left:20px;" mat-raised-button color="primary" [routerLink]="[ '/dashboard' ]">Se
-                connecter</button>
+              <!-- <button style="margin-left:20px;" mat-raised-button color="primary" type="submit" onsubmit="login()" [routerLink]="[ '/dashboard' ]">Se
+                connecter</button> -->
+                <button style="margin-left:20px;" mat-raised-button color="primary" type="submit" >Se
+                  connecter</button>
                 <button style="margin-left:20px;" mat-raised-button color="warn" (click)="delete()" >
                 Effacer</button>  
               
