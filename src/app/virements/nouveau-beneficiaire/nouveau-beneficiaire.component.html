@@ -1,131 +1,191 @@
 <mat-card class="header"></mat-card>
 <mat-card class="card">
-<div style="margin-left: 50%; margin-top: 2%; ">
-    <mat-radio-group (click)="option()" [(ngModel)]="virement" name="virer" aria-label="Select an option">
-        <mat-radio-button value="permanent">Virement Permanent</mat-radio-button>&nbsp;
-        <mat-radio-button value="unique">Virement Unique</mat-radio-button>
-    </mat-radio-group>
-    <!-- <input type="radio"  [(ngModel)]="virement_permanent" name="virement" value="permanent"><strong>Virement Permanent</strong>
+    <div style="margin-left: 50%; margin-top: 2%; ">
+        <mat-radio-group (click)="option()" [(ngModel)]="virement" name="virer" aria-label="Select an option">
+            <mat-radio-button value="permanent">Virement Permanent</mat-radio-button>&nbsp;
+            <mat-radio-button value="unique">Virement Unique</mat-radio-button>
+        </mat-radio-group>
+        <!-- <input type="radio"  [(ngModel)]="virement_permanent" name="virement" value="permanent"><strong>Virement Permanent</strong>
     <input type="radio" [(ngModel)]="virement_unique" name="virement" value="unique" style="margin-left: 20px;"><strong>Virement Unique</strong> -->
-</div>
+    </div>
 
-<div id="nouveau">
-    <div id="nouveau1" style="font-family: monospace; font: 16px; margin-left: 3%;">
-        <h5 style="margin-left: 3%;"></h5>
-
-
-        <div style="margin-top:2%; margin-left: 2%;" id="imprimer">
-            <div>
-                <strong> Compte</strong>
-                <p>
-                    <select id="inp1" style="width: 400px; height: 30px;">
-                        <option value="volvo"> 2103 356106790566 FFHHFFH</option>
-                        <option value="saab"> 2103 356106790566 FFHHFFH</option>
-                        <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
-                        <option value="audi"> 2103 356106790566 FFHHFFH</option>
-                    </select>
-                </p>
-            </div>
-
-            <div>
-                <strong> Agence</strong>
-                <p>02900 SICAP FOIRE</p>
-            </div>
-
-            <div>
-                <strong> Titulaire du compte</strong>
-                <p>IBOURAIMA COULIBALY</p>
-            </div>
-            <div>
-                <strong> Solde</strong>
-                <p>0 XOF au 30/07/2019</p>
-            </div>
-
-            <div>
-                <strong> Bénéficiaire à créditer</strong>
-                <p>
-                    <select id="inp1" style="width: 400px; height: 30px;">
-                        <option value="volvo">IBOURAIMA COULIBALY 356106790566 FFHHFFH</option>
-                        <option value="saab">OUSSEYNOU NDIAYE 2103 356106790566 FFHHFFH</option>
-                        <option value="mercedes">PAPE FALL 2103 356106790566 FFHHFFH</option>
-                        <option value="audi">Omar Fall 2103 356106790566 FFHHFFH</option>
-                    </select>
-                </p>
-            </div>
+    <div id="nouveau">
+        <div id="nouveau1" style="font-family: monospace; font: 16px; margin-left: 3%;">
+            <h5 style="margin-left: 3%;"></h5>
 
 
-            <div [ngSwitch]="virement">
-                <div *ngSwitchCase="'permanent'">
-
-                    <strong>Date</strong>
+            <div style="margin-top:2%; margin-left: 2%;" id="imprimer">
+                <div>
+                    <strong> Compte</strong>
                     <p>
-                        <mat-radio-group (click)="optionDate()" [(ngModel)]="date" aria-label="Select an option">
-                            <mat-radio-button value="today">Aujourd'hui</mat-radio-button>&nbsp;<br>
-                            <mat-radio-button value="autre">Autre Date</mat-radio-button>
-                            &nbsp;
-                        </mat-radio-group>
-                        <input type="text" *ngIf="date=='autre'" name="" id="">
+                        <select id="inp1" style="width: 400px; height: 30px;">
+                            <option value="volvo"> 2103 356106790566 FFHHFFH</option>
+                            <option value="saab"> 2103 356106790566 FFHHFFH</option>
+                            <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
+                            <option value="audi"> 2103 356106790566 FFHHFFH</option>
+                        </select>
+                    </p>
+                </div>
+
+                <div>
+                    <strong> Agence</strong>
+                    <p>02900 SICAP FOIRE</p>
+                </div>
+
+                <div>
+                    <strong> Titulaire du compte</strong>
+                    <p>IBOURAIMA COULIBALY</p>
+                </div>
+                <div>
+                    <strong> Solde</strong>
+                    <p>0 XOF au 30/07/2019</p>
+                </div>
+
+                <div>
+                    <strong> Bénéficiaire à créditer</strong>
+                    <p>
+                        <select id="inp1" style="width: 400px; height: 30px;">
+                            <option value="volvo">IBOURAIMA COULIBALY 356106790566 FFHHFFH</option>
+                            <option value="saab">OUSSEYNOU NDIAYE 2103 356106790566 FFHHFFH</option>
+                            <option value="mercedes">PAPE FALL 2103 356106790566 FFHHFFH</option>
+                            <option value="audi">Omar Fall 2103 356106790566 FFHHFFH</option>
+                        </select>
+                    </p>
+                </div>
+
+
+                <div [ngSwitch]="virement">
+                    <div *ngSwitchCase="'permanent'">
+
+                        <strong>Date</strong>
+
+                        <p> <input type="radio" name="date" id="" [ngModel]="date" style="height: 10px; width: 10px; margin-right: 10px;">Aujourd'hui</p>
+                        <div>
+                            <p><input type="radio" name="date" id="" style="height: 10px; width: 10px; margin-right: 10px;">A une autre date <input type="text" name="" id=""></p>
+                        </div>
+
+
+                        <div [ngSwitch]="virement">
+                            <div *ngSwitchCase="'permanent'">
+
+                                <strong>Date</strong>
+                                <p>
+                                    <mat-radio-group (click)="optionDate()" [(ngModel)]="date" aria-label="Select an option">
+                                        <mat-radio-button value="today">Aujourd'hui</mat-radio-button>&nbsp;<br>
+                                        <mat-radio-button value="autre">Autre Date</mat-radio-button>
+                                        &nbsp;
+                                    </mat-radio-group>
+                                    <input type="text" *ngIf="date=='autre'" name="" id="">
+                                </p>
+
+                                <div>
+                                    <strong>Périodicité</strong>
+                                    <p>
+                                        <select name="" id="" style="width: 200px; height: 30px;">
+                                            <option value="">Hebdomadaire</option>
+                                            <option value="">Mensuelle</option>
+                                            <option value="">Annuel</option>
+
+                                        </select>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div *ngSwitchCase="'unique'">
+
+                            <p>
+                                <mat-radio-group (click)="optionDate()" [(ngModel)]="date" aria-label="Select an option">
+                                    <mat-radio-button value="today">Aujourd'hui</mat-radio-button>&nbsp;<br>
+                                    <mat-radio-button value="autre">Autre Date</mat-radio-button>
+                                    &nbsp;
+                                </mat-radio-group>
+                                <input type="text" *ngIf="date=='autre'" name="" id="">
+                            </p>
+
+
+                            <div>
+                                <strong>Périodicité</strong>
+                                <p>
+                                    <select name="" id="" style="width: 200px; height: 30px;">
+                                        <option value="">Hebdomadaire</option>
+                                        <option value="">Mensuelle</option>
+                                        <option value="">Annuel</option>
+
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div>
+                    <strong>Devise du transfert</strong>
+                    <p>
+                        <select name="" id="" style="width: 200px; height: 30px;">
+                                <option value="">XOF</option>
+                                <option value="">EURO</option>
+                                <option value="">DOLLAR US</option>
+                                <option value="">YEN JAPONAIS</option>
+
+                            </select>
+                    </p>
+                </div>
+                <div>
+                    <strong>Montant</strong>
+                    <p> <input type="number" name="" id="" placeholder="0.00" style="height: 30px; width:200px;">
                     </p>
 
                     <div>
-                        <strong>Périodicité</strong>
+                        <strong>Motif</strong>
+                        <p><input type="text" name="" id="" style="height: 30px; width:200px;"></p>
+                    </div>
+                    <div>
+                        <strong>Description(max 140)</strong>
                         <p>
-                            <select name="" id="" style="width: 200px; height: 30px;">
-                                <option value="">Hebdomadaire</option>
-                                <option value="">Mensuelle</option>
-                                <option value="">Annuel</option>
-
-                            </select>
+                            <textarea name="" id="" cols="50" rows="5"></textarea>
                         </p>
                     </div>
-                </div>
-                <div *ngSwitchCase="'unique'">
 
                 </div>
-    
-    
-            </div>
-           
-            <div>
-                <strong>Devise du transfert</strong>
-                <p>
-                    <select name="" id="" style="width: 200px; height: 30px;">
-                        <option value="">XOF</option>
-                        <option value="">EURO</option>
-                        <option value="">DOLLAR US</option>
-                        <option value="">YEN JAPONAIS</option>
 
-                    </select>
-                </p>
-            </div>
-            <div>
-                <strong>Montant</strong>
-                <p> <input type="number" name="" id="" placeholder="0.00" style="height: 30px; width:200px;"></p>
+                <div>
+                    <strong>Motif</strong>
+                    <p><input type="text" name="" id="" style="height: 30px; width:200px;"></p>
+                </div>
+                <div>
+                    <strong>Description(max 140)</strong>
+                    <p>
+                        <textarea name="" id="" cols="50" rows="5"></textarea>
+                    </p>
+
+                </div>
+
+
 
             </div>
-
-            <div>
-                <strong>Motif</strong>
-                <p><input type="text" name="" id="" style="height: 30px; width:200px;"></p>
+            <div class="row" style="margin-left: 50%; margin-top: -1%;">
+                <button mat-raised-button color="primary" [routerLink]="">Valider</button>
+                <button mat-raised-button color="warn" [routerLink]="['']">Retour</button>
             </div>
-            <div>
-                <strong>Description(max 140)</strong>
-                <p>
-                    <textarea name="" id="" cols="50" rows="5"></textarea>
-                </p>
-            </div>
-
-
-
-        </div>
-        <div class="row" style="margin-left: 50%; margin-top: -1%;">
-            <button mat-raised-button color="primary" [routerLink]="">Valider</button>
-            <button mat-raised-button color="warn" [routerLink]="['']">Retour</button>
         </div>
     </div>
-</div>
 
-<mat-card-footer>
-    <mat-card class="footer"></mat-card>
-</mat-card-footer>
+    <!-- <div class="row" style="margin-left: 40%; margin-top: 1%;">
+                <button mat-raised-button color="primary" [routerLink]="">Valider</button>
+                <button mat-raised-button color="default" [routerLink]="">Effacer</button>
+                <button style="margin-left: 50%;" mat-raised-button color="warn" [routerLink]="[ '/dashboard/beneficaire/']">Retour</button>
+
+            </div> -->
+
+    <mat-card-footer style="width: 129.5%;">
+        <mat-card class="footer"></mat-card>
+
+    </mat-card-footer>
+
+
+
 </mat-card>

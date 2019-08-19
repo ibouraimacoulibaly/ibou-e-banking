@@ -12,7 +12,7 @@ import { PretsEnCoursComponent } from './prets/prets-en-cours/prets-en-cours.com
 import { NouveauPretsComponent } from './prets/nouveau-prets/nouveau-prets.component';
 import { RegistreComponent } from './registre/registre.component';
 import { RegistreFormComponent } from './registre-form/registre-form.component';
-import { VirementMasseComponent } from './virement-masse/virement-masse.component';
+
 import { ReleveIdentificationComponent } from './releve-identification/releve-identification.component';
 import { ReleveImpressionComponent } from './releve-impression/releve-impression.component';
 import { NouveauCompteComponent } from './components/dashboard/compte/nouveau-compte/nouveau-compte.component';
@@ -125,11 +125,7 @@ const routes: Routes = [
             path: 'nouveau',
             component: NouveauPretsComponent
           },
-          {
-            path: 'masse',
-            component: VirementMasseComponent
-
-          },
+         
           {
             path: 'releve',
             component: ReleveIdentificationComponent

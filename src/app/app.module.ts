@@ -6,7 +6,9 @@ import {MatRadioModule} from '@angular/material/radio';
 
 
 import { AgmCoreModule } from '@agm/core';
-//import { FileSelectDirective } from 'ng2-file-upload';
+
+// import { FileSelectDirective } from 'ng2-file-upload';
+
 import {MatDialogModule} from "@angular/material";
 
 
@@ -30,7 +32,7 @@ import { PretsEnCoursComponent } from './prets/prets-en-cours/prets-en-cours.com
 import { NouveauPretsComponent } from './prets/nouveau-prets/nouveau-prets.component';
 import { RegistreComponent } from './registre/registre.component';
 import { RegistreFormComponent } from './registre-form/registre-form.component';
-import { VirementMasseComponent } from './virement-masse/virement-masse.component';
+
 import { ReleveIdentificationComponent } from './releve-identification/releve-identification.component';
 import { ReleveImpressionComponent } from './releve-impression/releve-impression.component';
 import { NouveauCompteComponent } from './components/dashboard/compte/nouveau-compte/nouveau-compte.component';
@@ -84,7 +86,7 @@ import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiair
     NouveauPretsComponent,
     RegistreComponent,
     RegistreFormComponent,
-    VirementMasseComponent,
+   
     ReleveIdentificationComponent,
     ReleveImpressionComponent,
     NouveauCompteComponent,
@@ -93,7 +95,9 @@ import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiair
     ReseauxGabComponent,
     MessagerieComponent,
     DeviseComponent,
-    //FileSelectDirective,
+
+    //  FileSelectDirective,
+
     PresentationComponent,
     AbonnementComponent,
     ReinitiationMotDePasseComponent,
@@ -132,7 +136,7 @@ import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiair
     MatButtonModule,
     NgxPrintModule,
     AgmCoreModule.forRoot({
-     //apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
+    apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
       libraries: ['places']
     }),
     MatDialogModule
