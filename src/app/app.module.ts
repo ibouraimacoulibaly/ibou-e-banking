@@ -20,7 +20,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialAppModule } from './material.modules';
 import { CompteHomeComponent } from './components/dashboard/compte/compte-home/compte-home.component';
@@ -131,8 +131,9 @@ import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiair
     MaterialAppModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     MatRadioModule,
-    
+
     MatButtonModule,
     NgxPrintModule,
     AgmCoreModule.forRoot({

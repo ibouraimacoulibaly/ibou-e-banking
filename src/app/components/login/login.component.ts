@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
     this.input_clavier = this.input_clavier + val;
   }
   delete(){
-    console.log('delete');
+    console.log('error');
   }
   login(event) {
     console.log(this.username);
