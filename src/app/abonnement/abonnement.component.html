@@ -1,25 +1,23 @@
 <div class="container" id="telecharger">
- <h5>Cher client, <br>
-    Pour vous abonner au service de la BANQUE RÉGIONALE DE MARCHÉS,
-     vous voudrez bien télécharger le contrat de souscription correspondant à votre situation.
-  </h5>
-  <div id="telecharger1">
-      <img id="img1" mat-card-image src="assets/img/Telecharger.png" alt=""> 
- 
-     <a [href]="fileUrl" download="contrat_Entreprises.pdf">
+    <h5>Cher client, <br> Pour vous abonner au service E-BANKING de la BANQUE RÉGIONALE DE MARCHÉS, vous voudrez bien télécharger le contrat de souscription correspondant à votre situation.
+    </h5>
+    <div id="telecharger1">
+        <img id="img1" mat-card-image src="assets/img/Telecharger.png" alt="">
+
+        <a [href]="fileUrl" download="contrat_Entreprises.pdf">
          Entreprises Associations & Professionnels
       </a>
-      </div>
-      <div class="container" id="telecharger2">
-          <img id="img1" mat-card-image src="assets/img/Telecharger.png" alt=""> 
- 
-     <a [href]="fileUrl" download="contrat_Particuliers.txt">
-        Particuliers
-</a> 
+    </div>
+    <div class="container" id="telecharger2">
+        <img id="img1" mat-card-image src="assets/img/Telecharger.png" alt="">
 
-      </div>
-      
+        <a [href]="fileUrl" download="contrat_Particuliers.pdf">
+        Particuliers
+</a>
+
+    </div>
+
 </div>
- <div class="row" id="btr">
-      <button mat-raised-button color="warn" [routerLink]="[ '../']">retourner</button>
- </div>
+<div class="row" id="btr">
+    <button mat-raised-button color="warn" [routerLink]="[ '../']">retourner</button>
+</div>

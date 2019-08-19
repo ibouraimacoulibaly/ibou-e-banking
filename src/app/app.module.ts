@@ -5,7 +5,6 @@ import {NgxPrintModule} from 'ngx-print';
 import {MatRadioModule} from '@angular/material/radio';
 
 
-import { InternationalPhoneNumberModule } from 'ngx-international-phone-number';
 import { AgmCoreModule } from '@agm/core';
 
 // import { FileSelectDirective } from 'ng2-file-upload';
@@ -133,7 +132,7 @@ import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiair
     AppRoutingModule,
     FormsModule,
     MatRadioModule,
-    InternationalPhoneNumberModule,
+    
     MatButtonModule,
     NgxPrintModule,
     AgmCoreModule.forRoot({
