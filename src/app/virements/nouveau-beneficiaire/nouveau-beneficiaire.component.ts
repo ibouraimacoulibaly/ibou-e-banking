@@ -17,5 +17,6 @@ export class NouveauBeneficiaireComponent implements OnInit {
   optionDate() {
     console.log('entrée');
   }
+  option(){}
 
 }

@@ -1,117 +1,104 @@
 <div class="container-fluid col-sm-12" style="margin: auto;">
-    <div class="row">
+  <div class="row">
 
-    </div>
-    <div class="container-fluid col-sm-6  rounded mat-elevation-z8" style="margin: auto; margin-top: 10%; padding: 1%; background-color: #51C3CD;">
+  </div>
+  <div class="container-fluid col-sm-6  rounded mat-elevation-z8" style="margin: auto; margin-top: 10%; padding: 1%; background-color: #51C3CD;">
 
-        <div class="card card-stats mat-elevation-z2 brm-color w3-text-white">
-            <div class="card-header card-header-success card-header-icon">
-                <table class="container-fluid">
-                    <tbody class="container-fluid">
-                        <tr>
-                            <td><img mat-card-icon src="../../../assets/img/brm_logo.png" height="46" width="92" alt=""></td>
-                            <td class="container-fluid">
-                                <h5 class="float-center container-fluid">Authentification</h5>
-                            </td>
-                            <td class="float-center container-fluid"><a routerLink="/presentation/">Presentation</a> </td>
-                            <td class="container-fluid"> <a routerLink="/abonnement/"> Abonnement</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-
+    <div class="card card-stats mat-elevation-z2 brm-color w3-text-white" >
+      <div class="card-header card-header-success card-header-icon">
+        <table class="container-fluid">
+          <tbody class="container-fluid">
+            <tr>
+              <td><img mat-card-icon src="../../../assets/img/brm_logo.png" height="46" width="92" alt=""></td>
+              <td class="container-fluid">
+                <h5 class="float-center container-fluid">Authentification</h5>
+              </td>
+              <td class="float-center container-fluid"><a routerLink="/presentation/">Presentation</a> </td>
+              <td class="container-fluid"> <a routerLink="/abonnement/"> Abonnement</a></td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+      <div class="card-body row col-sm-12">
+        <div class="col-sm-5 container-fluid">
+            <form class="form" (ngSubmit)="login($event)">
+                <div class="form-group">
+                  <label for="username">Identifiant</label>
+                  <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" class="form-control"  >
+                </div>
+                <div class="form-group">
+                  <label for="password">Mot de passe</label>
+                  <input  type="password" [(ngModel)]="input_clavier" [ngModelOptions]="{standalone: true}" class="form-control" >
+                </div>
+                <div class="w3-center">
+                  <!-- <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid" >Se connecter</button> -->
+                  <button mat-raised-button color="primary"  type="submit">Se connecter</button>
+                   <button style="margin-left:20px;" mat-raised-button color="warn" (click)="delete()">
+                      Effacer</button>
+                </div>
+              </form>
+        </div>
+        <div class="col-sm-7 container-fluid clavier w3-center">
+            <div class="myrow">
+              <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i])" >{{b[i]}}</button>
             </div>
-            <div class="card-body row col-sm-12">
-                <div class="col-sm-5 container-fluid">
-                    <form class="form">
-                        <div class="form-group">
-                            <label for="username">Identifiant</label>
-                            <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Mot de passe</label>
-                            <input type="password" disabled [(ngModel)]="input_clavier" [ngModelOptions]="{standalone: true}" class="form-control">
-                        </div>
-                        <div class="row">
-                            <!-- <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid" >Se connecter</button> -->
-                            <button style="margin-left:20px;" mat-raised-button color="primary" [routerLink]="[ '/dashboard' ]">Se
-                connecter</button>
-                            <button style="margin-left:20px;" mat-raised-button color="warn" (click)="delete()">
-                Effacer</button>
-
-                            <!-- <button mat-raised-button color="Secondary" [routerLink]="[ '/registre/' ]">S'inscrire</button> -->
-                        </div>
-                    </form>
-                </div>
-                <div class="col-sm-7 container-fluid clavier w3-center">
-                    <div class="myrow">
-                        <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i])">{{b[i]}}</button>
-                    </div>
-                    <div class="myrow">
-                        <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 6])">{{b[i + 6]}}</button>
-                    </div>
-                    <div class="myrow">
-                        <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 12])">{{b[i + 12]}}</button>
-                    </div>
-                    <div class="myrow">
-                        <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 18])">{{b[i + 18]}}</button>
-                    </div>
-                    <div class="myrow">
-                        <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 24])">{{b[i + 24]}}</button>
-                    </div>
-                </div>
+            <div class="myrow">
+              <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 6])" >{{b[i + 6]}}</button>
             </div>
-
-            <div class="card-footer">
-
-
-                <div class="container-fluid" style="margin-left:5%;">
-                    <!-- <a [routerLink]="['/registre/']" style="color:rgb(59, 159, 199); margin-left: 10%;"> S'inscrire d'abord </a> -->
-
-                    <a [routerLink]="['reinitialiser-mot-de-passe']" style="color:rgb(59, 159, 199);">Mot de passe oublie?</a>
-                </div>
-
+            <div class="myrow">
+              <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 12])" >{{b[i + 12]}}</button>
+            </div>
+            <div class="myrow">
+              <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 18])" >{{b[i + 18]}}</button>
+            </div>
+            <div class="myrow">
+              <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 24])" >{{b[i + 24]}}</button>
+            </div>
+          </div>
+      </div>
+      
+      <div class="card-footer">
+        <div class="stats container-fluid w3-center" >
+            <div class="container-fluid" >
+              <a [routerLink]="['reinitialiser-mot-de-passe']" style="color:rgb(59, 159, 199);">Mot de passe oublie?</a>
             </div>
         </div>
-
+      </div>
     </div>
-</div>
-<div class="container" id="footer">
-    <a id="a">Mise en garde</a>
-    <a id="a">Mentions légales</a>
-    <a id="a">FAQ </a>
-    <a id="a"> Informations Sécurité</a>
 
+  </div>
 </div>
 <!-- <div class="container-fluid">
-  <div class="row col-sm-4 w3-card" style="margin:auto; margin-top:15%;">
-    <div class="container-fluid w3-center">
-      <div class="w3-container">
-        Accéder à mes comptes
-      </div>
-      <div class="margin">
-        <input type="number" class="input" placeholder="Entrez votre identifiant">
-        <button type="button" style="height:30px;" class="btn btn-success fa fa-ok"></button>
-      </div>
+<div class="row col-sm-4 w3-card" style="margin:auto; margin-top:15%;">
+  <div class="container-fluid w3-center">
+    <div class="w3-container">
+      Accéder à mes comptes
     </div>
-    <div class="col-12 container-fluid  w3-center">
-      <input type="password" class="clavier_input" [(ngModel)]="input_clavier">
-    </div>
-    <div class="col-12 container-fluid clavier w3-center">
-      <div class="myrow">
-        <button type="button" (click)="setInputClavier(b[i])" *ngFor="let i of rows">{{b[i]}}</button>
-      </div>
-      <div class="myrow">
-        <button type="button" (click)="setInputClavier(b[i + 6])"  *ngFor="let i of rows">{{b[i + 6]}}</button>
-      </div>
-      <div class="myrow">
-        <button type="button" (click)="setInputClavier(b[i + 12])" *ngFor="let i of rows">{{b[i + 12]}}</button>
-      </div>
-      <div class="myrow">
-        <button type="button" (click)="setInputClavier(b[i + 18])" *ngFor="let i of rows">{{b[i + 18]}}</button>
-      </div>
-      <div class="myrow">
-        <button type="button" (click)="setInputClavier(b[i + 24])" *ngFor="let i of rows">{{b[i + 24]}}</button>
-      </div>
+    <div class="margin">
+      <input type="number" class="input" placeholder="Entrez votre identifiant">
+      <button type="button" style="height:30px;" class="btn btn-success fa fa-ok"></button>
     </div>
   </div>
+  <div class="col-12 container-fluid  w3-center">
+    <input type="password" class="clavier_input" [(ngModel)]="input_clavier">
+  </div>
+  <div class="col-12 container-fluid clavier w3-center">
+    <div class="myrow">
+      <button type="button" (click)="setInputClavier(b[i])" *ngFor="let i of rows">{{b[i]}}</button>
+    </div>
+    <div class="myrow">
+      <button type="button" (click)="setInputClavier(b[i + 6])"  *ngFor="let i of rows">{{b[i + 6]}}</button>
+    </div>
+    <div class="myrow">
+      <button type="button" (click)="setInputClavier(b[i + 12])" *ngFor="let i of rows">{{b[i + 12]}}</button>
+    </div>
+    <div class="myrow">
+      <button type="button" (click)="setInputClavier(b[i + 18])" *ngFor="let i of rows">{{b[i + 18]}}</button>
+    </div>
+    <div class="myrow">
+      <button type="button" (click)="setInputClavier(b[i + 24])" *ngFor="let i of rows">{{b[i + 24]}}</button>
+    </div>
+  </div>
+</div>
 </div> -->

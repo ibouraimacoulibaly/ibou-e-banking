@@ -25,13 +25,13 @@ p {
     color: black;
 }
 .card{
-    margin-top: -0.75;
+    margin-top: -1%;
     width: 80%;
     margin-left: 10%;
 }
 .header{
     width: 80%;  
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: 10%;
     background-color: rgb(153, 158, 179);
     display: block;

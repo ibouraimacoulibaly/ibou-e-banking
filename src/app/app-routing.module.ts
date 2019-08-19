@@ -43,6 +43,7 @@ import { MessageContenuComponent } from './message-contenu/message-contenu.compo
 import { ReseauxDetailsComponent } from './reseaux-details/reseaux-details.component';
 import { BeneficiaireComponent } from './beneficiaire/beneficiaire.component';
 import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiaire-nouveau.component';
+import { MessageEnvoyeContenuComponent } from './message-envoye-contenu/message-envoye-contenu.component';
 
 
 
@@ -156,6 +157,10 @@ const routes: Routes = [
           {
             path: 'contenu-message',
             component: MessageContenuComponent
+          },
+          {
+            path: 'message-envoye',
+            component: MessageEnvoyeContenuComponent
           },
           {
             path: 'devise',

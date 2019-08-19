@@ -11,7 +11,7 @@ export class NouveauPretsComponent implements OnInit {
 
   constructor() {
   }
-
+  openDialog(){}
   
 
   ngOnInit() {

@@ -7,7 +7,9 @@ import {MatRadioModule} from '@angular/material/radio';
 
 import { InternationalPhoneNumberModule } from 'ngx-international-phone-number';
 import { AgmCoreModule } from '@agm/core';
+
 // import { FileSelectDirective } from 'ng2-file-upload';
+
 import {MatDialogModule} from "@angular/material";
 
 
@@ -94,7 +96,9 @@ import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiair
     ReseauxGabComponent,
     MessagerieComponent,
     DeviseComponent,
+
     //  FileSelectDirective,
+
     PresentationComponent,
     AbonnementComponent,
     ReinitiationMotDePasseComponent,
