@@ -97,6 +97,9 @@ export class ReseauxGabComponent implements OnInit {
    */
   
 }
+markerDragEnd(event){
+
+}
 
 }
 

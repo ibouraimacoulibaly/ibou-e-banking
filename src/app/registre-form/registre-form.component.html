@@ -1,4 +1,4 @@
-<div id="registre-form">
+<!-- <div id="registre-form">
   <mat-card style="width:100%; background-color: whitesmoke">
 
     <mat-card-content style="margin-left:15%; border:2px solid; width: 80%;">
@@ -95,11 +95,9 @@
                         </div>
                 </span>
               
-                <!-- if required -->
                 <input onlyNumber="true" class="form-control" [attr.maxlength]="maxlength" [(ngModel)]="phoneNumber" (ngModelChange)="updatePhoneNumber($event)" 
                 [placeholder]="placeholder" [type]="type" *ngIf="required" required #phoneNumberInput>
                 
-                <!-- if not required -->
                 <input onlyNumber="true" class="form-control" [attr.maxlength]="maxlength" [(ngModel)]="phoneNumber" (ngModelChange)="updatePhoneNumber($event)" 
                 [placeholder]="placeholder" [type]="type" *ngIf="!required" #phoneNumberInput>
               </div> <br>
@@ -116,4 +114,4 @@
 
     </mat-card-content>
   </mat-card>
-</div>
+</div> -->

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./code-sms.component.css']
 })
 export class CodeSmsComponent implements OnInit {
-
+  identifiant:any;
   constructor() { }
 
   ngOnInit() {

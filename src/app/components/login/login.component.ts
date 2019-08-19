@@ -44,6 +44,9 @@ export class LoginComponent implements OnInit {
   setInputClavier(val) {
     this.input_clavier = this.input_clavier + val;
   }
+  delete(){
+    console.log('delete');
+  }
   login(event) {
     console.log(this.username);
     console.log(this.password);
@@ -52,7 +55,7 @@ export class LoginComponent implements OnInit {
 
     }
     else {
-      window.alert('Authentificationpas correcte');
+      window.alert('Authentification incorrecte');
 
 
     }

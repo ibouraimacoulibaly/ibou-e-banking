@@ -21,7 +21,7 @@ export class VersBeneficaireComponent implements OnInit {
       numero: '12',
       date: '26/07/2019',
       compte: '5436-0984869994786',
-      motif: 'transfert en reconnaissance',
+      motif: 'Transfert',
       montant: '122 546',
       dates: '26/08/2019'
       
@@ -32,9 +32,9 @@ export class VersBeneficaireComponent implements OnInit {
       numero: '34',
       date: '20/03/2019',
       compte: '4321-1234869994493',
-      motif: 'demande',
+      motif: 'Demande',
       montant: '500 464',
-      dates: '06/02/2019'
+      dates: '06/12/2019'
     }
    
   ];

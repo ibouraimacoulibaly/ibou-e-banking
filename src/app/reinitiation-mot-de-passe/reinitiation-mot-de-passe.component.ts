@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reinitiation-mot-de-passe.component.css']
 })
 export class ReinitiationMotDePasseComponent implements OnInit {
-
+identifiant:any;
   constructor() { }
 
   ngOnInit() {

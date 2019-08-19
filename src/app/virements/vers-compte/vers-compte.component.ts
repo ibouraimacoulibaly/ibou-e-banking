@@ -21,9 +21,9 @@ export class VersCompteComponent implements OnInit {
       date: '26/07/2019',
       compte: '00981234768576543',
       credit: '34768576543210056',
-      motif: 'transfert en reconnaissance',
+      motif: 'Transfert',
       montant: '540 64O',
-      dates: '21/05/2019'
+      dates: '21/09/2019'
       
       
     },
@@ -32,7 +32,7 @@ export class VersCompteComponent implements OnInit {
       date: '23/04/2019',
       compte: '43211234869994493',
       credit: '48643219994493123',
-      motif: 'demande',
+      motif: 'Demande',
       montant: '122 464',
       dates: '26/06/2019'
     }

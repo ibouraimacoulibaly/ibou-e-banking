@@ -50,58 +50,79 @@
 
     <mat-tab label="Liste">
         <div class="container" id="tableau">
-            <table>
+
+            <div style="margin-left: 40%; font-size: 16px; margin-bottom: 2%;">Nos Agences</div>
+            <table class="table">
                 <thead>
-                    <tr>
-                        <th>Agence</th>
-                        <th>Gab</th>
-                    </tr>
+                    <th>Symbole</th>
+                    <th>Agences</th>
+                    <th>Adresse</th>
+
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Agence : </strong>
-                            <p>sicap foire</p>
-                            <strong>Adresse : </strong>
-                            <p>Sicap foire lot 139</p>
-                            <strong>Téléphone : </strong>
-                            <p>+221 33 867 25 16</p>
-                            <strong>Horaire : </strong>
-                            <p>7/7 08:00 - 17:00</p>
-                        </td>
-                        <td>
-                            <strong>Gab : </strong>
-                            <p>ucad</p>
-                            <strong>Siége sociale : </strong>
-                            <p>Point E lot 139</p>
+                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                        <td>Sicap foire </td>
+                        <td>Sicap foire lot 139</td>
 
-
-                        </td>
                     </tr>
-
                     <tr>
-                        <td><strong>Agence : </strong>
-                            <p>Pikine</p>
-                            <strong>Adresse : </strong>
-                            <p>Pikine Est lot 139</p>
-                            <strong>Téléphone : </strong>
-                            <p>+221 33 867 25 16</p>
-                            <strong>Horaire : </strong>
-                            <p>7/7 08:00 - 17:00</p>
-                        </td>
-                        <td>
-                            <strong>Gab : </strong>
-                            <p>Pike Est</p>
-                            <strong>Adresse : </strong>
-                            <p>Pikine Est lot 139</p>
+                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                        <td>Point E</td>
+                        <td>A coté de l'université (UCAD)</td>
 
-
-                        </td>
                     </tr>
+                    <tr>
+                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                        <td>Pikine</td>
+                        <td>Pikine Est face cinéma awa</td>
 
+                    </tr>
 
                 </tbody>
 
             </table>
+
+
+
+            <div>
+
+                <div style="margin-left: 40%; font-size: 16px; margin-bottom: 2%; margin-top: 4%;">Nos GABs</div>
+                <table class="table">
+                    <thead>
+                        <th>Symbole</th>
+                        <th>Gabs</th>
+                        <th>Adresse</th>
+
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <a routerLink="/dashboard/reseaux-details/">
+                                <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                            </a>
+                            <td>Sicap foire </td>
+                            <td>Sicap foire lot 139</td>
+
+                        </tr>
+
+                        <tr>
+                            <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                            <td>Point E</td>
+                            <td>A coté de l'université (UCAD)</td>
+
+                        </tr>
+                        <tr>
+                            <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                            <td>Pikine</td>
+                            <td>Pikine Est face cinéma awa</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
         </div>
 
     </mat-tab>

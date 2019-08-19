@@ -14,7 +14,7 @@
 }
 
 .card{
-  margin-top:-2.5%;
+  margin-top:-3.5%;
 }
 .table-item:hover {
   cursor: pointer;
@@ -41,7 +41,7 @@ td{
 .header{
   
   width: 100%;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 0%;
   background-color: rgb(153, 158, 179);
 }

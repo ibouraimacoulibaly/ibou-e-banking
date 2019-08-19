@@ -77,12 +77,12 @@
         </mat-accordion>
 
         <mat-list>
-            <a routerLink="/dashboard/masse/">
+            <!-- <a routerLink="/dashboard/masse/">
                 <mat-list-item>
                     <span class="fa fa-hand-holding-usd  " style="color: rgb(46, 13, 163);"></span>
                     <h4 mat-line>Virements de masse</h4>
                 </mat-list-item>
-            </a>
+            </a> -->
             <mat-divider></mat-divider>
             <a routerLink="/dashboard/depot-terme/">
                 <mat-list-item>
@@ -91,10 +91,12 @@
                 </mat-list-item>
             </a>
             <mat-divider></mat-divider>
-            <mat-list-item>
-                <span class="fa fa-users  " style="color:rgb(46, 13, 163);"></span>
-                <h4 mat-line>Bénéficiaires</h4>
-            </mat-list-item>
+            <a routerLink="/dashboard/liste-beneficiaire/">
+                <mat-list-item>
+                    <span class="fa fa-users  " style="color:rgb(46, 13, 163);"></span>
+                    <h4 mat-line>Bénéficiaires</h4>
+                </mat-list-item>
+            </a>
             <a routerLink="/dashboard/remise-cheque/">
                 <mat-list-item>
                     <span class="fa fa-book " style="color: rgb(46, 13, 163);"></span>

@@ -12,5 +12,8 @@ export class NouveauVirementComponent implements OnInit {
 
   ngOnInit() {
   }
+  option(){
+    
+  }
 
 }

@@ -1,16 +1,21 @@
 <mat-card class="header"></mat-card>
 <mat-card class="card">
+    <div style="margin-left: 50%; margin-top: 2%; margin-bottom: -2%;">
+        <!-- <input type="radio" name="virement" id=""><strong>Virement Permanent</strong>
+    <input type="radio" name="virement" id="" style="margin-left: 20px;"><strong>Virement Unique</strong> -->
+        <mat-radio-group (click)="option()" [(ngModel)]="virement" name="virer" aria-label="Select an option">
+            <mat-radio-button value="permanent">Virement Permanent</mat-radio-button>&nbsp;
+            <mat-radio-button value="unique">Virement Unique</mat-radio-button>
+        </mat-radio-group>
+    </div>
+
     <div id="nouveau">
-        <div style="margin-left: 50%; margin-top: -1%; ">
-            <mat-radio-group [(ngModel)]="virement" name="virer" aria-label="Select an option">
-                <mat-radio-button value="permanent" checked>Virement Permanent</mat-radio-button>&nbsp;
-                <mat-radio-button value="unique">Virement Unique</mat-radio-button>
-            </mat-radio-group>
-            <!-- <input type="radio"  [(ngModel)]="virement_permanent" name="virement" value="permanent"><strong>Virement Permanent</strong>
-                    <input type="radio" [(ngModel)]="virement_unique" name="virement" value="unique" style="margin-left: 20px;"><strong>Virement Unique</strong> -->
-        </div>
-        <div  style=" margin-left: 3%;">
+        <div id="nouveau1" style="font-family: monospace; font: 16px; margin-left: 3%;">
             <h5 style="margin-left: 3%;"></h5>
+
+
+
+
 
 
             <div style="margin-top:2%; margin-left: 2%;" id="imprimer">
@@ -18,10 +23,10 @@
                     <strong> Compte à débiter</strong>
                     <p>
                         <select id="inp1" style="width: 400px; height: 30px;">
-                            <option value="volvo">CPTL CLIP 2103 356106790566 FFHHFFH</option>
-                            <option value="saab">DHTL CLIP 2103 356106790566 FFHHFFH</option>
-                            <option value="mercedes">EQGL CLIP 2103 356106790566 FFHHFFH</option>
-                            <option value="audi">ADRF CLIP 2103 356106790566 FFHHFFH</option>
+                            <option value="volvo"> 2103 356106790566 FFHHFFH</option>
+                            <option value="saab"> 2103 356106790566 FFHHFFH</option>
+                            <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
+                            <option value="audi"> 2103 356106790566 FFHHFFH</option>
                         </select>
                     </p>
                 </div>
@@ -120,13 +125,14 @@
 
 
 
-        </div>
-        <div class="row" style="margin-left: 50%; margin-top: -1%;">
-            <button mat-raised-button color="primary" [routerLink]="">Valider</button>
-            <button mat-raised-button color="warn" [routerLink]="['']">Retour</button>
+            <div class="row" style="margin-left: 50%; margin-top: -1%;">
+                <button mat-raised-button color="primary" [routerLink]="">Valider</button>
+                <button mat-raised-button color="warn" [routerLink]="['']">Retour</button>
+            </div>
         </div>
     </div>
-    <mat-card-footer>
+    <mat-card-footer >
         <mat-card class="footer"></mat-card>
+
     </mat-card-footer>
 </mat-card>
