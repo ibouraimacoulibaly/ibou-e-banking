@@ -2,30 +2,6 @@
 
     <mat-tab label="Map">
 
-        <mat-tab label="Map">
-
-
-            <div class="container">
-
-                <h6>recherche nos reseaux e-banking sur maps</h6>
-
-                <div class="form-group">
-                    <label>Enter address</label>
-                    <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
-                </div>
-
-                <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
-                    <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true" (dragEnd)="markerDragEnd($event)"></agm-marker>
-                </agm-map>
-
-                <h5>Address: {{address}}</h5>
-                <div>Latitude: {{latitude}}</div>
-                <div>Longitude: {{longitude}}</div>
-            </div>
-        </mat-tab>
-
-
-
 
 
         <div class="container">
@@ -34,16 +10,22 @@
 
             <div class="form-group">
                 <label>Enter address</label>
-                <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+                <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()"
+                    placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off"
+                    type="text" #search>
             </div>
 
-            <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
-                <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true" (dragEnd)="markerDragEnd($event)"></agm-marker>
+            <!-- <h1>{{ title }}</h1> -->
+
+            <!-- <agm-map [zoom]="14" [latitude]="late" [longitude]="lnge" (mapClick)="onChooseLocation($event)" > -->
+
+            <agm-map [zoom]="14" [latitude]="late" [longitude]="lnge"  >
+                <agm-marker [latitude]="late" [longitude]="lnge" ></agm-marker>
+
             </agm-map>
 
-            <h5>Address: {{address}}</h5>
-            <div>Latitude: {{latitude}}</div>
-            <div>Longitude: {{longitude}}</div>
+            <div>Latitude: {{late}}</div>
+            <div>Longitude: {{lnge}}</div>
         </div>
     </mat-tab>
 
@@ -61,19 +43,22 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;">
+                        </td>
                         <td>Sicap foire </td>
                         <td>Sicap foire lot 139</td>
 
                     </tr>
                     <tr>
-                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;">
+                        </td>
                         <td>Point E</td>
                         <td>A coté de l'université (UCAD)</td>
 
                     </tr>
                     <tr>
-                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;">
+                        </td>
                         <td>Pikine</td>
                         <td>Pikine Est face cinéma awa</td>
 
@@ -99,7 +84,8 @@
 
                         <tr>
                             <a routerLink="/dashboard/reseaux-details/">
-                                <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                                <td><img src="/assets/img/gabs.jpg"
+                                        style="width: 30px; margin-left: 10px;  height: 20px;"></td>
                             </a>
                             <td>Sicap foire </td>
                             <td>Sicap foire lot 139</td>
@@ -107,13 +93,15 @@
                         </tr>
 
                         <tr>
-                            <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                            <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;">
+                            </td>
                             <td>Point E</td>
                             <td>A coté de l'université (UCAD)</td>
 
                         </tr>
                         <tr>
-                            <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
+                            <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;">
+                            </td>
                             <td>Pikine</td>
                             <td>Pikine Est face cinéma awa</td>
 

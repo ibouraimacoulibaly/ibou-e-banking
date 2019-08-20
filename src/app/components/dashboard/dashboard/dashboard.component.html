@@ -9,22 +9,22 @@
 
         <span class="example-spacer" style="flex:auto;"></span>
         <a style="color:white; font-size: 12px;">
-      Bienvenue Ibouraima Coulibaly </a>
+            Bienvenue Ibouraima Coulibaly </a>
         <a style="color:white; font-size: 12px; margin-left: 2%;"> Dernière connexion 31/07/2019</a>
 
         <button mat-icon-button style="color:white;" [matMenuTriggerFor]="menu">
-      <mat-icon>account_circle</mat-icon>
-    </button>
+            <mat-icon>account_circle</mat-icon>
+        </button>
         <mat-menu #menu="matMenu">
 
             <button mat-menu-item>
-        <mat-icon>edit</mat-icon>
-        <span>Changer mot de passe</span>
-      </button>
+                <mat-icon>edit</mat-icon>
+                <span>Changer mot de passe</span>
+            </button>
             <button mat-menu-item [routerLink]="[ '' ]">
-        <mat-icon>close</mat-icon>
-        <span>Déconnexion</span>
-      </button>
+                <mat-icon>close</mat-icon>
+                <span>Déconnexion</span>
+            </button>
 
         </mat-menu>
     </mat-toolbar-row>
@@ -140,7 +140,7 @@
         <mat-list>
             <a routerLink="/dashboard/devise/">
                 <mat-list-item>
-                    <span class="fa fa-balance-scale" aria-hidden="true"  style="color: rgb(46, 13, 163);"></span>
+                    <span class="fa fa-balance-scale" aria-hidden="true" style="color: rgb(46, 13, 163);"></span>
                     <h4 mat-line>Cours des devises</h4>
                 </mat-list-item>
             </a>
@@ -168,5 +168,9 @@
 
     <mat-sidenav-content>
         <router-outlet></router-outlet>
+
+       <div class="footer"></div>
+        
+
     </mat-sidenav-content>
 </mat-sidenav-container>
