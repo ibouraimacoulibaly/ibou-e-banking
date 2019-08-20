@@ -133,6 +133,7 @@ import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiair
     FormsModule,
     ReactiveFormsModule,
     MatRadioModule,
+
     MatButtonModule,
     NgxPrintModule,
     AgmCoreModule.forRoot({
