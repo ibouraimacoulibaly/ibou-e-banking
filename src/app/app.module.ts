@@ -146,7 +146,9 @@ import { InfoSecuriteComponent } from './components/footer/info-securite/info-se
     NgxPrintModule,
     AgmCoreModule.forRoot({
     // apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
-    apiKey: 'AIzaSyAh6sPBwLCAj-pprUs_W7E3KrX-ARZLKlo',
+    //apiKey: 'AIzaSyAh6sPBwLCAj-pprUs_W7E3KrX-ARZLKlo',
+    apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
+
 
       libraries: ['places']
     }),

@@ -1,12 +1,12 @@
 .tete{
     width: 30%;
-    height: 5%;
-    border: 2px solid;
+    height: 7%;
+    border: 1px solid;
     border-color: blue;
     display: block;
     margin:auto;
     text-align: center;
-    margin-top: 5%;
-    font-size: 180%;
+    margin-top: 4%;
+    /* font-size: 180%; */
 
 }
