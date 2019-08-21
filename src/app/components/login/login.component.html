@@ -1,78 +1,79 @@
 <div class="container-fluid col-sm-12" style="margin: auto;">
-  <div class="row">
+    <div class="row">
 
-  </div>
-  <div class="container-fluid col-sm-6  rounded mat-elevation-z8" style="margin: auto; margin-top: 10%; padding: 1%; background-color: #51C3CD;">
-
-    <div class="card card-stats mat-elevation-z2 brm-color w3-text-white" >
-      <div class="card-header card-header-success card-header-icon">
-        <table class="container-fluid">
-          <tbody class="container-fluid">
-            <tr>
-              <td><img mat-card-icon src="../../../assets/img/brm_logo.png" height="46" width="92" alt=""></td>
-              <td class="container-fluid">
-                <h5 class="float-center container-fluid">Authentification</h5>
-              </td>
-              <td class="float-center container-fluid"><a routerLink="/presentation/">Presentation</a> </td>
-              <td class="container-fluid"> <a routerLink="/abonnement/"> Abonnement</a></td>
-            </tr>
-          </tbody>
-        </table>
-        
-      </div>
-      <div class="card-body row col-sm-12">
-        <div class="col-sm-5 container-fluid">
-            <form class="form" (ngSubmit)="login($event)">
-                <div class="form-group">
-                  <label for="username">Identifiant</label>
-                  <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" class="form-control"  >
-                </div>
-                <div class="form-group">
-                  <label for="password">Mot de passe</label>
-                  <input  type="password" [(ngModel)]="input_clavier" [ngModelOptions]="{standalone: true}" class="form-control" disabled>
-                </div>
-                <div class="w3-center">
-                  <!-- <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid" >Se connecter</button> -->
-                  <button mat-raised-button color="primary"  type="submit">Se connecter</button>
-                   <button type="reset" style="margin-left:20px;" mat-raised-button color="warn" (click)="delete()">
-                      Effacer</button>
-                </div>
-              </form>
-        </div>
-        <div class="col-sm-7 container-fluid clavier w3-center">
-            <div class="myrow">
-              <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i])" >{{b[i]}}</button>
-            </div>
-            <div class="myrow">
-              <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 6])" >{{b[i + 6]}}</button>
-            </div>
-            <div class="myrow">
-              <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 12])" >{{b[i + 12]}}</button>
-            </div>
-            <div class="myrow">
-              <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 18])" >{{b[i + 18]}}</button>
-            </div>
-            <div class="myrow">
-              <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 24])" >{{b[i + 24]}}</button>
-            </div>
-          </div>
-      </div>
-      
-      <div class="card-footer">
-        <div class="stats container-fluid w3-center" >
-            <div class="container-fluid" >
-            
-              <a [routerLink]="['reinitialiser-mot-de-passe']" style="color:rgb(59, 159, 199);">Mot de passe oublie?<br></a>
-              
-            </div>
-        </div>
-        <div class="footer">
-            <p style="text-align: center;color: blanchedalmond;"><a routerLink="mise-en-garde">Mise en garde</a> | <a routerLink="mention-legale">Mentions Légales</a> | <a routerLink="faq">FAQ</a> |<a routerLink="info-securite">Informations Sécurité</a> </p>
-        </div>
-      </div>
     </div>
+    <div class="container-fluid col-sm-6  rounded mat-elevation-z8" style="margin: auto; margin-top: 10%; padding: 1%; background-color: #51C3CD;">
 
-  </div>
+        <div class="card card-stats mat-elevation-z2 brm-color w3-text-white">
+            <div class="card-header card-header-success card-header-icon">
+                <table class="container-fluid">
+                    <tbody class="container-fluid">
+                        <tr>
+                            <td><img mat-card-icon src="../../../assets/img/brm_logo.png" height="46" width="92" alt=""></td>
+                            <td class="container-fluid">
+                                <h5 class="float-center container-fluid">Authentification</h5>
+                            </td>
+                            <td class="float-center container-fluid"><a routerLink="/presentation/">Presentation</a> </td>
+                            <td class="container-fluid"> <a routerLink="/abonnement/"> Abonnement</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="card-body row col-sm-12">
+                <div class="col-sm-5 container-fluid">
+                    <form class="form" (ngSubmit)="login($event)">
+                        <div class="form-group">
+                            <label for="username">Identifiant</label>
+                            <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" [(ngModel)]="input_clavier" [ngModelOptions]="{standalone: true}" class="form-control" disabled>
+                        </div>
+                        <div class="w3-center">
+                            <!-- <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid" >Se connecter</button> -->
+                            <button mat-raised-button color="primary" type="submit">Se connecter</button>
+                            <button type="reset" style="margin-left:20px;" mat-raised-button color="warn" (click)="delete()">
+                      Effacer</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-7 container-fluid clavier w3-center">
+                    <div class="myrow">
+                        <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i])">{{b[i]}}</button>
+                    </div>
+                    <div class="myrow">
+                        <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 6])">{{b[i + 6]}}</button>
+                    </div>
+                    <div class="myrow">
+                        <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 12])">{{b[i + 12]}}</button>
+                    </div>
+                    <div class="myrow">
+                        <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 18])">{{b[i + 18]}}</button>
+                    </div>
+                    <div class="myrow">
+                        <button type="button" *ngFor="let i of rows" (click)="setInputClavier(b[i + 24])">{{b[i + 24]}}</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <div class="stats container-fluid w3-center">
+                    <div class="container-fluid">
+
+                        <a [routerLink]="['reinitialiser-mot-de-passe']" style="color:rgb(59, 159, 199);">Mot de passe oublie?<br></a>
+
+                    </div>
+                    <br>
+                </div>
+                <div class="footer">
+                    <p style="text-align: center;color: blanchedalmond;"><a routerLink="mise-en-garde">Mise en garde</a> | <a routerLink="mention-legale">Mentions Légales</a> | <a routerLink="faq">FAQ</a> |<a routerLink="info-securite">Informations Sécurité</a> </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 <!-- <div class="container-fluid">
 <div class="row col-sm-4 w3-card" style="margin:auto; margin-top:15%;">
