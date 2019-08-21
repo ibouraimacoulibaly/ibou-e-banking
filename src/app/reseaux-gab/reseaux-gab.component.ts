@@ -19,6 +19,7 @@ export class ReseauxGabComponent implements OnInit {
   zoom: number;
   address: string;
   private geoCoder;
+  
 
   
   
@@ -31,6 +32,8 @@ export class ReseauxGabComponent implements OnInit {
     private ngZone: NgZone) { }
 
   ngOnInit() {
+    
+    
     /*this.mapsAPILoader.load().then(() => {
         this.setCurrentLocation();
         this.geoCoder = new google.maps.Geocoder;

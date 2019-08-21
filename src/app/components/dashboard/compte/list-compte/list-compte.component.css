@@ -1,27 +1,27 @@
-
 .table-item:hover {
-    cursor: pointer;
     background-color: rgb(218, 215, 243);
     border-right: 3px solid rgba(7, 7, 65, 0.637);
     border-left: 3px solid rgba(7, 7, 65, 0.637);
 }
-th{
+
+th {
     font-family: 'Courier New', Courier, monospace;
     font-size: 26px;
     color: black;
-
 }
-td{
-    color:grey;
+
+td {
+    color: grey;
     font-size: 12px;
 }
-button{
+
+button {
     margin: 5px;
     height: 60%;
 }
-mat-icon{
+
+mat-icon {
     text-align: center;
     display: block;
     margin: auto;
- }
-  
+}

@@ -1,4 +1,4 @@
-<mat-tab-group animationDuration="1500ms">
+<mat-tab-group animationDuration="1500ms" style="margin-bottom: 3%;">
 
     <mat-tab label="Map">
 
@@ -51,77 +51,96 @@
     <mat-tab label="Liste">
         <div class="container" id="tableau">
 
-            <div style="margin-left: 40%; font-size: 16px; margin-bottom: 2%;">Nos Agences</div>
-            <table class="table">
-                <thead>
-                    <th>Symbole</th>
-                    <th>Agences</th>
-                    <th>Adresse</th>
+            <div style="margin-left: 40%; font-size: 16px; margin-bottom: -3%;">Nos Agences</div>
+            <mat-card class="header"></mat-card>
+            <mat-card>
+                <table class="table" style="margin-top: -2%; width: 105%; margin-left: -2.5%;">
+                    <thead>
 
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
-                        <td>Sicap foire </td>
-                        <td>Sicap foire lot 139</td>
+                        <th>Agences</th>
+                        <th>Adresse</th>
+                        <th>Horaires</th>
 
-                    </tr>
-                    <tr>
-                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
-                        <td>Point E</td>
-                        <td>A coté de l'université (UCAD)</td>
+                    </thead>
+                    <tbody>
+                        <tr>
 
-                    </tr>
-                    <tr>
-                        <td><img src="/assets/img/agence.png" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
-                        <td>Pikine</td>
-                        <td>Pikine Est face cinéma awa</td>
+                            <td>Sicap foire </td>
+                            <td>Sicap foire lot 139 <br> +221 33 867 25 16</td>
+                            <td>Lundi-jeudi de 08H:00mn - 17H:00mn <br>vendredi 08H:00mn - 16H:00mn</td>
 
-                    </tr>
+                        </tr>
+                        <tr>
 
-                </tbody>
+                            <td>Point E</td>
+                            <td>A coté de l'université (UCAD) <br> +221 77 258 61 31
+                            </td>
+                            <td>Lundi-jeudi de 08H:00mn - 17H:00mn <br>vendredi 08H:00mn - 16H:00mn</td>
+                        </tr>
+                        <tr>
 
-            </table>
+                            <td>Pikine</td>
+                            <td>Pikine Est face cinéma awa <br> +221 77 615 24 37</td>
+                            <td>Lundi-jeudi de 08H:00mn - 17H:00mn <br>vendredi 08H:00mn - 16H:00mn </td>
+                        </tr>
+
+                    </tbody>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row class="table-item" *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+                <!-- <mat-paginator [length]="displayedColumns.length" [hidden]="true" [pageSize]="2" [pageSizeOptions]="[5,7, 14]" showFirstLastButtons></mat-paginator> -->
+                <mat-card-footer>
+                    <mat-card class="footer"></mat-card>
+                </mat-card-footer>
+            </mat-card>
 
 
 
             <div>
 
-                <div style="margin-left: 40%; font-size: 16px; margin-bottom: 2%; margin-top: 4%;">Nos GABs</div>
-                <table class="table">
-                    <thead>
-                        <th>Symbole</th>
-                        <th>Gabs</th>
-                        <th>Adresse</th>
+                <div style="margin-left: 40%; font-size: 16px; margin-bottom: -3%; margin-top: 2%;">Nos GABs</div>
+                <mat-card class="header"></mat-card>
+                <mat-card>
+                    <table class="table" style="margin-top: -2%; width: 105%; margin-left: -2.5%;">
 
-                    </thead>
-                    <tbody>
+                        <thead>
 
-                        <tr>
-                            <a routerLink="/dashboard/reseaux-details/">
-                                <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
-                            </a>
-                            <td>Sicap foire </td>
-                            <td>Sicap foire lot 139</td>
+                            <th>Gabs</th>
+                            <th>Adresse</th>
+                            <th>Etat</th>
 
-                        </tr>
+                        </thead>
+                        <tbody>
 
-                        <tr>
-                            <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
-                            <td>Point E</td>
-                            <td>A coté de l'université (UCAD)</td>
+                            <tr>
 
-                        </tr>
-                        <tr>
-                            <td><img src="/assets/img/gabs.jpg" style="width: 30px; margin-left: 10px;  height: 20px;"></td>
-                            <td>Pikine</td>
-                            <td>Pikine Est face cinéma awa</td>
+                                <td>Sicap foire </td>
+                                <td>Sicap foire lot 139</td>
+                                <td><i style="margin-left: 10px; color: teal;" class="fa fa-check" aria-hidden="true"></i></td>
 
-                        </tr>
+                            </tr>
 
-                    </tbody>
+                            <tr>
 
-                </table>
+                                <td>Point E</td>
+                                <td>A coté de l'université (UCAD)</td>
+                                <td><i style=" margin-left: 10px; color: teal;" class="fa fa-check" aria-hidden="true"></i></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Pikine</td>
+                                <td>Pikine Est face cinéma awa</td>
+                                <td><i style=" margin-left: 10px; width: 20px; color: red;" class="fa fa-times" aria-hidden="true"></i></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                    <mat-card-footer>
+                        <mat-card class="footer"></mat-card>
+                    </mat-card-footer>
+                </mat-card>
             </div>
         </div>
 

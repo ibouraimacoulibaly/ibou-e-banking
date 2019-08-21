@@ -2,22 +2,22 @@
     <h5>Cher client, <br> Pour vous abonner au service E-BANKING de la BANQUE RÉGIONALE DE MARCHÉS, vous voudrez bien télécharger le contrat de souscription correspondant à votre situation.
     </h5>
     <div id="telecharger1">
-        <img id="img1" mat-card-image src="assets/img/Telecharger.png" alt="">
+        <img style="color: orange;" id="img1" mat-card-image src="assets/img/Telecharger.png" alt="">
 
-        <a [href]="fileUrl" download="contrat_Entreprises.pdf">
-         Entreprises Associations & Professionnels
-      </a>
+        <button style="background-color: orange;" (click)="download1()">
+         Entreprises 
+        </button>
     </div>
     <div class="container" id="telecharger2">
-        <img id="img1" mat-card-image src="assets/img/Telecharger.png" alt="">
+        <img id="img1" mat-card-image src="assets/img/Telecharger.png" alt="" style="background-color: orange;">
 
-        <a [href]="fileUrl" download="contrat_Particuliers.pdf">
+        <button style="background-color: orange;" (click)="download()">
         Particuliers
-</a>
+        </button>
 
     </div>
 
 </div>
 <div class="row" id="btr">
-    <button mat-raised-button color="warn" [routerLink]="[ '../']">retourner</button>
+    <button mat-raised-button color="warn" [routerLink]="[ '../']">Retour</button>
 </div>
