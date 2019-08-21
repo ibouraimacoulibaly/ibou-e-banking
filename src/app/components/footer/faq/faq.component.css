@@ -1,0 +1,11 @@
+.tete{
+    width: 30%;
+    height: 5%;
+    border: 2px solid;
+    border-color: blue;
+    display: block;
+    margin:auto;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 180%;
+}

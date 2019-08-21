@@ -10,7 +10,7 @@
         <span class="example-spacer" style="flex:auto;"></span>
         <a style="color:white; font-size: 12px;">
             Bienvenue Ibouraima Coulibaly </a>
-        <a style="color:white; font-size: 12px; margin-left: 2%;"> Dernière connexion 31/07/2019</a>
+        <a style="color:white; font-size: 12px; margin-left: 2%;"> Dernière connexion 31/07/2019 16:25:01</a>
 
         <button mat-icon-button style="color:white;" [matMenuTriggerFor]="menu">
             <mat-icon>account_circle</mat-icon>
@@ -169,7 +169,9 @@
     <mat-sidenav-content>
         <router-outlet></router-outlet>
 
-       <div class="footer"></div>
+       <div class="footer">
+           <p style="text-align: center;color: blanchedalmond;"><a routerLink="mise-en-garde">Mise en garde</a> | <a routerLink="mention-legale">Mentions Légales</a> | <a routerLink="faq">FAQ</a> |<a routerLink="info-securite">Informations Sécurité</a> </p>
+       </div>
         
 
     </mat-sidenav-content>

@@ -65,6 +65,10 @@ import { MessageEnvoyeContenuComponent } from './message-envoye-contenu/message-
 import { ReseauxDetailsComponent } from './reseaux-details/reseaux-details.component';
 import { BeneficiaireComponent } from './beneficiaire/beneficiaire.component';
 import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiaire-nouveau.component';
+import { MiseEnGardeComponent } from './components/footer/mise-en-garde/mise-en-garde.component';
+import { MentionLegaleComponent } from './components/footer/mention-legale/mention-legale.component';
+import { FaqComponent } from './components/footer/faq/faq.component';
+import { InfoSecuriteComponent } from './components/footer/info-securite/info-securite.component';
 
 
 
@@ -120,6 +124,10 @@ import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiair
     ReseauxDetailsComponent,
     BeneficiaireComponent,
     BeneficiaireNouveauComponent,
+    MiseEnGardeComponent,
+    MentionLegaleComponent,
+    FaqComponent,
+    InfoSecuriteComponent,
 
     
 

@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "brm-e-banking",
   "version": "0.0.0",
   "scripts": {
@@ -63,9 +62,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"
-  }
-}
-=======
+  },
+
+
     "name": "brm-e-banking",
     "version": "0.0.0",
     "scripts": {
@@ -128,4 +127,3 @@
         "typescript": "~3.1.6"
     }
 }
->>>>>>> fd7f59af4f93e9578e23202b7d5aecbcb7f1036a

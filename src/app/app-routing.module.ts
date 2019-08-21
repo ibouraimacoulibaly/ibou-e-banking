@@ -44,6 +44,10 @@ import { ReseauxDetailsComponent } from './reseaux-details/reseaux-details.compo
 import { BeneficiaireComponent } from './beneficiaire/beneficiaire.component';
 import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiaire-nouveau.component';
 import { MessageEnvoyeContenuComponent } from './message-envoye-contenu/message-envoye-contenu.component';
+import { MiseEnGardeComponent } from './components/footer/mise-en-garde/mise-en-garde.component';
+import { MentionLegaleComponent } from './components/footer/mention-legale/mention-legale.component';
+import { FaqComponent } from './components/footer/faq/faq.component';
+import { InfoSecuriteComponent } from './components/footer/info-securite/info-securite.component';
 
 
 
@@ -213,6 +217,22 @@ const routes: Routes = [
            {
              path: 'beneficiaire-nouveau',
              component: BeneficiaireNouveauComponent
+           },
+           {
+             path:'mise-en-garde',
+             component:MiseEnGardeComponent
+           },
+           {
+             path:'mention-legale',
+             component:MentionLegaleComponent
+           },
+           {
+             path:'faq',
+             component:FaqComponent
+           },
+           {
+             path:'info-securite',
+             component:InfoSecuriteComponent
            }
 
          
