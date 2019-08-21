@@ -1,45 +1,151 @@
+<p style="font-size: 18px; text-align: center; font-family: 'Courier New', Courier, monospace;"> Remise de chéques</p>
 <div class="container" id="remise">
-    <p style="font-size: 18px; color:black;"> Listes de chéques à remettre</p>
 
-    <div>
-        <strong>Sélectionner un Compte : </strong>
-        <select name="" id="" style="margin-left: 5%; height: 30px;">
-        <option value="">021235-4054054545-5405 XOF COMPTE A VUE PARTICULIERS</option>
-        <option value="">021235-4054054545-5405 XOF COMPTE EPARGNE</option>
-        <option value="">021235-4054054545-5405 XOF COMPTE A VUE PARTICULIERS</option>
-      </select>
-    </div>
-    <button style="margin-left: 83%;" mat-raised-button><i style="margin: 5px; margin-left: -10px;" class="fa fa-plus" aria-hidden="true"></i>Ajouter</button>
-    <table>
-        <thead>
-            <tr>
-                <th>Emetteur</th>
-                <th>Banque</th>
-                <th>Numéro de chéques</th>
-                <th>Montant</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><input type="text" name="" id="" value=""></td>
-                <td><input type="text" name="" id="" value=""></td>
-                <td><input type="text" name="" id="" value=""></td>
-                <td><input type="text" name="" id="" value=""></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td style="color: red; margin-left: 30px;">Total</td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="container" style="margin-left: 40%; margin-top: 3%;">
-        <a>
-            <mat-icon style="margin-top: 10px; color: red;" matSuffix>print</mat-icon>
-            Edition pdf</a>
-        <a style="margin-left: 3%;">
-            <mat-icon style="" matSuffix>print</mat-icon> Imprimer</a>
-    </div>
+    <mat-card class="header"></mat-card>
+    <mat-card>
 
+        <div style="margin-top: 2%;">
+            <strong style="font-family: 'Courier New', Courier, monospace;">Sélectionner un Compte : </strong>
+            <select name="" id="" style="margin-left: 5%; height: 30px;">
+                <option value="">021235-4054054545-5405 XOF COMPTE A VUE PARTICULIERS</option>
+                <option value="">021235-4054054545-5405 XOF COMPTE EPARGNE</option>
+                <option value="">021235-4054054545-5405 XOF COMPTE A VUE PARTICULIERS</option>
+            </select>
+        </div>
+        <button style="margin-left: 90%; height: 30px; margin-bottom: 2%;" *ngIf="fieldArray.length <= 10" color="primary" mat-raised-button (click)="addFieldValue()"><i style="margin: 5px; margin-left: -10px;"
+                class="fa fa-plus" aria-hidden="true"></i>Ajouter</button>
+
+
+
+
+
+
+        <table class="table table-striped ">
+
+            <thead>
+                <!-- <tr>
+                    <th>Item Name
+
+                        <a (click)="onEditCloseItems()" class="text-info float-right">
+                            <i class="mdi mdi-{{isEditItems ? 'close' : 'pencil'}} mdi-18px"></i>
+                        </a>
+                    </th>
+
+                </tr> -->
+
+                <tr style="text-align: center;">
+                    <th>Emetteur</th>
+                    <th>Banque</th>
+                    <th>Numéro de chéques</th>
+                    <th>Montant</th>
+                </tr>
+            </thead>
+
+            <!-- <tbody>
+                <tr *ngIf="firstField">
+                    <td>
+                        <i (click)="firstField = false" class="mdi mdi-close mdi-18px"></i> {{firstFieldName}}
+                    </td>
+                </tr>
+                <tr *ngFor="let field of fieldArray; let i = index">
+                    <td *ngIf="field?.name">
+                        <i (click)="deleteFieldValue(i)" class="mdi mdi-close mdi-18px"></i> {{field.name}}</td>
+                </tr>
+            </tbody> -->
+
+            <tbody>
+                <tr>
+                    <td *ngIf="firstField">
+                        <div class="input-group">
+
+                            <input [(ngModel)]="firstFieldName1" class="form-control py-2 " type="text" name="firstFieldName">
+
+                        </div>
+                    </td>
+
+                    <td *ngIf="firstField">
+                        <div class="input-group">
+
+                            <input [(ngModel)]="firstFieldName2" class="form-control py-2 " type="text" name="firstFieldName">
+
+                        </div>
+                    </td>
+
+                    <td *ngIf="firstField">
+                        <div class="input-group">
+
+                            <input [(ngModel)]="firstFieldName3" class="form-control py-2 " type="text" name="firstFieldName">
+
+                        </div>
+                    </td>
+
+                    <td *ngIf="firstField">
+                        <div class="input-group">
+
+                            <input [(ngModel)]="firstFieldName4" class="form-control py-2 " type="number" [formControl]="number" name="firstFieldName">
+
+                        </div>
+                    </td>
+
+
+
+                </tr>
+
+                <tr *ngFor="let field of fieldArray; let i = index">
+                    <td>
+                        <div class="input-group">
+
+                            <input [(ngModel)]="field.name" class="form-control" type="text">
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="input-group">
+
+                            <input [(ngModel)]="field.name1" class="form-control" type="text">
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="input-group">
+
+                            <input [(ngModel)]="field.name2" class="form-control" type="text">
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="input-group">
+
+                            <input [(ngModel)]="field.name3" class="form-control" type="number" [formControl]="number1" name="{{field.name}}">
+                        </div>
+                    </td>
+                </tr>
+
+
+                <!-- <tr>
+                    <td align="right">
+                        <button *ngIf="fieldArray.length <= 2" class="btn btn-success btn-sm" type="button" (click)="addFieldValue()" style="margin-right:10px">Add More Item</button>
+                        <button (click)="onEditCloseItems()"   type="button">Save Items</button>
+                    </td>
+                </tr> -->
+            </tbody>
+
+        </table>
+        <div class="row" style="">
+            <p style="margin-left: 69%; color: tomato; font-size: 14px;">Total</p>
+            <p style="margin-left: 77%; margin-top: -4.3%; font-size: 14px;">{{ number.value + number1.value}} XOF</p>
+
+
+        </div>
+        <div class="container" style="margin-left: 40%; margin-top: 3%;">
+
+            <a style="margin-left: 3%;" printTitle="E-BANKING" printSectionId="remise">
+                <mat-icon style="" matSuffix>print</mat-icon> Imprimer
+            </a>
+        </div>
+
+        <mat-card-footer>
+            <mat-card class="footer"></mat-card>
+        </mat-card-footer>
+    </mat-card>
 </div>

@@ -29,7 +29,7 @@
                 </div>
                 <div class="form-group">
                   <label for="password">Mot de passe</label>
-                  <input  type="password" [(ngModel)]="input_clavier" [ngModelOptions]="{standalone: true}" class="form-control" >
+                  <input  type="password" [(ngModel)]="input_clavier" [ngModelOptions]="{standalone: true}" class="form-control" disabled>
                 </div>
                 <div class="w3-center">
                   <!-- <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid" >Se connecter</button> -->
@@ -62,7 +62,7 @@
         <div class="stats container-fluid w3-center" >
             <div class="container-fluid" >
             
-              <a [routerLink]="['reinitialiser-mot-de-passe']" style="color:rgb(59, 159, 199);">Mot de passe oublie?<br><br></a>
+              <a [routerLink]="['reinitialiser-mot-de-passe']" style="color:rgb(59, 159, 199);">Mot de passe oublie?<br></a>
               
             </div>
         </div>

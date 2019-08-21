@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import * as jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-abonnement',
@@ -8,15 +9,23 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class AbonnementComponent implements OnInit {
 
-  fileUrl;
+ 
   constructor(private sanitizer: DomSanitizer) {  }
 
   ngOnInit() {
-    const data = 'assets/img/chapitre2.pdf';
-    const blob = new Blob([data], { type: 'application/octet-stream' });
-
-    this.fileUrl = this.sanitizer.bypassSecurityTrustResourceUrl(window.URL.createObjectURL(blob));
+    
 
   }
+  download1(){
+    const doc1 = new jsPDF();
+    doc1.text('CONTRAT ENTREPRISE ', 100, 100);
+    doc1.save('contrat_Entreprises.pdf');
+  }
+  download(){
+    const doc = new jsPDF();
+    doc.text('CONTRAT  PARTICULIERS ', 50, 50);
+    doc.save('contrat_Particuliers.pdf');
+  }
+  
 
 }

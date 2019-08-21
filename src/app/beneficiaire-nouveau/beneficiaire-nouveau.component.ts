@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import * as jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-beneficiaire-nouveau',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BeneficiaireNouveauComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sanitizer: DomSanitizer) {  }
 
   ngOnInit() {
   }
-
+  download(){
+    const doc = new jsPDF();
+    doc.text('FORMULAIRE AJOUT BENEFICIAIRE  ', 60, 100);
+    doc.setFont("helvetica");
+    doc.setFontType("bold");
+    doc.setFontSize(2);
+    doc.save('Foormulaire_Ajout_Bénéficiaire.pdf');
+  }
 }

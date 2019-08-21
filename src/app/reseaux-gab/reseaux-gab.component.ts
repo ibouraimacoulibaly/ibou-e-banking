@@ -14,24 +14,67 @@ import { MapServiceService } from '../services/map-service.service';
   styleUrls: ['./reseaux-gab.component.css']
 })
 export class ReseauxGabComponent implements OnInit {
-  title: string = 'Localisation';
+
+  title: string = 'AGM project';
+  latitude: number;
+  longitude: number;
+  zoom: number;
+  address: string;
+  private geoCoder;
+  
+
+  //title: string = 'Localisation';
   late: number = 14.729898480616876;
   lnge: number = -17.457637927829182;
   locationChoosen=true;
   location: Object;
-  constructor(private map: MapServiceService) { }
+  
+
+  @ViewChild('search')
+  public searchElementRef: ElementRef;
+
+
+  constructor(private mapsAPILoader: MapsAPILoader,
+    private ngZone: NgZone, private map: MapServiceService) { }
 
   ngOnInit() {
-    // this.map.getLocation().subscribe(data =>{
-    //   console.log(data);
-    //   this.late = data.latitude;
-    //   this.lnge = data.longitude;
-    // })
-  }
+    
+    
+    /*this.mapsAPILoader.load().then(() => {
+        this.setCurrentLocation();
+        this.geoCoder = new google.maps.Geocoder;
+   
+        let autocomplete = new google.maps.places.Autocomplete(this.searchElementRef.nativeElement, {
+          types: ["address"]
+        });
+        autocomplete.addListener("place_changed", () => {
+          this.ngZone.run(() => {
+            //get the place result
+            let place: google.maps.places.PlaceResult = autocomplete.getPlace();
+   
+            //verify result
+            if (place.geometry === undefined || place.geometry === null) {
+              return;
+            }
+   
+            //set latitude, longitude and zoom
+            this.latitude = place.geometry.location.lat();
+            this.longitude = place.geometry.location.lng();
+            this.zoom = 12;
+          });
+        });
+      });
+    }*/
+
+  
+  
+
+  
   // onChooseLocation(event){
   //   this.late=event.coords.lat;
   //   this.lnge=event.coords.lng;
   //   this.locationChoosen=true;
   // }
 
+  }
 }
