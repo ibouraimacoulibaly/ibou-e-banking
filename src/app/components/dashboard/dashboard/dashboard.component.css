@@ -68,6 +68,9 @@ mat-card{
     display: inline-block;
     position: relative;
   }
+  a:hover{
+    color: rgb(179, 80, 80);
+  }
   
   .drop-down__button{
   background: linear-gradient(to right,#222D5D,rgb(58, 192, 204));
