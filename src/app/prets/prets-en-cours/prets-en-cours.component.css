@@ -2,6 +2,12 @@ table {
     width: 98%;
     margin-left: 1%;
   }
+  .table-item:hover{
+    cursor: pointer;
+    background-color: rgb(218, 215, 243);
+    border-right: 3px solid rgba(7, 7, 65, 0.637);
+    border-left: 3px solid rgba(7, 7, 65, 0.637);
+  }
   
   .mat-form-field {
     font-size: 14px;

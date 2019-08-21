@@ -24,7 +24,7 @@ export class MessagerieComponent implements OnInit {
       nombre: '27/11/2017',
     },
     {
-      dossier: 'Demande de Chèque',
+      dossier: 'BRM BANK',
       numero: 'Demande de chéquier',
       du:'25/06/2015',
       nombre: '25/08/2015',

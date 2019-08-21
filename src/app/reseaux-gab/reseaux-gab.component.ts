@@ -4,6 +4,7 @@ import { MapsAPILoader, MouseEvent } from '@agm/core';
 import { MatTableDataSource, MatPaginator } from '@angular/material';
 import {TooltipPosition} from '@angular/material/tooltip';
 import {FormControl} from '@angular/forms'
+import { MapServiceService } from '../services/map-service.service';
 
 
 
@@ -13,6 +14,7 @@ import {FormControl} from '@angular/forms'
   styleUrls: ['./reseaux-gab.component.css']
 })
 export class ReseauxGabComponent implements OnInit {
+
   title: string = 'AGM project';
   latitude: number;
   longitude: number;
@@ -21,7 +23,11 @@ export class ReseauxGabComponent implements OnInit {
   private geoCoder;
   
 
-  
+  //title: string = 'Localisation';
+  late: number = 14.729898480616876;
+  lnge: number = -17.457637927829182;
+  locationChoosen=true;
+  location: Object;
   
 
   @ViewChild('search')
@@ -29,7 +35,7 @@ export class ReseauxGabComponent implements OnInit {
 
 
   constructor(private mapsAPILoader: MapsAPILoader,
-    private ngZone: NgZone) { }
+    private ngZone: NgZone, private map: MapServiceService) { }
 
   ngOnInit() {
     
@@ -60,49 +66,15 @@ export class ReseauxGabComponent implements OnInit {
       });
     }*/
 
-    // Get Current Location Coordinates
-    /*
-    private setCurrentLocation() {
-      if ('geolocation' in navigator) {
-        navigator.geolocation.getCurrentPosition((position) => {
-          this.latitude = position.coords.latitude;
-          this.longitude = position.coords.longitude;
-          this.zoom = 8;
-          this.getAddress(this.latitude, this.longitude);
-        });
-      }
-    }
-   
-   
-    markerDragEnd($event: MouseEvent) {
-      console.log($event);
-      this.latitude = $event.coords.lat;
-      this.longitude = $event.coords.lng;
-      this.getAddress(this.latitude, this.longitude);
-    }
-   
-    getAddress(latitude, longitude) {
-      this.geoCoder.geocode({ 'location': { lat: latitude, lng: longitude } }, (results, status) => {
-        console.log(results);
-        console.log(status);
-        if (status === 'OK') {
-          if (results[0]) {
-            this.zoom = 12;
-            this.address = results[0].formatted_address;
-          } else {
-            window.alert('No results found');
-          }
-        } else {
-          window.alert('Geocoder failed due to: ' + status);
-        }
-   
-      });
-   */
   
-}
-markerDragEnd(event){
+  
 
-}
+  
+  // onChooseLocation(event){
+  //   this.late=event.coords.lat;
+  //   this.lnge=event.coords.lng;
+  //   this.locationChoosen=true;
+  // }
 
+  }
 }
-

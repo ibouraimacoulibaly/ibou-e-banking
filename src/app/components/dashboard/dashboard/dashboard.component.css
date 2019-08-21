@@ -8,14 +8,26 @@
   right: 0;
   
 }
+mat-card{
+  width: 100%;
+ background-color: rgb(208, 209, 235); 
+  margin-top: 40%;
+  display: block;
+}
+.footer{
+  width: 90%;
+  height: 4%;
+  background-color: rgb(72, 76, 196);
+  position: fixed;
+  bottom: 0;
+
+}
 
 .sidenav{
     width: 240px;
      background:rgb(208, 209, 235);  
     /* background: linear-gradient(to left,rgb(5, 5, 75,0.2) , rgb(255, 0, 0, 0.2), rgba(206, 187, 153, 0.2), rgb(255, 255, 0,0.2),rgb(200, 255, 0,0.2)); */
-    /* background: linear-gradient(to bottom,rgb(197, 204, 216), rgb(182, 190, 207),white);  */
-
-    
+    /* background: linear-gradient(to bottom,rgb(197, 204, 216), rgb(182, 190, 207),white);  */  
   }
   
 

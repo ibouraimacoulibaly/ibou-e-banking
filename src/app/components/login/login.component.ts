@@ -56,6 +56,8 @@ export class LoginComponent implements OnInit {
     }
     else {
       window.alert('Authentification incorrecte');
+      this.input_clavier='';
+      this.username='';
 
 
     }

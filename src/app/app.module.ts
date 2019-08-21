@@ -137,7 +137,9 @@ import { BeneficiaireNouveauComponent } from './beneficiaire-nouveau/beneficiair
     MatButtonModule,
     NgxPrintModule,
     AgmCoreModule.forRoot({
-    apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
+    // apiKey: '8110477bc4msha7acb11d1bf06b4p1bc2cfjsn2595b3a79a31',
+    apiKey: 'AIzaSyAh6sPBwLCAj-pprUs_W7E3KrX-ARZLKlo',
+
       libraries: ['places']
     }),
     MatDialogModule
