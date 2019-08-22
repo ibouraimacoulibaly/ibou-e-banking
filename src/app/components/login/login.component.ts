@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { DomSanitizer } from '@angular/platform-browser';
+import * as jsPDF from 'jspdf';
 
 
 @Component({
@@ -17,11 +19,10 @@ export class LoginComponent implements OnInit {
   rows = [0, 1, 2, 3, 4, 5];
   b = [];
   input_clavier = '';
-  constructor(private formBuilder: FormBuilder, private router: Router) {
+  constructor(private formBuilder: FormBuilder, private router: Router, private sanitizer: DomSanitizer) {
     for (let i = 0; i < 6; i++) {
       for (let y = 0; y < 5; y++) {
-        let e = Math.floor(Math.random() * 1000);
-        console.log(e);
+        let e = Math.floor(Math.random() * 1000); 
         // tslint:disable-next-line:triple-equals
         if ((e % 2) == 0) {
           if (this.clavier_val.length > 0) {
@@ -61,5 +62,27 @@ export class LoginComponent implements OnInit {
 
 
     }
+  }
+
+  download(){
+    const doc = new jsPDF();
+    doc.text('MISE EN GARDE ', 60, 100);
+    doc.save('mise_garde.pdf');
+  }
+  mention(){
+    const doc = new jsPDF();
+    doc.text('MENTIONS LEGALES ', 60, 100);
+    doc.save('Mension.pdf');
+  }
+  faq(){
+    const doc = new jsPDF();
+    doc.text('FAQ ', 60, 100);
+    doc.save('Faq.pdf');
+  }
+
+  info(){
+    const doc = new jsPDF();
+    doc.text('Informations Sécurité', 60, 100);
+    doc.save('info.pdf');
   }
 }

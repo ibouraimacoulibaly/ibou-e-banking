@@ -37,4 +37,5 @@ export class RemiseChequeComponent implements OnInit {
   onEditCloseItems() {
    // this.isEditItems = !this.isEditItems;
   }
+  
 }

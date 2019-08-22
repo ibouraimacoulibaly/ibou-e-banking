@@ -1,4 +1,5 @@
-<p style="font-size: 18px; text-align: center; font-family: 'Courier New', Courier, monospace;"> Remise de chéques</p>
+<br><br>
+<span id="re" style="margin-top: 2%;"> Remise de chéques</span>
 <div class="container" id="remise">
 
     <mat-card class="header"></mat-card>
@@ -82,7 +83,7 @@
                     <td *ngIf="firstField">
                         <div class="input-group">
 
-                            <input [(ngModel)]="firstFieldName4" class="form-control py-2 " type="number" [formControl]="number" name="firstFieldName">
+                            <input id="number" [(ngModel)]="firstFieldName4" class="form-control py-2 " type="number" [formControl]="number" name="firstFieldName">
 
                         </div>
                     </td>
@@ -102,7 +103,7 @@
                     <td>
                         <div class="input-group">
 
-                            <input [(ngModel)]="field.name1" class="form-control" type="text">
+                            <input [(ngModel)]="field.name1" class="form-control" value="t" type="text">
                         </div>
                     </td>
 
@@ -116,7 +117,7 @@
                     <td>
                         <div class="input-group">
 
-                            <input [(ngModel)]="field.name3" class="form-control" type="number" [formControl]="number1" name="{{field.name}}">
+                            <input id="number1" [(ngModel)]="field.name3" class="form-control" type="number" value=0 [formControl]="number1" name="{{field.name}}">
                         </div>
                     </td>
                 </tr>
@@ -131,21 +132,34 @@
             </tbody>
 
         </table>
-        <div class="row" style="">
+        <div class="row">
             <p style="margin-left: 69%; color: tomato; font-size: 14px;">Total</p>
-            <p style="margin-left: 77%; margin-top: -4.3%; font-size: 14px;">{{ number.value + number1.value}} XOF</p>
+            <p style="margin-left: 77%; margin-top: -4.3%; font-size: 14px;"> {{ number.value + number1.value}} XOF</p>
 
 
         </div>
         <div class="container" style="margin-left: 40%; margin-top: 3%;">
 
-            <a style="margin-left: 3%;" printTitle="E-BANKING" printSectionId="remise">
-                <mat-icon style="" matSuffix>print</mat-icon> Imprimer
-            </a>
+            <button printTitle="E-BANKING" printSectionId="remise" ngxPrint style="margin-left:2%; background-color: white; margin-bottom: 2%; border: none;">
+                <mat-icon matSuffix>print</mat-icon> Imprimer
+            </button>
         </div>
+
+
 
         <mat-card-footer>
             <mat-card class="footer"></mat-card>
         </mat-card-footer>
     </mat-card>
+
+    <script type="text/javascript">
+        function calculer() {
+            var calcul = document.getElementById("number").value + document.getElementById("number").value;
+            if (calcul == null) {
+                return 0;
+            } else {
+                return calcul;
+            }
+        }
+    </script>
 </div>

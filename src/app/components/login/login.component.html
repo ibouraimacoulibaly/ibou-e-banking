@@ -68,7 +68,11 @@
                     <br>
                 </div>
                 <div class="footer">
-                    <p style="text-align: center;color: blanchedalmond;"><a routerLink="mise-en-garde">Mise en garde</a> | <a routerLink="mention-legale">Mentions Légales</a> | <a routerLink="faq">FAQ</a> |<a routerLink="info-securite">Informations Sécurité</a> </p>
+                    <p style="text-align: center;color: blanchedalmond;">
+                        <a style="cursor: pointer" (click)="download()">Mise en garde</a> |
+                        <a style="cursor: pointer" (click)="mention()">Mentions Légales</a> |
+                        <a style="cursor: pointer" (click)="faq()">FAQ</a> |
+                        <a style="cursor: pointer" (click)="info()">Informations Sécurité</a> </p>
                 </div>
             </div>
         </div>
