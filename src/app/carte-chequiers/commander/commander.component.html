@@ -1,21 +1,18 @@
 <form action="">
-    <div class="container" id="principal">
-        <div class="container" id="principal1">
-
+    <div class="container-fluid" id="principal">
             <table class="example-full-width" cellspacing="0">
                 <tr>
                     <td>
                         <h4>Mes commandes de chéquiers</h4>
                     </td>
-                    <td>
+                    <!-- <td>
                         <button printTitle="E-BANKING" printSectionId="principal" ngxPrint style="margin-left:290%;">
-                <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon> <div style="margin-top:-25px; margin-left:30px;">Impression</div> 
-            </button>
-                    </td>
+                        <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon> <div style="margin-top:-25px; margin-left:30px;">Impression</div> 
+                        </button>
+                    </td> -->
                 </tr>
             </table>
 
-        </div>
         <div style="margin-top:2%; margin-left: 2%;" id="imprimer">
             <div>
                 <strong style="font-family: monospace;">Veuillez</strong>
@@ -30,11 +27,11 @@
                 <strong> Compte</strong>
                 <p>
                     <select id="inp1" style="width: 400px; height: 30px;">
-          <option value="volvo"> 2103 356106790566 FFHHFFH</option>
-          <option value="saab"> 2103 356106790566 FFHHFFH</option>
-          <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
-          <option value="audi"> 2103 356106790566 FFHHFFH</option>
-        </select>
+                        <option value="volvo"> 2103 356106790566 FFHHFFH</option>
+                        <option value="saab"> 2103 356106790566 FFHHFFH</option>
+                        <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
+                        <option value="audi"> 2103 356106790566 FFHHFFH</option>
+                    </select>
                 </p>
             </div>
 
@@ -72,21 +69,20 @@
                 <strong>Type de chéquiers</strong>
                 <p>
                     <select name="" id="" style="width: 200px; height: 30px;">
-        <option value="">ATalon Barré 25F</option>
-        <option value="">Simple Non Barré 100F</option>
-        
-      </select>
+                        <option value="">ATalon Barré 25F</option>
+                        <option value="">Simple Non Barré 100F</option>
+
+                    </select>
                 </p>
             </div>
 
-
         </div>
 
-
     </div>
-    <div class="row" style="margin-left: 40%; margin-top: 1%;">
+    <div class="" style="margin-left: 40%; margin-top: 1%;">
         <button mat-raised-button color="primary" [routerLink]="">Valider</button>
         <button mat-raised-button color="secondary" [routerLink]="">Effacer</button>
-        <button style="margin-left: 50%;" mat-raised-button color="warn" [routerLink]="[ '/dashboard/cheque/']">Retour</button>
+        <button style="margin-left: 30%;" mat-raised-button color="warn"
+            [routerLink]="[ '/dashboard/cheque/']">Retour</button>
     </div>
 </form>

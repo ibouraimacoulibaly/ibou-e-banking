@@ -6,11 +6,12 @@
                 <td>
                     <h4 style="color: black;">Demande de carte bancaire</h4>
                 </td>
-                <td>
+                <!-- <td>
                     <button printTitle="E-BANKING" printSectionId="imprimer" ngxPrint style="margin-left:290%;">
-                  <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon> <div style="margin-top:-25px; margin-left:30px;">Impression</div> 
-              </button>
-                </td>
+                        <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon>
+                        <div style="margin-top:-25px; margin-left:30px;">Impression</div>
+                    </button>
+                </td> -->
             </tr>
         </table>
 
@@ -20,11 +21,11 @@
             <strong> Compte</strong>
             <p>
                 <select id="inp1" style="width: 400px; height: 30px;">
-            <option value="volvo"> 2103 356106790566 FFHHFFH</option>
-            <option value="saab"> 2103 356106790566 FFHHFFH</option>
-            <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
-            <option value="audi"> 2103 356106790566 FFHHFFH</option>
-          </select>
+                    <option value="volvo"> 2103 356106790566 FFHHFFH</option>
+                    <option value="saab"> 2103 356106790566 FFHHFFH</option>
+                    <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
+                    <option value="audi"> 2103 356106790566 FFHHFFH</option>
+                </select>
             </p>
         </div>
 
@@ -57,10 +58,10 @@
             <strong> Type de carte</strong>
             <p>
                 <select name="" id="" style="width: 150px; height: 30px;">
-         
-         <option value="">Classic</option>
-         <option value="">Electron</option>
-       </select>
+
+                    <option value="">Classic</option>
+                    <option value="">Electron</option>
+                </select>
             </p>
         </div>
 
@@ -102,7 +103,8 @@
         <div>
             <strong>Montant débit autorisé</strong>
             <p>
-                <input style="width: 200px; height: 30px;" type="number" name="montant" id="montant" placeholder="0.000"> XOF
+                <input style="width: 200px; height: 30px;" type="number" name="montant" id="montant"
+                    placeholder="0.000"> XOF
             </p>
         </div>
 
@@ -112,9 +114,11 @@
     </div>
 
 
-</div>
-<div class="row" style="margin-left: 40%; margin-top: 1%;">
-    <button mat-raised-button color="primary" [routerLink]="">Valider</button>
-    <button mat-raised-button color="secondary" [routerLink]="">Effacer</button>
-    <button style="margin-left: 50%;" mat-raised-button color="warn" [routerLink]="[ '/dashboard/carte/']">Retour</button>
+
+    <div class="" style="margin-left: 40%; margin-top: 1%;">
+        <button mat-raised-button color="primary" [routerLink]="">Valider</button>
+        <button mat-raised-button color="secondary" [routerLink]="">Effacer</button>
+        <button style="margin-left: 50%;" mat-raised-button color="warn"
+            [routerLink]="[ '/dashboard/carte/']">Retour</button>
+    </div>
 </div>
