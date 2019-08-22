@@ -16,6 +16,9 @@
     background-image: url('./assets/img/brmhead.jpg');
     background-repeat: no-repeat;
 }
+table{
+    width: 100%;
+}
 .body-dash{
     background-image: url('./assets/img/brmhead.jpg');
     -o-filter: url('./assets/img/brmhead.jpg');

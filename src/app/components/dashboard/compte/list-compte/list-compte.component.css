@@ -3,6 +3,9 @@
     border-right: 3px solid rgba(7, 7, 65, 0.637);
     border-left: 3px solid rgba(7, 7, 65, 0.637);
 }
+table{
+    width: 90%;
+}
 
 th {
     font-family: 'Courier New', Courier, monospace;

@@ -2,6 +2,11 @@ table {
     width: 98%;
     margin-left: 1%;
   }
+  mat-paginator{
+    width: 10%;
+    margin-left: 40%;
+
+  }
   .table-item:hover{
     cursor: pointer;
     background-color: rgb(218, 215, 243);
