@@ -10,7 +10,10 @@
         <span class="example-spacer" style="flex:auto;"></span>
         <a style="color:white; font-size: 12px;">
             Bienvenue Ibouraima Coulibaly </a>
-        <a style="color:white; font-size: 12px; margin-left: 2%;"> Dernière connexion 31/07/2019 16:25:01</a>
+        <!-- <a style="color:white; font-size: 12px; margin-left: 2%;"> Dernière connexion 31/07/2019 16:25:01</a> -->
+        <a style="color:white; font-size: 12px; margin-left: 2%;"> Dernière connexion
+            {{dateConnexion| date:'dd-MM-yyyy HH:mm:ss'}}</a>
+
 
         <button mat-icon-button style="color:white;" [matMenuTriggerFor]="menu">
             <mat-icon>account_circle</mat-icon>
@@ -106,11 +109,11 @@
                 </mat-list-item>
             </a>
             <!-- <a routerLink="/dashboard/releve/">
-        <mat-list-item>
+            <mat-list-item>
             <span class="fa fa-portrait " style="color: rgb(46, 13, 163);"></span> 
           <h4 mat-line>Relevé d'identification bancaire</h4>
-        </mat-list-item>
-      </a> -->
+           </mat-list-item>
+            </a> -->
             <mat-divider></mat-divider>
         </mat-list>
 
@@ -170,18 +173,18 @@
 
     <mat-sidenav-content>
         <router-outlet></router-outlet>
-<footer>
-        <div class="footer">
+        <footer>
+            <div class="footer">
                 <p class="w3-center mymarge" style="text-align: center; color: blanchedalmond;">
                     <a routerLink="mise-en-garde">Mise en garde</a> |
-                     <a routerLink="mention-legale">Mentions Légales</a> | 
-                     <a routerLink="faq">FAQ</a> |
-                     <a routerLink="info-securite">Informations Sécurité</a> 
-                    </p>
+                    <a routerLink="mention-legale">Mentions Légales</a> |
+                    <a routerLink="faq">FAQ</a> |
+                    <a routerLink="info-securite">Informations Sécurité</a>
+                </p>
             </div>
-</footer>
-      
-        
+        </footer>
+
+
 
     </mat-sidenav-content>
 </mat-sidenav-container>
