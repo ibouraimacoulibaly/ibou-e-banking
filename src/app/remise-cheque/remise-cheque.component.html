@@ -83,7 +83,7 @@
                     <td *ngIf="firstField">
                         <div class="input-group">
 
-                            <input id="number" data-montant class="form-control py-2 " type="number" [formControl]="number" name="firstFieldName">
+                            <input (change)="calcul()" id="number" data-montant class="form-control py-2 " type="number" [formControl]="number" name="firstFieldName">
 
                         </div>
                     </td>
@@ -103,7 +103,7 @@
                     <td>
                         <div class="input-group">
 
-                            <input [(ngModel)]="field.name1" class="form-control" value="t" type="text">
+                            <input [(ngModel)]="field.name1" class="form-control" type="text">
                         </div>
                     </td>
 
@@ -117,7 +117,7 @@
                     <td>
                         <div class="input-group">
 
-                            <input id="number1" data-montant class="form-control" type="number" [formControl]="number1" name="{{field.name}}">
+                            <input (change)="calcul()" data-montant id="num{{i}}" class="form-control" type="number">
                         </div>
                     </td>
                 </tr>
@@ -132,9 +132,9 @@
             </tbody>
 
         </table>
-        <div class="row">
+        <div class="input-group">
             <p style="margin-left: 69%; color: tomato; font-size: 14px;">Total</p>
-            <input placeholder="0" style="margin-left: 77%; border: none; margin-top:-6%; font-size: 14px;" value=" {{number.value + number1.value }} XOF">
+            <input class="form-control" id="number1" [formControl]="number2" style="margin-left: 77%; border: none; margin-top:-5.5%; font-size: 14px;" value=" {{ total}} XOF">
 
 
         </div>
@@ -151,26 +151,5 @@
         </mat-card-footer>
     </mat-card>
 
-    <script type="text/javascript">
-        // function calculer() {
-        //     var calcul = document.getElementById("number").value + document.getElementById("number1").value;
-        //     if (calcul == null) {
-        //         return 0;
-        //     } else {
-        //         return calcul;
-        //     }
 
-        // }
-        // var calcul = 0;
-        // var number = 0;
-        // var number1 = 0;
-        // number = document.getElementById("number").value;
-        // number = document.getElementById("number").value;
-        // calcul = document.getElementById("number").value + document.getElementById("number1").value;
-        // if (isNaN(calcul)) {
-        //     calcul = 0;
-        // } else {
-        //     calcul = document.getElementById("number").value + document.getElementById("number1").value;
-        //}
-    </script>
 </div>
