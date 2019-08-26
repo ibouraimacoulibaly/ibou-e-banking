@@ -15,8 +15,6 @@ tr:hover {
 }
 
 th {
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
 }
 
@@ -25,11 +23,10 @@ td {
 }
 
 
-/* table {
-     border: 1px solid; 
+table {
     width: 80%;
-    margin-left: 0%;
-} */
+    margin-left: 25%;
+}
 
 tr {
     width: 100%;

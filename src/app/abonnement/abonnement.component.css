@@ -1,26 +1,30 @@
 #telecharger {
-    margin-left: 10%;
+    margin-left: 15%;
     background-color: orange;
     margin-top: 19%;
-    height: 80%;
+    width: 80%;
     border: 10px solid;
     border-radius: 5px;
 }
 
 #telecharger1 {
-    margin-left: 15%;
+    margin-left: 25%;
     width: 10%;
     color: rgb(146, 116, 116);
     font-size: 16px;
-    margin-top: 2%;
+}
+button{
+    margin-bottom: 10%;
+}
+img{
+    margin-top:5%;
 }
 
 #telecharger2 {
-    margin-left: 65%;
+    margin-left: 45%;
     width: 10%;
     color: rgb(146, 116, 116);
     font-size: 16px;
-    margin-top: -7%;
 }
 
 mat-icon {
@@ -30,7 +34,7 @@ mat-icon {
 }
 
 #btr {
-    margin-left: 50%;
+    margin-left: 45%;
     margin-top: 1%;
     margin-bottom: 2%;
 }

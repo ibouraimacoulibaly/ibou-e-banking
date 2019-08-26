@@ -66,23 +66,23 @@ export class LoginComponent implements OnInit {
 
   download(){
     const doc = new jsPDF();
-    doc.text('MISE EN GARDE ', 60, 100);
+    doc.text('MISE EN GARDE ', 80, 100);
     doc.save('mise_garde.pdf');
   }
   mention(){
     const doc = new jsPDF();
-    doc.text('MENTIONS LEGALES ', 60, 100);
-    doc.save('Mension.pdf');
+    doc.text('MENTIONS LEGALES ', 80, 100);
+    doc.save('Mention.pdf');
   }
   faq(){
     const doc = new jsPDF();
-    doc.text('FAQ ', 60, 100);
+    doc.text('FAQ ', 80, 100);
     doc.save('Faq.pdf');
   }
 
   info(){
     const doc = new jsPDF();
-    doc.text('Informations Sécurité', 60, 100);
+    doc.text('INFORMATIONS DE SECURITE', 70, 100);
     doc.save('info.pdf');
   }
 }

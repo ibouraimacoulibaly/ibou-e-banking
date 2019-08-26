@@ -1,124 +1,113 @@
+<h4 style="text-align: center;font-size: 14px;">Demande de carte bancaire</h4>
+<mat-card class="header"></mat-card>
+
 <div class="container" id="principal">
-    <div class="container" id="principal1">
+    <mat-card>
+        <div style="margin-top:2%; margin-left: 2%;" id="imprimer">
+            <div>
+                <a> Compte</a>
+                <p>
+                    <select id="inp1" style="width: 400px; height: 30px;">
+                        <option value="volvo"> 2103 356106790566 FFHHFFH</option>
+                        <option value="saab"> 2103 356106790566 FFHHFFH</option>
+                        <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
+                        <option value="audi"> 2103 356106790566 FFHHFFH</option>
+                    </select>
+                </p>
+            </div>
 
-        <table class="example-full-width" cellspacing="0">
-            <tr>
-                <td>
-                    <h4 style="color: black;">Demande de carte bancaire</h4>
-                </td>
-                <!-- <td>
-                    <button printTitle="E-BANKING" printSectionId="imprimer" ngxPrint style="margin-left:290%;">
-                        <mat-icon style="margin-left:-80px;" matSuffix>print</mat-icon>
-                        <div style="margin-top:-25px; margin-left:30px;">Impression</div>
-                    </button>
-                </td> -->
-            </tr>
-        </table>
+            <div>
+                <a> Agence</a>
+                <p>
+                    1150 Sicap foire
+                </p>
+            </div>
 
-    </div>
-    <div style="margin-top:2%; margin-left: 2%;" id="imprimer">
-        <div>
-            <strong> Compte</strong>
-            <p>
-                <select id="inp1" style="width: 400px; height: 30px;">
-                    <option value="volvo"> 2103 356106790566 FFHHFFH</option>
-                    <option value="saab"> 2103 356106790566 FFHHFFH</option>
-                    <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
-                    <option value="audi"> 2103 356106790566 FFHHFFH</option>
-                </select>
-            </p>
-        </div>
+            <div>
+                <a>Titulaire du compte</a>
+                <p>
+                    COULIBALY IBOURAIMA
+                </p>
 
-        <div>
-            <strong> Agence</strong>
-            <p>
-                1150 Sicap foire
-            </p>
-        </div>
+            </div>
 
-        <div>
-            <strong>Titulaire du compte</strong>
-            <p>
-                COULIBALY IBOURAIMA
-            </p>
+            <div>
+                <a>Type de commande</a>
+                <p>
+                    <input type="radio" name="commande" id=""> Prémiere acquisition
+                </p>
+                <p>
+                    <input type="radio" name="commande" id=""> Carte complémentaire
+                </p>
+            </div>
 
-        </div>
+            <div>
+                <a> Type de carte</a>
+                <p>
+                    <select name="" id="" style="width: 150px; height: 30px;">
 
-        <div>
-            <strong>Type de commande</strong>
-            <p>
-                <input type="radio" name="commande" id=""> Prémiere acquisition
-            </p>
-            <p>
-                <input type="radio" name="commande" id=""> Carte complémentaire
-            </p>
-        </div>
+                        <option value="">Classic</option>
+                        <option value="">Electron</option>
+                    </select>
+                </p>
+            </div>
 
-        <div>
-            <strong> Type de carte</strong>
-            <p>
-                <select name="" id="" style="width: 150px; height: 30px;">
-
-                    <option value="">Classic</option>
-                    <option value="">Electron</option>
-                </select>
-            </p>
-        </div>
-
-        <div>
-            <strong>Titulaire de la carte</strong>
-            <p>
-                <!-- <select name="" id="" style="width: 200px; height: 30px;">
+            <div>
+                <a>Titulaire de la carte</a>
+                <p>
+                    <!-- <select name="" id="" style="width: 200px; height: 30px;">
           <option value="">IBOURAIMA COULIBALY</option>
           <option value="">YOUGA DIENG </option>
           <option value="">PAPE BABACAR FAR</option>
         </select> -->
-                <input style="width: 200px; height: 30px;" type="text" value="IBOURAIMA COULIBALY">
-            </p>
+                    <input style="width: 200px; height: 30px;" type="text" value="IBOURAIMA COULIBALY">
+                </p>
+            </div>
+
+            <div>
+                <a>Type d'utilisation</a>
+                <p>
+                    <input type="radio" name="utilisation" id="">Affaire
+                </p>
+                <p>
+                    <input type="radio" name="utilisation" id="">Personnelle
+                </p>
+            </div>
+
+            <div>
+                <a>Type de Débit</a>
+                <p>
+                    <input type="radio" name="debit" id="">Immédiat
+                </p>
+                <p>
+                    <input type="radio" name="debit" id="">Différé debut de mois
+                </p>
+                <p>
+                    <input type="radio" name="debit" id="">Différé fin de mois
+                </p>
+            </div>
+
+            <div>
+                <a>Montant débit autorisé</a>
+                <p>
+                    <input style="width: 200px; height: 30px;" type="number" name="montant" id="montant"
+                        placeholder="0.000"> XOF
+                </p>
+            </div>
+
+
+
+
         </div>
+        <mat-card-footer>
+            <mat-card class="footer"></mat-card>
+        </mat-card-footer>
+    </mat-card>
 
-        <div>
-            <strong>Type d'utilisation</strong>
-            <p>
-                <input type="radio" name="utilisation" id="">Affaire
-            </p>
-            <p>
-                <input type="radio" name="utilisation" id="">Personnelle
-            </p>
-        </div>
-
-        <div>
-            <strong>Type de Débit</strong>
-            <p>
-                <input type="radio" name="debit" id="">Immédiat
-            </p>
-            <p>
-                <input type="radio" name="debit" id="">Différé debut de mois
-            </p>
-            <p>
-                <input type="radio" name="debit" id="">Différé fin de mois
-            </p>
-        </div>
-
-        <div>
-            <strong>Montant débit autorisé</strong>
-            <p>
-                <input style="width: 200px; height: 30px;" type="number" name="montant" id="montant"
-                    placeholder="0.000"> XOF
-            </p>
-        </div>
-
-
-
-
-    </div>
-
-
-
-    <div class="" style="margin-left: 40%; margin-top: 1%;">
-        <button mat-raised-button color="primary" [routerLink]="">Valider</button>
-        <button mat-raised-button color="secondary" [routerLink]="">Effacer</button>
-        <button style="margin-left: 50%;" mat-raised-button color="warn"
-            [routerLink]="[ '/dashboard/carte/']">Retour</button>
-    </div>
+</div>
+<div class="" style="margin-left: 40%; margin-top: 1%;">
+    <button mat-raised-button color="primary" [routerLink]="">Valider</button>
+    <button mat-raised-button color="secondary" [routerLink]="">Effacer</button>
+    <button style="margin-left: 50%;" mat-raised-button color="warn"
+        [routerLink]="[ '/dashboard/carte/']">Retour</button>
 </div>

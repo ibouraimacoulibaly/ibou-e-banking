@@ -7,8 +7,10 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./remise-cheque.component.css']
 })
 export class RemiseChequeComponent implements OnInit {
-  number = new FormControl('');
   number1 = new FormControl('');
+  number2 = new FormControl('');
+  firstFieldName4:any;
+  montant:any;
  
   constructor() { }
 

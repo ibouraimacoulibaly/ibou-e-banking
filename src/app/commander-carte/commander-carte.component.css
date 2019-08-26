@@ -1,25 +1,15 @@
 p{
     margin-left: 35%;
-    margin-top: -17px;
-    font-size: 13px;
-    color: black;
-    
+    margin-top: -17px; 
   
   }
   strong{
-      font-size: 14px;
-      color: black;
-      font-family: monospace;
 
   }
-  #principal1{
-      border-bottom: 3px solid;
-  }
+ 
   #principal{
-      width: 80%;
-      border: 3px solid;
-      border-radius: 8px;
-      margin-top: 2%;
+      width: 80.1%;
+      margin-top: -1%;
   }
   button{
       margin-left: 2%;
@@ -28,5 +18,18 @@ p{
       margin: 1%;
       width: 10px;
       height: 10px;
+  }
+  .header{
+    width: 78%;
+    margin-top: 0%;
+    margin-left: 11%;
+    background-color: rgb(153, 158, 179);
+  }
+  .footer{
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    background-color: rgb(121, 136, 206);
+    display: block;
   }
   
