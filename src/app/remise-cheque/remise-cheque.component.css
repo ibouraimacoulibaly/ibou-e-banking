@@ -42,7 +42,6 @@ i {
 
 th {
     margin-left: 20px;
-<<<<<<< HEAD
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -51,7 +50,5 @@ th {
     color: black;
     margin-left: 45%;
     margin-top: 2%;
-    margin-bottom: 0%;
-=======
->>>>>>> f729c6130f8b0091408285f9be840db9fc8211f8
+    margin-bottom: 2%;
 }
