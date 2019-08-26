@@ -1,6 +1,5 @@
 p {
     margin-left: 35%;
-<<<<<<< HEAD
     margin-top: -17px;
     font-size: 13px;
     color: black;
@@ -33,38 +32,3 @@ input {
     width: 10px;
     height: 10px;
 }
-=======
-    margin-top: -17px; 
-  
-  }
-  strong{
-
-  }
- 
-  #principal{
-      width: 80.1%;
-      margin-top: -1%;
-  }
-  button{
-      margin-left: 2%;
-  }
-  input{
-      margin: 1%;
-      width: 10px;
-      height: 10px;
-  }
-  .header{
-    width: 78%;
-    margin-top: 0%;
-    margin-left: 11%;
-    background-color: rgb(153, 158, 179);
-  }
-  .footer{
-    width: 100%;
-    margin-top: 0%;
-    margin-left: 0%;
-    background-color: rgb(121, 136, 206);
-    display: block;
-  }
-  
->>>>>>> 4280c46e660f7dbdc5c5b3ab54f83c356e9d86bb

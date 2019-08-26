@@ -1,10 +1,6 @@
 <br><br>
 <span id="re" style="margin-top: 2%;"> Remise de chéques</span>
 <div class="container" id="remise">
-<<<<<<< HEAD
-
-=======
->>>>>>> 4280c46e660f7dbdc5c5b3ab54f83c356e9d86bb
 
     <mat-card class="header"></mat-card>
     <mat-card>
@@ -87,11 +83,7 @@
                     <td *ngIf="firstField">
                         <div class="input-group">
 
-<<<<<<< HEAD
                             <input id="number" data-montant class="form-control py-2 " type="number" [formControl]="number" name="firstFieldName">
-=======
-                            <input id="number" [(ngModel)]="firstFieldName4" class="form-control py-2 " type="number" [formControl]="number1" name="firstFieldName">
->>>>>>> 4280c46e660f7dbdc5c5b3ab54f83c356e9d86bb
 
                         </div>
                     </td>
@@ -125,11 +117,7 @@
                     <td>
                         <div class="input-group">
 
-<<<<<<< HEAD
                             <input id="number1" data-montant class="form-control" type="number" [formControl]="number1" name="{{field.name}}">
-=======
-                            <input id="number1" [(ngModel)]="field.montant" class="form-control" type="number" value=0 [formControl]="number2" name="{{field.name}}">
->>>>>>> 4280c46e660f7dbdc5c5b3ab54f83c356e9d86bb
                         </div>
                     </td>
                 </tr>
@@ -146,21 +134,13 @@
         </table>
         <div class="row">
             <p style="margin-left: 69%; color: tomato; font-size: 14px;">Total</p>
-<<<<<<< HEAD
             <input placeholder="0" style="margin-left: 77%; border: none; margin-top:-6%; font-size: 14px;" value=" {{number.value + number1.value }} XOF">
-=======
-            <p style="margin-left: 77%; margin-top: -4.3%; font-size: 14px;"> {{ number1.value + number2.value}} XOF</p>
->>>>>>> 4280c46e660f7dbdc5c5b3ab54f83c356e9d86bb
 
 
         </div>
         <div style="margin-left: 40%; margin-top: 3%;">
 
-<<<<<<< HEAD
             <button printTitle="E-BANKING" printSectionId="remise" ngxPrint style="margin-left:2%; background-color: white; margin-bottom: 4%; margin-top: -5%; border: none;">
-=======
-            <button printTitle="E-BANKING" printSectionId="remise" ngxPrint style="margin-left:2%; background-color: white; margin-bottom: 2%; border: none;">
->>>>>>> 4280c46e660f7dbdc5c5b3ab54f83c356e9d86bb
                 <mat-icon matSuffix>print</mat-icon> Imprimer
             </button>
         </div>

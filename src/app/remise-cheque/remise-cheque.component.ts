@@ -8,7 +8,6 @@ import { Input } from '@angular/compiler/src/core';
   styleUrls: ['./remise-cheque.component.css']
 })
 export class RemiseChequeComponent implements OnInit {
-<<<<<<< HEAD
   number = new FormControl();
   number1 = new FormControl();
  //resultat = new FormControl();
@@ -19,12 +18,6 @@ export class RemiseChequeComponent implements OnInit {
   sum;
  
 
-=======
-  number1 = new FormControl('');
-  number2 = new FormControl('');
-  firstFieldName4:any;
-  montant:any;
->>>>>>> 4280c46e660f7dbdc5c5b3ab54f83c356e9d86bb
  
   constructor() { }
 
