@@ -9,15 +9,10 @@ import { Input } from '@angular/compiler/src/core';
   styleUrls: ['./remise-cheque.component.css']
 })
 export class RemiseChequeComponent implements OnInit {
-  number = new FormControl();
-  number1 = new FormControl();
-  number2 = new FormControl();
- //resultat = new FormControl();
-//  number: number = 10;  
-//   number1: number = 20; 
+  
   total;
   list_Array =[];
-  sum:any=0 ;
+ // sum:any=0 ;
 
  
   constructor() { }
@@ -28,7 +23,7 @@ export class RemiseChequeComponent implements OnInit {
   newAttribute: any = {};
 
   firstField = true;
-firstFieldName = 'Emetteur';
+  firstFieldName = 'Emetteur';
   
   // isEditItems: boolean;
 
@@ -55,7 +50,7 @@ firstFieldName = 'Emetteur';
     let list = document.querySelectorAll("[data-montant]");
     this.total = 0;
     this.list_Array= [];
-    console.log(list.length,list);
+    // console.log(list.length,list);
      list.forEach((element:HTMLInputElement) => {
       this.total += parseInt(element.value,10);
       

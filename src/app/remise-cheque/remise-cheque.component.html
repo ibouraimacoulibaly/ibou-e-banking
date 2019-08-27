@@ -83,7 +83,7 @@
                     <td *ngIf="firstField">
                         <div class="input-group">
 
-                            <input (change)="calcul()" id="number" data-montant class="form-control py-2 " type="number" [formControl]="number" name="firstFieldName">
+                            <input (change)="calcul()" id="number" data-montant class="form-control py-2 " type="number" [formControl]="number" name="firstFieldName" min="0">
 
                         </div>
                     </td>
@@ -117,7 +117,7 @@
                     <td>
                         <div class="input-group">
 
-                            <input (change)="calcul()" data-montant id="num{{i}}" class="form-control" type="number">
+                            <input (change)="calcul()" data-montant id="num{{i}}" class="form-control" type="number" min="0">
                         </div>
                     </td>
                 </tr>
@@ -151,5 +151,26 @@
         </mat-card-footer>
     </mat-card>
 
+    <script type="text/javascript">
+        // function calculer() {
+        //     var calcul = document.getElementById("number").value + document.getElementById("number1").value;
+        //     if (calcul == null) {
+        //         return 0;
+        //     } else {
+        //         return calcul;
+        //     }
 
+        // }
+        // var calcul = 0; 
+        // var number = 0;
+        // var number1 = 0;
+        // number = document.getElementById("number").value;
+        // number = document.getElementById("number").value;
+        // calcul = document.getElementById("number").value + document.getElementById("number1").value;
+        // if (isNaN(calcul)) {
+        //     calcul = 0;
+        // } else {
+        //     calcul = document.getElementById("number").value + document.getElementById("number1").value;
+        //}
+    </script>
 </div>
