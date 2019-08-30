@@ -1,6 +1,6 @@
 #remise {
-    width: 94%;
-    margin-left: 3%;
+    width: 100%;
+    /*margin-left: 10%;*/
     height: 50%;
     /* border: 1px solid; */
     /* border-radius: 8px; */
@@ -11,9 +11,9 @@ table {
 }
 
 .footer {
-    width: 100%;
+    width: 103%;
     margin-top: 0%;
-    margin-left: 0%;
+    margin-left: -1.5%;
     background-color: rgb(121, 136, 206);
     display: block;
 }
@@ -51,4 +51,8 @@ th {
     margin-left: 45%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+#impri {
+    margin-top: 10%;
 }
