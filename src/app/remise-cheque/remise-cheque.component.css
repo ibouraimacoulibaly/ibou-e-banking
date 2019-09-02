@@ -56,3 +56,12 @@ th {
 #impri {
     margin-top: 10%;
 }
+
+hr {
+    opcaity: 0.6;
+    width: 400px;
+    height: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #666;
+}

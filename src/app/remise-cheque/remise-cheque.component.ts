@@ -85,118 +85,119 @@ export class RemiseChequeComponent implements OnInit {
   //  captureScreen()
   // {
   //   html2canvas(document.getElementById("remise1")).then(function(canvas) {
-  //     // document.body.appendChild(canvas);
+  //      document.body.appendChild(canvas);
   //     this.header=false; 
   //     var generatedImage = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
   //     window.location.href=generatedImage;
   //   }).finally(()=>{
-  //     // this.print();
+  //      this.print();
   //     this.header=true;
   //   }
   //   );
   // }
+  
 
-  print(): void {
+  // print(): void {
 
-    let printContents, popupWin, test;
+  //   let printContents, popupWin, test;
 
-    printContents = (<HTMLInputElement>document.getElementById('remise1')).innerHTML;
-    test = printContents;
-    popupWin = window.open('', '', 'top=0,left=0,height=100%,width=auto');
-    popupWin.document.open();
-    popupWin.document.write(`
-      <html>
-        <head>
-        <h1> <title> Remise de chéques </title>  </h3>
-          <style>
+  //   printContents = (<HTMLInputElement>document.getElementById('remise1')).innerHTML;
+  //   test = printContents;
+  //   popupWin = window.open('', '', 'top=0,left=0,height=100%,width=auto');
+  //   popupWin.document.open();
+  //   popupWin.document.write(`
+  //     <html>
+  //       <head>
+  //       <h1> <title> Remise de chéques </title>  </h3>
+  //         <style>
         
-        #impri{
-          text-align: left;
-          margin-top: 2%;
-        }
-        #impri1{
-          margin-top: -12%;
-          text-align: right;
-        }
-        #p{
-          margin-top: -1%;
-        }
-        tr {
-          border: 1px solid;
-      }
-        #p1{
-          margin-top: -1%;
-        }
+  //       #impri{
+  //         text-align: left;
+  //         margin-top: 2%;
+  //       }
+  //       #impri1{
+  //         margin-top: -12%;
+  //         text-align: right;
+  //       }
+  //       #p{
+  //         margin-top: -1%;
+  //       }
+  //       tr {
+  //         border: 1px solid;
+  //     }
+  //       #p1{
+  //         margin-top: -1%;
+  //       }
        
 
-        #div{
-          margin-top: -14%;
-          text-align: right;
+  //       #div{
+  //         margin-top: -14%;
+  //         text-align: right;
          
          
-        }
-        h4{
+  //       }
+  //       h4{
          
-          margin-left: 50%;
-          border-bottom: 2px solid;
-        }
-        #strong{
-          margin-top: -9%;
-          margin-left: 10%;
-        } 
-        #impri2{
-          text-align: left;
+  //         margin-left: 50%;
+  //         border-bottom: 2px solid;
+  //       }
+  //       #strong{
+  //         margin-top: -9%;
+  //         margin-left: 10%;
+  //       } 
+  //       #impri2{
+  //         text-align: left;
           
-          display: block;
+  //         display: block;
 
-        } 
-        .table1{
-          margin-left: 70%;
-          margin-top : -6%;
-        }
-        #img{
-          width: auto;
+  //       } 
+  //       .table1{
+  //         margin-left: 70%;
+  //         margin-top : -6%;
+  //       }
+  //       #img{
+  //         width: auto;
          
-          height: auto;
-        } 
-          </style>
-        </head>
-    <body onload="window.print();window.close()">
-    <div id="impri">  <img width="90" height="46" style="margin-top: -0.4%;  margin-left: 3%;" src="../../../assets/img/brm_logo.png"> </br>
+  //         height: auto;
+  //       } 
+  //         </style>
+  //       </head>
+  //   <body onload="window.print();window.close()">
+  //   <div id="impri">  <img width="90" height="46" style="margin-top: -0.4%;  margin-left: 3%;" src="../../../assets/img/brm_logo.png"> </br>
     
-    </div> <br> <br>
-    <div id="impri1">
+  //   </div> <br> <br>
+  //   <div id="impri1">
     
-    <p id="p1">Date de la remise : 31/07/2019
-    </p>
-    </div> <br> <br> 
+  //   <p id="p1">Date de la remise : 31/07/2019
+  //   </p>
+  //   </div> <br> <br> 
 
-    <div id="impri2"> Titulaire du compte <br>IBOURAIMA COULIBALY <br>
-    COMPTE A VUE PARTICULIERS <br> 
-    SICAP FOIRE LOT 139 <br> DAKAR SENEGAL
-    <div/>
-    <div id="div">
-    <h4 style="margin-right: 2%;"> Identifiant national de compte bancaire
-   </h4> <br> <br>
-   <table class="table1">
-   <tr> 
-   <th>banque</th> &nbsp;&nbsp; &nbsp;&nbsp; <th>agence</th> <th> Clé</th>
-   </tr>
-   <tr>
-   <td>122222</td> &nbsp;&nbsp; <td style="margin-left: 2%;">22222</td> <td>222222</td>
-   </tr>
-   </table>
-    </div>
-    <h5>Compte: 0212354054054545 <h5> 
-    <h5>Nombre de chèques :   <h5>  
-    <img id="img" src="../../../assets/img/téléchargement">
-    </body>
-      </html>`
-    );
-    popupWin.document.close();
+  //   <div id="impri2"> Titulaire du compte <br>IBOURAIMA COULIBALY <br>
+  //   COMPTE A VUE PARTICULIERS <br> 
+  //   SICAP FOIRE LOT 139 <br> DAKAR SENEGAL
+  //   <div/>
+  //   <div id="div">
+  //   <h4 style="margin-right: 2%;"> Identifiant national de compte bancaire
+  //  </h4> <br> <br>
+  //  <table class="table1">
+  //  <tr> 
+  //  <th>banque</th> &nbsp;&nbsp; &nbsp;&nbsp; <th>agence</th> <th> Clé</th>
+  //  </tr>
+  //  <tr>
+  //  <td>122222</td> &nbsp;&nbsp; <td style="margin-left: 2%;">22222</td> <td>222222</td>
+  //  </tr>
+  //  </table>
+  //   </div>
+  //   <h5>Compte: 0212354054054545 <h5> 
+  //   <h5>Nombre de chèques :   <h5>  
+  //   <img id="img" src="../../../assets/img/téléchargement">
+  //   </body>
+  //     </html>`
+  //   );
+  //   popupWin.document.close();
 
 
-  }
+  // }
 
 
   public captureScreen() {
@@ -216,7 +217,7 @@ export class RemiseChequeComponent implements OnInit {
         let pdf = new jspdf('p', 'mm', 'a4'); // A4 size page of PDF  
         var position = 10;
         pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight)
-        pdf.save('MYPdf.pdf'); // Generated PDF   
+        pdf.save('Remise de chéques.pdf'); // Generated PDF   
       }).finally(() => {
         this.header = true;
       }
@@ -228,6 +229,9 @@ export class RemiseChequeComponent implements OnInit {
 
   }
 
-
+ligne() {
+     let nomb;
+     nomb= document.getElementById('remise');
+}
 
 }
