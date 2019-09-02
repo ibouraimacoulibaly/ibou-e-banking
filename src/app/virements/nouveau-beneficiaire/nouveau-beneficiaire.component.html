@@ -56,6 +56,7 @@
                 <div [ngSwitch]="virement">
                     <div *ngSwitchCase="'permanent'">
 
+<<<<<<< HEAD
                         <strong>Date</strong>
                         <p>
                             <mat-radio-group (click)="optionDate()" [(ngModel)]="date" aria-label="Select an option">
@@ -73,6 +74,10 @@
                                     <option value="">Hebdomadaire</option>
                                     <option value="">Mensuelle</option>
                                     <option value="">Annuel</option>
+=======
+
+
+>>>>>>> 6a11a525b76b39ede79dd9cdfbe65b84efd4a3ca
 
                                 </select>
                             </p>
@@ -80,6 +85,7 @@
                     </div>
                     <div *ngSwitchCase="'unique'">
 
+<<<<<<< HEAD
                         <p>
                             <mat-radio-group (click)="optionDate()" [(ngModel)]="date" aria-label="Select an option">
                                 <mat-radio-button value="today">Aujourd'hui</mat-radio-button>&nbsp;<br>
@@ -88,6 +94,8 @@
                             </mat-radio-group>
                             <input type="text" *ngIf="date=='autre'" name="" id="">
                         </p>
+=======
+>>>>>>> 6a11a525b76b39ede79dd9cdfbe65b84efd4a3ca
 
 
                         <div>
@@ -128,17 +136,7 @@
 
                 </div>
 
-                <div>
-                    <strong>Motif</strong>
-                    <p><input type="text" name="" id="" style="height: 30px; width:200px;"></p>
-                </div>
-                <div>
-                    <strong>Description(max 140)</strong>
-                    <p>
-                        <textarea name="" id="" cols="50" rows="5"></textarea>
-                    </p>
 
-                </div>
 
 
 

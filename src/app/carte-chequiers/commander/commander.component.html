@@ -1,8 +1,8 @@
-<h4 style="text-align: center;font-size: 14px;">Mes comandes de chéquiers</h4>
+<h4 style="text-align: center;font-size: 14px;"> Comande de chéquiers</h4>
 <mat-card class=" container-fluid header"></mat-card>
 <form action="">
-    <div class="" >
-            <mat-card class="card">
+    <div class="">
+        <mat-card class="card">
 
             <table class="example-full-width" cellspacing="0">
                 <tr>
@@ -16,71 +16,71 @@
                 </tr>
             </table>
 
-        <div style="margin-top:2%; margin-left: 2%;" id="imprimer">
-            <div>
-                <a style="font-family: monospace;">Veuillez</a>
-                <p>
-                    <input type="radio" name="button" id=""> Tenir à ma disposition à mon agence
-                </p>
-                <p>
-                    <input type="radio" name="button" id=""> M'expédier par pli recommandé et à mes frais à mon adresse
-                </p>
-            </div>
-            <div>
-                <a> Compte</a>
-                <p>
-                    <select id="inp1" style="width: 400px; height: 30px;">
+            <div style="margin-top: -3%; margin-left: 2%;" id="imprimer">
+                <div>
+                    <a style="font-family: monospace;">Veuillez</a>
+                    <p>
+                        <input type="radio" name="button" id=""> Tenir à ma disposition à mon agence
+                    </p>
+                    <p>
+                        <input type="radio" name="button" id=""> M'expédier par pli recommandé et à mes frais à mon adresse
+                    </p>
+                </div>
+                <div>
+                    <a> Compte</a>
+                    <p>
+                        <select id="inp1" style="width: 400px; height: 30px;">
                         <option value="volvo"> 2103 356106790566 FFHHFFH</option>
                         <option value="saab"> 2103 356106790566 FFHHFFH</option>
                         <option value="mercedes"> 2103 356106790566 FFHHFFH</option>
                         <option value="audi"> 2103 356106790566 FFHHFFH</option>
                     </select>
-                </p>
-            </div>
+                    </p>
+                </div>
 
-            <div>
-                <a> Devise</a>
-                <p>
-                    XOF
-                </p>
-            </div>
+                <div>
+                    <a> Devise</a>
+                    <p>
+                        XOF
+                    </p>
+                </div>
 
-            <div>
-                <a>Titulaire du compte</a>
-                <p>
-                    COULIBALY IBOURAIMA
-                </p>
+                <div>
+                    <a>Titulaire du compte</a>
+                    <p>
+                        COULIBALY IBOURAIMA
+                    </p>
 
-            </div>
+                </div>
 
-            <div>
-                <a> Agence</a>
-                <p>
-                    1150 Sicap foire
-                </p>
-            </div>
+                <div>
+                    <a> Agence</a>
+                    <p>
+                        1150 Sicap foire
+                    </p>
+                </div>
 
 
-            <div>
-                <a> Nombre de chéquiers</a>
-                <p>
-                    <input type="number" name="" id="" style="width: 200px; height: 30px;">
-                </p>
-            </div>
+                <div>
+                    <a> Nombre de chéquiers</a>
+                    <p>
+                        <input type="number" name="" id="" style="width: 200px; height: 30px;">
+                    </p>
+                </div>
 
-            <div>
-                <a>Type de chéquiers</a>
-                <p >&nbsp;
-                    <select name="" id="" style="width: 200px; height: 30px;">
+                <div>
+                    <a>Type de chéquiers</a>
+                    <p>&nbsp;
+                        <select name="" id="" style="width: 200px; height: 30px;">
                         <option value="">ATalon Barré 25F</option>
                         <option value="">Simple Non Barré 100F</option>
 
                     </select>
-                </p>
-            </div>
+                    </p>
+                </div>
 
-        </div>
-        <mat-card-footer>
+            </div>
+            <mat-card-footer>
                 <mat-card class="footer"></mat-card>
             </mat-card-footer>
         </mat-card>
@@ -89,7 +89,6 @@
     <div class="" style="margin-left: 40%; margin-top: 1%;">
         <button mat-raised-button color="primary" [routerLink]="">Valider</button>
         <button mat-raised-button color="secondary" [routerLink]="">Effacer</button>
-        <button style="margin-left: 30%;" mat-raised-button color="warn"
-            [routerLink]="[ '/dashboard/cheque/']">Retour</button>
+        <button style="margin-left: 30%;" mat-raised-button color="warn" [routerLink]="[ '/dashboard/cheque/']">Retour</button>
     </div>
 </form>
