@@ -2,8 +2,8 @@ import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core'
 import { MapsAPILoader, MouseEvent } from '@agm/core';
 
 import { MatTableDataSource, MatPaginator } from '@angular/material';
-import {TooltipPosition} from '@angular/material/tooltip';
-import {FormControl} from '@angular/forms'
+import { TooltipPosition } from '@angular/material/tooltip';
+import { FormControl } from '@angular/forms'
 import { MapServiceService } from '../services/map-service.service';
 
 
@@ -21,14 +21,14 @@ export class ReseauxGabComponent implements OnInit {
   zoom: number;
   address: string;
   private geoCoder;
-  
+
 
   //title: string = 'Localisation';
-  late: number = 14.729898480616876;
-  lnge: number = -17.457637927829182;
-  locationChoosen=true;
+  late: number = 14.741433;
+  lnge: number = -17.460705;
+  locationChoosen = true;
   location: Object;
-  
+
 
   @ViewChild('search')
   public searchElementRef: ElementRef;
@@ -38,8 +38,8 @@ export class ReseauxGabComponent implements OnInit {
     private ngZone: NgZone, private map: MapServiceService) { }
 
   ngOnInit() {
-    
-    
+
+
     /*this.mapsAPILoader.load().then(() => {
         this.setCurrentLocation();
         this.geoCoder = new google.maps.Geocoder;
@@ -66,15 +66,15 @@ export class ReseauxGabComponent implements OnInit {
       });
     }*/
 
-  
-  
 
-  
-  // onChooseLocation(event){
-  //   this.late=event.coords.lat;
-  //   this.lnge=event.coords.lng;
-  //   this.locationChoosen=true;
-  // }
+
+
+
+    // onChooseLocation(event){
+    //   this.late=event.coords.lat;
+    //   this.lnge=event.coords.lng;
+    //   this.locationChoosen=true;
+    // }
 
   }
 }

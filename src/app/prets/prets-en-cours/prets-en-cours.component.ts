@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource, MatPaginator } from '@angular/material';
-import {TooltipPosition} from '@angular/material/tooltip';
-import {FormControl} from '@angular/forms';
+import { TooltipPosition } from '@angular/material/tooltip';
+import { FormControl } from '@angular/forms';
 
 
 @Component({
@@ -10,27 +10,27 @@ import {FormControl} from '@angular/forms';
   styleUrls: ['./prets-en-cours.component.css']
 })
 export class PretsEnCoursComponent implements OnInit {
-positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
+  positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left', 'right'];
   position = new FormControl(this.positionOptions[0]);
 
-  displayedColumns: string[] = ['dossier', 'numero', 'du','nombre', 'montant_impaye'];
+  displayedColumns: string[] = ['dossier', 'numero', 'du', 'nombre', 'montant_impaye'];
 
   comptes: Compte[] = [
     {
       dossier: '012768',
       numero: '021235-4054054545-5405 XOF',
-      du:'621 000',
+      du: '621 000',
       nombre: '8',
       montant_impaye: '205 605'
     },
     {
       dossier: '098908',
       numero: '445052-4054054545-5405 XOF',
-      du:'4 300 000',
+      du: '4 300 000',
       nombre: '4',
       montant_impaye: ' 980 000'
     }
-    
+
   ];
 
   dataSource: MatTableDataSource<Compte>;
@@ -50,7 +50,7 @@ positionOptions: TooltipPosition[] = ['after', 'before', 'above', 'below', 'left
 export interface Compte {
   dossier: string;
   numero: string;
-  du:string;
+  du: string;
   nombre: string;
   montant_impaye: string;
 }

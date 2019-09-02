@@ -13,7 +13,8 @@
                 <option value="">021235-4054054545-5405 XOF COMPTE A VUE PARTICULIERS</option>
             </select>
         </div>
-        <button style="margin-left: 90%; height: 30px; margin-bottom: 2%;" *ngIf="fieldArray.length <= 10" color="primary" mat-raised-button (click)="addFieldValue()"><i style="margin: 5px; margin-left: -10px;"
+        <button style="margin-left: 90%; height: 30px; margin-bottom: 2%;" *ngIf="fieldArray.length <= 10"
+            color="primary" mat-raised-button (click)="addFieldValue()"><i style="margin: 5px; margin-left: -10px;"
                 class="fa fa-plus" aria-hidden="true"></i>Ajouter</button>
 
 
@@ -59,7 +60,8 @@
                     <td *ngIf="firstField">
                         <div class="input-group">
 
-                            <input [(ngModel)]="firstFieldName1" class="form-control py-2 " type="text" name="firstFieldName">
+                            <input [(ngModel)]="firstFieldName1" class="form-control py-2 " type="text"
+                                name="firstFieldName">
 
                         </div>
                     </td>
@@ -67,7 +69,8 @@
                     <td *ngIf="firstField">
                         <div class="input-group">
 
-                            <input [(ngModel)]="firstFieldName2" class="form-control py-2 " type="text" name="firstFieldName">
+                            <input [(ngModel)]="firstFieldName2" class="form-control py-2 " type="text"
+                                name="firstFieldName">
 
                         </div>
                     </td>
@@ -75,7 +78,8 @@
                     <td *ngIf="firstField">
                         <div class="input-group">
 
-                            <input [(ngModel)]="firstFieldName3" class="form-control py-2 " type="text" name="firstFieldName">
+                            <input [(ngModel)]="firstFieldName3" class="form-control py-2 " type="text"
+                                name="firstFieldName">
 
                         </div>
                     </td>
@@ -83,7 +87,8 @@
                     <td *ngIf="firstField">
                         <div class="input-group">
 
-                            <input (change)="calcul()" id="number" data-montant class="form-control py-2 " type="number" [formControl]="number" name="firstFieldName">
+                            <input (change)="calcul()" id="number" data-montant class="form-control py-2 " type="number"
+                                min="0" [formControl]="number" name="firstFieldName">
 
                         </div>
                     </td>
@@ -117,7 +122,8 @@
                     <td>
                         <div class="input-group">
 
-                            <input (change)="calcul()" data-montant id="num{{i}}" class="form-control" type="number">
+                            <input (change)="calcul()" data-montant id="num{{i}}" class="form-control" min="0"
+                                type="number">
                         </div>
                     </td>
                 </tr>
@@ -134,13 +140,15 @@
         </table>
         <div class="input-group">
             <p style="margin-left: 69%; color: tomato; font-size: 14px;">Total</p>
-            <input class="form-control" id="number1" [formControl]="number2" style="margin-left: 77%; border: none; margin-top:-5.5%; font-size: 14px;" value=" {{ total}} XOF">
+            <input class="form-control" id="number1" [formControl]="number2"
+                style="margin-left: 77%; border: none; margin-top:-5.5%; font-size: 14px;" value=" {{ total}} XOF">
 
 
         </div>
         <div style="margin-left: 40%; margin-top: 3%;">
 
-            <button printTitle="E-BANKING" printSectionId="remise" ngxPrint style="margin-left:2%; background-color: white; margin-bottom: 4%; margin-top: -5%; border: none;">
+            <button printTitle="E-BANKING" printSectionId="remise" ngxPrint
+                style="margin-left:2%; background-color: white; margin-bottom: 4%; margin-top: -5%; border: none;">
                 <mat-icon matSuffix>print</mat-icon> Imprimer
             </button>
         </div>
