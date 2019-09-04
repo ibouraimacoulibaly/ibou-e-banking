@@ -1,106 +1,107 @@
-.admin-container{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top:8%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  
-}
-mat-card{
-width: 100%;
-background-color: rgb(208, 209, 235); 
-margin-top: 40%;
-display: block;
-}
-.mymarge{
-  margin-left: -20%;
-}
-.footer{
-  text-align: center;
-  display: block;
-  margin: auto;
-  width: 100%;
-  height: 4%;
-  background-color: rgb(72, 76, 196);
-  position: fixed;
-  bottom: 0; 
-
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.sidenav{
+mat-card {
+    width: 100%;
+    background-color: rgb(208, 209, 235);
+    margin-top: 40%;
+    display: block;
+}
+
+.mymarge {
+    margin-left: -20%;
+}
+
+.footer {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 4%;
+    background-color: rgb(72, 76, 196);
+    position: fixed;
+    bottom: 0;
+}
+
+.sidenav {
     width: 240px;
-     background:rgb(208, 209, 235);  
+    background: rgb(208, 209, 235);
     /* background: linear-gradient(to left,rgb(5, 5, 75,0.2) , rgb(255, 0, 0, 0.2), rgba(206, 187, 153, 0.2), rgb(255, 255, 0,0.2),rgb(200, 255, 0,0.2)); */
-    /* background: linear-gradient(to bottom,rgb(197, 204, 216), rgb(182, 190, 207),white);  */  
-  }
-  
+    /* background: linear-gradient(to bottom,rgb(197, 204, 216), rgb(182, 190, 207),white);  */
+}
 
-.mat-expansion-panel{
+.mat-expansion-panel {
     /* background-color:  rgba(152, 145, 252, 0.808) !important; */
     width: 100% !important;
     padding: 0px !important;
     margin: 0px !important;
     font-size: 14px;
-    background: linear-gradient(to top, rgba(95, 95, 66, 0.027),rgba(200, 255, 0, 0.048));
+    background: linear-gradient(to top, rgba(95, 95, 66, 0.027), rgba(200, 255, 0, 0.048));
+}
 
-  }
-  .mat-expansion-panel-header{
+.mat-expansion-panel-header {
     font-size: 14px !important;
     padding-left: 15px !important;
     margin: 1px !important;
-  }
-  .mat-list-item{
+}
+
+.mat-list-item {
     width: 100% !important;
     padding: 0px !important;
     margin: 0px !important;
     font-size: 14px;
-  }
-  .mat-list-item:hover{
-    background: linear-gradient(to right, rgb(1, 10, 39),white);
-    border-bottom: 1px solid rgb(3, 163, 255) ;
+}
+
+.mat-list-item:hover {
+    background: linear-gradient(to right, rgb(1, 10, 39), white);
+    border-bottom: 1px solid rgb(3, 163, 255);
     color: white;
-  }
-  .side-active{
-    border-right: 4px solid rgba(2, 176, 182, 0.973) !important; 
-    background: linear-gradient(to right,rgb(250, 250, 250),rgb(183, 204, 66));
-    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.2);
-  
-  }
-  
-  
-  .drop-down{
+}
+
+.side-active {
+    border-right: 4px solid rgba(2, 176, 182, 0.973) !important;
+    background: linear-gradient(to right, rgb(250, 250, 250), rgb(183, 204, 66));
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.drop-down {
     display: inline-block;
     position: relative;
-  }
-  a:hover{
+}
+
+a:hover {
     color: rgb(179, 80, 80);
-  }
-  
-  .drop-down__button{
-  background: linear-gradient(to right,#222D5D,rgb(58, 192, 204));
-  display: inline-block;
-  line-height: 40px;
-  padding: 0 18px;
-  text-align: left;
-  border-radius: 4px;
-  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.2);
-  cursor: pointer;
-  width: 100%;
-  }
-  
-  .example-headers-align .mat-expansion-panel-header-title,
-  .example-headers-align .mat-expansion-panel-header-description {
+}
+
+.drop-down__button {
+    background: linear-gradient(to right, #222D5D, rgb(58, 192, 204));
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 18px;
+    text-align: left;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 100%;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
     flex-basis: 0;
-  }
-  
-  .example-headers-align .mat-expansion-panel-header-description {
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .mat-list-item{
-    cursor: pointer;
-  }
+}
 
+.mat-list-item {
+    cursor: pointer;
+}
