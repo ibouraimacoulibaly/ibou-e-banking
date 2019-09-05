@@ -53,72 +53,86 @@
                     </p>
                 </div>
 
-
                 <div [ngSwitch]="virement">
                     <div *ngSwitchCase="'permanent'">
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+                        <strong>Date</strong>
+                        <p>
+                            <mat-radio-group (click)="optionDate()" [(ngModel)]="date" aria-label="Select an option">
+                                <mat-radio-button value="today">Aujourd'hui</mat-radio-button>&nbsp;<br>
+                                <mat-radio-button value="autre">Autre Date</mat-radio-button>
+                                &nbsp;
+                            </mat-radio-group>
+                            <input type="text" *ngIf="date=='autre'" name="" id="">
+                        </p>
+
+                        <div>
+                            <strong>Périodicité</strong>
+                            <p>
+                                <select name="" id="" style="width: 200px; height: 30px;">
+                                    <option value="">Hebdomadaire</option>
+                                    <option value="">Mensuelle</option>
+                                    <option value="">Annuel</option>
+=======
+=======
+
+>>>>>>> 7a634cc29a590bf2fe890948826e28eaa48d2bb5
 
 
+>>>>>>> 6a11a525b76b39ede79dd9cdfbe65b84efd4a3ca
 
-                        <div [ngSwitch]="virement">
-                            <div *ngSwitchCase="'permanent'">
-
-                                <strong>Date</strong>
-                                <p>
-                                    <mat-radio-group (click)="optionDate()" [(ngModel)]="date" aria-label="Select an option">
-                                        <mat-radio-button value="today">Aujourd'hui</mat-radio-button>&nbsp;<br>
-                                        <mat-radio-button value="autre">Autre Date</mat-radio-button>
-                                        &nbsp;
-                                    </mat-radio-group>
-                                    <input type="text" *ngIf="date=='autre'" name="" id="">
-                                </p>
-
-                                <div>
-                                    <strong>Périodicité</strong>
-                                    <p>
-                                        <select name="" id="" style="width: 200px; height: 30px;">
-                                            <option value="">Hebdomadaire</option>
-                                            <option value="">Mensuelle</option>
-                                            <option value="">Annuel</option>
-
-                                        </select>
-                                    </p>
-                                </div>
-                            </div>
+<<<<<<< HEAD
+                                </select>
+                            </p>
                         </div>
-                        <div *ngSwitchCase="'unique'">
-
-
-
-                            <div>
-                                <strong>Périodicité</strong>
-                                <p>
-                                    <select name="" id="" style="width: 200px; height: 30px;">
-                                        <option value="">Hebdomadaire</option>
-                                        <option value="">Mensuelle</option>
-                                        <option value="">Annuel</option>
-
-                                    </select>
-                                </p>
-                            </div>
-                        </div>
-
-
                     </div>
+                    <div *ngSwitchCase="'unique'">
+=======
+>>>>>>> 7a634cc29a590bf2fe890948826e28eaa48d2bb5
+
+<<<<<<< HEAD
+                        <p>
+                            <mat-radio-group (click)="optionDate()" [(ngModel)]="date" aria-label="Select an option">
+                                <mat-radio-button value="today">Aujourd'hui</mat-radio-button>&nbsp;<br>
+                                <mat-radio-button value="autre">Autre Date</mat-radio-button>
+                                &nbsp;
+                            </mat-radio-group>
+                            <input type="text" *ngIf="date=='autre'" name="" id="">
+                        </p>
+=======
+>>>>>>> 6a11a525b76b39ede79dd9cdfbe65b84efd4a3ca
 
 
+                        <div>
+                            <strong>Périodicité</strong>
+                            <p>
+                                <select name="" id="" style="width: 200px; height: 30px;">
+                                    <option value="">Hebdomadaire</option>
+                                    <option value="">Mensuelle</option>
+                                    <option value="">Annuel</option>
+
+                                </select>
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
+
+
+
 
                 <div>
                     <strong>Devise du transfert</strong>
                     <p>
                         <select name="" id="" style="width: 200px; height: 30px;">
-                                <option value="">XOF</option>
-                                <option value="">EURO</option>
-                                <option value="">DOLLAR US</option>
-                                <option value="">YEN JAPONAIS</option>
+                            <option value="">XOF</option>
+                            <option value="">EURO</option>
+                            <option value="">DOLLAR US</option>
+                            <option value="">YEN JAPONAIS</option>
 
-                            </select>
+                        </select>
                     </p>
                 </div>
                 <div>
@@ -126,16 +140,6 @@
                     <p> <input type="number" name="" id="" placeholder="0.00" style="height: 30px; width:200px;">
                     </p>
 
-                    <div>
-                        <strong>Motif</strong>
-                        <p><input type="text" name="" id="" style="height: 30px; width:200px;"></p>
-                    </div>
-                    <div>
-                        <strong>Description(max 140)</strong>
-                        <p>
-                            <textarea name="" id="" cols="50" rows="5"></textarea>
-                        </p>
-                    </div>
 
                 </div>
 

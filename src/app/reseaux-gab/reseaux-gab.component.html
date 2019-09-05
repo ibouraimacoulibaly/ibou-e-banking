@@ -12,7 +12,9 @@
 
             <div class="form-group">
                 <label>Enter address</label>
-                <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+                <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()"
+                    placeholder="Search Nearest Location" autocorrect="off" autocapitalize="off" spellcheck="off"
+                    type="text" #search>
             </div>
 
             <!-- <h1>{{ title }}</h1> -->
@@ -31,10 +33,11 @@
 
 
     <mat-tab label="Agences">
-        <div class="" >
+        <div class="">
 
             <div style="margin-left: 40%; font-size: 16px; margin-bottom: -3%;margin-top: 3%;">Nos Agences</div>
-            <br>  <mat-card class="header"></mat-card>
+            <br>
+            <mat-card class="header"></mat-card>
             <mat-card>
                 <table class="table" style="margin-top: -1.7%; width: 105%; margin-left: -1.7%;">
                     <thead>
@@ -82,59 +85,62 @@
 
 
 
-           
+
         </div>
 
     </mat-tab>
     <mat-tab label="Gabs">
-            <div>
+        <div>
 
-                    <div style="margin-left: 40%; margin-bottom: -3%;font-size: 16px; margin-top: 3%; ">Nos Gabs</div><br>
-                    <mat-card class="header"></mat-card>
-                    <mat-card>
-                            <table class="table" style="margin-top: -1.7%; width: 105%; margin-left: -1.7%;">
-    
-                            <thead>
-                                <th>Gabs</th>
-                                <th>Adresse</th>
-                                <th>Etat</th>
-    
-    
-                            </thead>
-                            <tbody>
-    
-    
-                                <tr>
-    
-                                    <td>Sicap foire </td>
-                                    <td>Sicap foire lot 139</td>
-                                    <td><i style="margin-left: 10px; color: teal;" class="fa fa-check" aria-hidden="true"></i></td>
-                                </tr>
-    
-    
-    
-    
-                                <tr>
-    
-                                    <td>Point E</td>
-                                    <td>A coté de l'université (UCAD)</td>
-                                    <td><i style=" margin-left: 10px; color: teal;" class="fa fa-check" aria-hidden="true"></i></td>
-    
-                                </tr>
-                                <tr>
-    
-                                    <td>Pikine</td>
-                                    <td>Pikine Est face cinéma awa</td>
-                                    <td><i style=" margin-left: 10px; width: 20px; color: red;" class="fa fa-times" aria-hidden="true"></i></td>
-                                </tr>
-    
-                            </tbody>
-    
-                        </table>
-                        <mat-card-footer>
-                            <mat-card class="footer"></mat-card>
-                        </mat-card-footer>
-                    </mat-card>
-                </div>
+            <div style="margin-left: 40%; margin-bottom: -3%;font-size: 16px; margin-top: 3%; ">Nos Gabs</div><br>
+            <mat-card class="header"></mat-card>
+            <mat-card>
+                <table class="table" style="margin-top: -1.7%; width: 105%; margin-left: -1.7%;">
+
+                    <thead>
+                        <th>Gabs</th>
+                        <th>Adresse</th>
+                        <th>Etat</th>
+
+
+                    </thead>
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>Sicap foire </td>
+                            <td>Sicap foire lot 139</td>
+                            <td><i style="margin-left: 10px; color: teal;" class="fa fa-check" aria-hidden="true"></i>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+
+                            <td>Point E</td>
+                            <td>A coté de l'université (UCAD)</td>
+                            <td><i style=" margin-left: 10px; color: teal;" class="fa fa-check" aria-hidden="true"></i>
+                            </td>
+
+                        </tr>
+                        <tr>
+
+                            <td>Pikine</td>
+                            <td>Pikine Est face cinéma awa</td>
+                            <td><i style=" margin-left: 10px; width: 20px; color: red;" class="fa fa-times"
+                                    aria-hidden="true"></i></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <mat-card-footer>
+                    <mat-card class="footer"></mat-card>
+                </mat-card-footer>
+            </mat-card>
+        </div>
     </mat-tab>
 </mat-tab-group>
