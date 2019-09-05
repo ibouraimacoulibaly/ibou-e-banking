@@ -150,16 +150,17 @@
                 </mat-list-item>
             </a>
             <mat-divider></mat-divider>
-            <a routerLink="/dashboard/reseaux/">
-                <mat-list-item>
-                    <span class="fa fa-hotel  " style="color: rgb(46, 13, 163);"></span>
+            <a>
+                <mat-list-item routerLink="/dashboard/reseaux/">
+                    <span class="fa fa-hotel" style="color: rgb(46, 13, 163);"></span>
 
                     <h4 mat-line>Notre Réseau </h4>
                 </mat-list-item>
             </a>
             <mat-divider></mat-divider>
-            <a routerLink="/dashboard/messagerie/">
-                <mat-list-item>
+            <a>
+                <mat-list-item routerLink="/dashboard/messagerie/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+                    true}">
                     <span class="fa fa-envelope  " style="color: rgb(46, 13, 163);"></span>
                     <h4 mat-line>Messagerie</h4>
                 </mat-list-item>

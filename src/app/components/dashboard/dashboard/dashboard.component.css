@@ -105,3 +105,9 @@ a:hover {
 .mat-list-item {
     cursor: pointer;
 }
+
+.mat-list-item:active-link {
+    color: #0c0c28;
+    background-color: royalblue;
+    text-decoration: underline;
+}
