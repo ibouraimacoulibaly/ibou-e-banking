@@ -1,71 +1,6 @@
 <br>
 <br>
 <span id="re" style="margin-top: 2%;"> Remise de chéques</span>
-<<<<<<< HEAD
-<div class="container" id="remise">
-
-    <mat-card class="header"></mat-card>
-    <mat-card>
-        <div style="margin-top: 2%;">
-            <strong style="font-family: 'Courier New', Courier, monospace;">Sélectionner un Compte : </strong>
-            <select name="" id="" style="margin-left: 5%; height: 30px;">
-                <option value="">021235-4054054545-5405 XOF COMPTE A VUE PARTICULIERS</option>
-                <option value="">021235-4054054545-5405 XOF COMPTE EPARGNE</option>
-                <option value="">021235-4054054545-5405 XOF COMPTE A VUE PARTICULIERS</option>
-            </select>
-        </div>
-
-        <button style="margin-left: 90%; height: 30px; margin-bottom: 2%;" *ngIf="fieldArray.length <= 10"
-            color="primary" mat-raised-button (click)="addFieldValue()"><i style="margin: 5px; margin-left: -10px;"
-                class="fa fa-plus" aria-hidden="true"></i>Ajouter</button>
-        <div class="container" id="remise">
-
-
-
-
-
-            <div id="remise1" style="margin-left:2%;">
-                <div id="test" class="container-fluid" [hidden]='header' style="color: black;">
-                    <h6 style="text-align: center">Remise de chéques</h6>
-                    <div id="impri" style="margin-top: 3%;"> <img width="90" height="46"
-                            src="../../../assets/img/brm_logo.png">
-
-                    </div> <br /> <br />
-                    <div id="impri1" style="text-align: right;  margin-top: -8%; margin-right: 15%;">
-
-                        <p id="p1">Date de la remise : 31/07/2019
-                        </p>
-                    </div> <br /> <br />
-
-                    <div id="impri2"> Titulaire du compte <br />IBOURAIMA COULIBALY <br /> COMPTE A VUE PARTICULIERS
-                        <br /> SICAP FOIRE LOT 139 <br /> DAKAR SENEGAL
-                    </div>
-                    <div id="div" style="margin-bottom: 4%;">
-
-                        <h5 style="margin-right: 9%; text-align: right; margin-top: -14%;"> Identifiant national de
-                            compte bancaire
-                        </h5>
-                        <hr style="margin-left:45%; margin-top: -1.3%; font-weight:bold; size:5px;"> <br />
-                        <table class="table1" style="margin-left: 50%; width: 50%; margin-top: -5%;">
-                            <tr>
-                                <th>Banque</th>
-                                <th>Agence</th>
-                                <th>Compte</th>
-                                <th> Clé</th>
-                            </tr>
-                            <tr>
-                                <td>SN32040</td>
-                                <td> 01002 </td>
-                                <td>0212354054054545</td>
-                                <td>42</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <td>Nombre de chèques : 3
-                    </td>
-                </div>
-=======
 
 
 
@@ -82,7 +17,8 @@
         </select>
     </div>
 
-    <button style="margin-left: 90%; height: 30px; margin-bottom: 2%;" *ngIf="fieldArray.length <= 10" color="primary" mat-raised-button (click)="addFieldValue()"><i style="margin: 5px; margin-left: -10px;" class="fa fa-plus"
+    <button style="margin-left: 90%; height: 30px; margin-bottom: 2%;" *ngIf="fieldArray.length <= 10" color="primary"
+        mat-raised-button (click)="addFieldValue()"><i style="margin: 5px; margin-left: -10px;" class="fa fa-plus"
             aria-hidden="true"></i>Ajouter</button>
     <div class="container" id="remise">
 
@@ -93,7 +29,8 @@
         <div id="remise1" style="margin-left:2%;">
             <div id="test" class="container-fluid" [hidden]='header' style="color: black;">
                 <h6 style="text-align: center">Remise de chéques</h6>
-                <div id="impri" style="margin-top: 3%;"> <img width="90" height="46" src="../../../assets/img/brm_logo.png">
+                <div id="impri" style="margin-top: 3%;"> <img width="90" height="46"
+                        src="../../../assets/img/brm_logo.png">
 
                 </div> <br /> <br />
                 <div id="impri1" style="text-align: right;  margin-top: -8%; margin-right: 15%;">
@@ -102,12 +39,13 @@
                     </p>
                 </div> <br /> <br />
 
-                <div id="impri2"> Titulaire du compte <br />IBOURAIMA COULIBALY <br /> COMPTE A VUE PARTICULIERS <br /> SICAP FOIRE LOT 139 <br /> DAKAR SENEGAL
+                <div id="impri2"> Titulaire du compte <br />IBOURAIMA COULIBALY <br /> COMPTE A VUE PARTICULIERS <br />
+                    SICAP FOIRE LOT 139 <br /> DAKAR SENEGAL
                 </div>
                 <div id="div" style="margin-bottom: 4%;">
->>>>>>> 7a634cc29a590bf2fe890948826e28eaa48d2bb5
 
-                    <h5 style="margin-right: 9%; text-align: right; margin-top: -14%;"> Identifiant national de compte bancaire
+                    <h5 style="margin-right: 9%; text-align: right; margin-top: -14%;"> Identifiant national de compte
+                        bancaire
                     </h5>
                     <hr style="margin-left:45%; margin-top: -1.3%; font-weight:bold; size:5px;"> <br />
                     <table class="table1" style="margin-left: 50%; width: 40%; margin-top: -5%;">
@@ -124,17 +62,12 @@
                             <td>42</td>
                         </tr>
                     </table>
-                </div>
+                </div><br>
 
-<<<<<<< HEAD
-                <table class="table table-striped ">
 
-                    <thead>
-                        <!-- <tr>
-                       <th>Item Name
-=======
-                <td>Nombre de chèques : 3
-                </td>
+                <td style="margin-top: 5%;">Nombre de chèques : {{ nombre }}
+
+
             </div>
 
 
@@ -142,27 +75,14 @@
 
                 <thead>
                     <!-- <tr>
-                    <th>Item Name
->>>>>>> 7a634cc29a590bf2fe890948826e28eaa48d2bb5
+                        <th>Item Name
 
-                        <a (click)="onEditCloseItems()" class="text-info float-right">
-                            <i class="mdi mdi-{{isEditItems ? 'close' : 'pencil'}} mdi-18px"></i>
-                        </a>
-                       </th>
+                            <a (click)="onEditCloseItems()" class="text-info float-right">
+                                <i class="mdi mdi-{{isEditItems ? 'close' : 'pencil'}} mdi-18px"></i>
+                            </a>
+                        </th> -->
 
-                     </tr> -->
 
-<<<<<<< HEAD
-                        <tr style="text-align: center; ">
-                            <th>Emetteur</th>
-                            <th>Banque</th>
-                            <th>Numéro de chéques</th>
-                            <th>Montant</th>
-                        </tr>
-                    </thead>
-
-                    <!-- <tbody>
-=======
                     <tr style="text-align: center; ">
                         <th>Emetteur</th>
                         <th>Banque</th>
@@ -171,102 +91,14 @@
                     </tr>
                 </thead>
 
-                <!-- <tbody>
->>>>>>> 7a634cc29a590bf2fe890948826e28eaa48d2bb5
-                <tr *ngIf="firstField">
-                    <td>
-                        <i (click)="firstField = false" class="mdi mdi-close mdi-18px"></i> {{firstFieldName}}
-                    </td>
-                </tr>
-                <tr *ngFor="let field of fieldArray; let i = index">
-                    <td *ngIf="field?.name">
-                        <i (click)="deleteFieldValue(i)" class="mdi mdi-close mdi-18px"></i> {{field.name}}</td>
-                </tr>
-                 </tbody> -->
 
-<<<<<<< HEAD
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="input-group">
-
-                                    <input [(ngModel)]="firstFieldName1" class="form-control py-2 " type="text"
-                                        name="firstFieldName">
-
-                                </div>
-                            </td>
-
-                            <td *ngIf="firstField">
-                                <div class="input-group">
-
-                                    <input [(ngModel)]="firstFieldName2" class="form-control py-2 " type="text"
-                                        name="firstFieldName">
-
-                                </div>
-                            </td>
-
-                            <td *ngIf="firstField">
-                                <div class="input-group">
-
-                                    <input [(ngModel)]="firstFieldName3" class="form-control py-2 " type="text"
-                                        name="firstFieldName">
-
-                                </div>
-                            </td>
-
-                            <td *ngIf="firstField">
-                                <div class="input-group">
-
-                                    <input (change)="calcul()" id="number" data-montant class="form-control py-2 "
-                                        type="number" min="0" [formControl]="number" name="firstFieldName">
-
-                                </div>
-                            </td>
-
-
-
-                        </tr>
-
-                        <tr *ngFor="let field of fieldArray; let i = index">
-                            <td>
-                                <div class="input-group">
-
-                                    <input [(ngModel)]="field.name" class="form-control" type="text">
-                                </div>
-                            </td>
-
-                            <td>
-                                <div class="input-group">
-
-                                    <input [(ngModel)]="field.name1" class="form-control" type="text">
-                                </div>
-                            </td>
-
-                            <td>
-                                <div class="input-group">
-
-                                    <input [(ngModel)]="field.name2" class="form-control" type="text">
-                                </div>
-                            </td>
-
-                            <td>
-                                <div class="input-group">
-
-                                    <input (change)="calcul()" data-montant id="num{{i}}" class="form-control" min="0"
-                                        type="number">
-                                </div>
-                            </td>
-                        </tr>
-
-
-                        <!-- <tr>
-=======
                 <tbody>
                     <tr>
                         <td>
                             <div class="input-group">
 
-                                <input [(ngModel)]="firstFieldName1" class="form-control py-2" type="text" name="firstFieldName1">
+                                <input [(ngModel)]="firstFieldName1" class="form-control py-2" type="text"
+                                    name="firstFieldName1">
 
                             </div>
                         </td>
@@ -274,7 +106,8 @@
                         <td *ngIf="firstField">
                             <div class="input-group">
 
-                                <input [(ngModel)]="firstFieldName2" class="form-control py-2 " type="text" name="firstFieldName2">
+                                <input [(ngModel)]="firstFieldName2" class="form-control py-2 " type="text"
+                                    name="firstFieldName2">
 
                             </div>
                         </td>
@@ -282,7 +115,8 @@
                         <td *ngIf="firstField">
                             <div class="input-group">
 
-                                <input [(ngModel)]="firstFieldName3" class="form-control py-2 " type="text" name="firstFieldName">
+                                <input [(ngModel)]="firstFieldName3" class="form-control py-2 " type="text"
+                                    name="firstFieldName">
 
                             </div>
                         </td>
@@ -290,7 +124,8 @@
                         <td *ngIf="firstField">
                             <div class="input-group">
 
-                                <input (change)="calcul()" id="number" data-montant class="form-control py-2" type="number" name="firstFieldName" min="0">
+                                <input (change)="calcul()" id="number" data-montant class="form-control py-2"
+                                    type="number" name="firstFieldName" min="0">
 
                             </div>
                         </td>
@@ -299,7 +134,7 @@
 
                     </tr>
 
-                    <tr *ngFor="let field of fieldArray; let i = index">
+                    <tr *ngFor="let field of fieldArray; let i = index" id="tr{{i}}">
                         <td>
                             <div class="input-group">
 
@@ -324,142 +159,63 @@
                         <td>
                             <div class="input-group">
 
-                                <input (change)="calcul()" data-montant id="num{{i}}" class="form-control" type="number" min="0">
-                                <i [hidden]="!header" style="color: red" (click)="deleteFieldValue(i)" class="mdi mdi-close mdi-18px"></i>
+                                <input (change)="calcul()" data-montant id="num{{i}}" class="form-control" type="number"
+                                    min="0">
+                                <i [hidden]="!header" style="color: red" (click)="deleteFieldValue(i)"
+                                    class="mdi mdi-close mdi-18px"></i>
                             </div>
 
                         </td>
                     </tr>
 
 
-                    <!-- <tr>
->>>>>>> 7a634cc29a590bf2fe890948826e28eaa48d2bb5
-                    <td align="right">
-                        <button *ngIf="fieldArray.length <= 2" class="btn btn-success btn-sm" type="button" (click)="addFieldValue()" style="margin-right:10px">Add More Item</button>
-                        <button (click)="onEditCloseItems()"   type="button">Save Items</button>
-                    </td>
-<<<<<<< HEAD
-                  </tr> -->
-                    </tbody>
 
-                </table>
-                <table>
-                    <div class="input-group">
-                        <p style="margin-left: 69%; color: tomato; font-size: 14px;">Total</p>
-                        <input class="form-control" id="number1" [formControl]="number2"
-                            style="margin-left: 77%; border: none; margin-top:-5.5%; font-size: 14px;"
-                            value=" {{ total}} XOF">
-
-
-                    </div>
-                </table>
-
-            </div>
-            <div style="margin-left: 40%; margin-top: 3%;">
-
-                <button printTitle="E-BANKING" printSectionId="remise" ngxPrint
-                    style="margin-left:2%; background-color: white; margin-bottom: 4%; margin-top: -5%; border: none;">
-                    <mat-icon matSuffix>print</mat-icon> Imprimer
-                </button>
-            </div>
-
-
-            <mat-card-footer>
-                <mat-card class="footer"></mat-card>
-            </mat-card-footer>
-=======
-                </tr> -->
                 </tbody>
 
             </table>
             <table>
-                <tr>
-                    <div class="input-group" id="remise1">
-                        <p style="margin-left: 69%; color: tomato; font-size: 14px;">Total</p>
-                        <input class="form-control" (change)="nombre()" type="text" [(ngModel)]="number" id="number2" style="margin-left: 77%; border: none; margin-top:-5%; font-size: 14px;" value=" {{ formatTotal }} XOF">
+                <div class="input-group">
+                    <p style="margin-left: 69%; color: tomato; font-size: 14px;">Total</p>
+                    <input class="form-control" id="number1" [formControl]="number2"
+                        style="margin-left: 77%; border: none; margin-top:-5.5%; font-size: 14px;"
+                        value=" {{formatTotal}} XOF">
 
 
-                    </div>
-                </tr>
+                </div>
             </table>
 
         </div>
         <div style="margin-left: 40%; margin-top: 3%;">
 
-            <button (click)="captureScreen()" mat-raised-button style="margin-left:2%; background-color: white; margin-bottom: 4%; margin-top: -5%; border: none; ">
-            <mat-icon matSuffix>print</mat-icon> Imprimer
-        </button>
->>>>>>> 7a634cc29a590bf2fe890948826e28eaa48d2bb5
+            <button (click)="captureScreen()" mat-raised-button
+                style="margin-left:2%; background-color: white; margin-bottom: 4%; margin-top: -5%; border: none; ">
+                <mat-icon matSuffix>print</mat-icon> Imprimer
+            </button>
         </div>
 
-        <!-- <script type="text/javascript">
-    function getPDF() {
 
-        var HTML_Width = $("#remise1").width();
-        var HTML_Height = $("#remise1").height();
-        var top_left_margin = 15;
-        var PDF_Width = HTML_Width + (top_left_margin * 2);
-        var PDF_Height = (PDF_Width * 1.5) + (top_left_margin * 2);
-        var canvas_image_width = HTML_Width;
-        var canvas_image_height = HTML_Height;
-
-        var totalPDFPages = Math.ceil(HTML_Height / PDF_Height) - 1;
-
-
-        html2canvas($("#remise1")[0], {
-            allowTaint: true
-        }).then(function(canvas) {
-            canvas.getContext('2d');
-
-            console.log(canvas.height + "  " + canvas.width);
-
-
-            var imgData = canvas.toDataURL("../../../assets/img", 1.0);
-            var pdf = new jsPDF('p', 'pt', [PDF_Width, PDF_Height]);
-            pdf.addImage(imgData, 'JPG', top_left_margin, top_left_margin, canvas_image_width, canvas_image_height);
-
-<<<<<<< HEAD
-=======
         <mat-card-footer>
             <mat-card class="footer"></mat-card>
         </mat-card-footer>
+
+
+
+        <!-- 
+        <table>
+            <tr>
+                <div class="input-group" id="remise1">
+                    <p style="margin-left: 69%; color: tomato; font-size: 14px;">Total</p>
+                    <input (change)="calcul()" class="form-control" type="text" [(ngModel)]="number" id="number2" style="margin-left: 77%; border: none; margin-top:-5%;" value=" {{ formatTotal }} XOF">
+
+
+                </div>
+            </tr>
+        </table>
+
     </div>
-</mat-card>
+    <div style="margin-left: 40%; margin-top: 3%;">
 
-<!-- <script type="text/javascript">
-    function getPDF() {
-
-        var HTML_Width = $("#remise1").width();
-        var HTML_Height = $("#remise1").height();
-        var top_left_margin = 15;
-        var PDF_Width = HTML_Width + (top_left_margin * 2);
-        var PDF_Height = (PDF_Width * 1.5) + (top_left_margin * 2);
-        var canvas_image_width = HTML_Width;
-        var canvas_image_height = HTML_Height;
-
-        var totalPDFPages = Math.ceil(HTML_Height / PDF_Height) - 1;
-
-
-        html2canvas($("#remise1")[0], {
-            allowTaint: true
-        }).then(function(canvas) {
-            canvas.getContext('2d');
-
-            console.log(canvas.height + "  " + canvas.width);
-
-
-            var imgData = canvas.toDataURL("../../../assets/img", 1.0);
-            var pdf = new jsPDF('p', 'pt', [PDF_Width, PDF_Height]);
-            pdf.addImage(imgData, 'JPG', top_left_margin, top_left_margin, canvas_image_width, canvas_image_height);
-
->>>>>>> 7a634cc29a590bf2fe890948826e28eaa48d2bb5
-
-            for (var i = 1; i <= totalPDFPages; i++) {
-                pdf.addPage(PDF_Width, PDF_Height);
-                pdf.addImage(imgData, 'JPG', top_left_margin, -(PDF_Height * i) + (top_left_margin * 4), canvas_image_width, canvas_image_height);
-            }
-
-            pdf.save("HTML-Document.pdf");
-        });
-    };
-</script> -->
+        <button (click)="captureScreen()" mat-raised-button style="margin-left:2%; background-color: white; margin-bottom: 4%; margin-top: -5%; border: none; ">
+            <mat-icon matSuffix>print</mat-icon> Imprimer
+        </button>
+    </div> -->
